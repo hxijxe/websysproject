@@ -10,6 +10,13 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+.membImg{
+  max-width: 150px;
+  max-height: auto;
+  padding: 20px;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -3064,24 +3071,24 @@ textarea.form-control-lg {
 
 .btn-secondary {
   color: #fff;
-  background-color: #7464a1;
-  border-color: #7464a1;
+  background-color: #d12929;
+  border-color: #d12929;
 }
 .btn-secondary:hover {
-  color: #fff;
-  background-color: #635589;
-  border-color: #5d5081;
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
 }
 .btn-check:focus + .btn-secondary, .btn-secondary:focus {
   color: #fff;
-  background-color: #635589;
-  border-color: #5d5081;
+  background-color: #000;
+  border-color: #000;
   box-shadow: 0 0 0 0.25rem rgba(137, 123, 175, 0.5);
 }
 .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #5d5081;
-  border-color: #574b79;
+  background-color: #000;
+  border-color: #000;
 }
 .btn-check:checked + .btn-secondary:focus, .btn-check:active + .btn-secondary:focus, .btn-secondary:active:focus, .btn-secondary.active:focus, .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(137, 123, 175, 0.5);
@@ -4657,16 +4664,16 @@ textarea.form-control-lg {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1rem 1rem;
+  padding: 2rem 2rem;
 }
 
 .card-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .card-subtitle {
   margin-top: -0.25rem;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .card-text:last-child {
