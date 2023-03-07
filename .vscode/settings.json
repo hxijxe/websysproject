@@ -1,0 +1,6 @@
+{
+    "php.validate.enable": true,
+    "php.suggest.basic": true,
+    "html.format.templating": true,
+    "php.validate.executablePath": "c:/Users/otaku/Dev/php/php.exe"
+}
