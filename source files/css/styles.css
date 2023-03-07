@@ -11,10 +11,16 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+#footnav{
+  background-color: #000;
+  color: white;
+}
+
 .membImg{
   max-width: 150px;
   max-height: auto;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 :root {
@@ -11620,7 +11626,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 7rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -11703,5 +11709,5 @@ body {
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }

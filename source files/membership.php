@@ -29,20 +29,20 @@
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
             </div>
         </section>
 
         <section class="projects-section bg-body" id="projects">
-            <div class="container px-4 px-lg-5">
+            <div class="container px-5 px-lg-5">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
-                            <div class="text-center card-header" style="background-color: #414a4c;">
+                            <div class="text-center card-header" style="background-color: #51123c;">
                                 <img src="img/sit_logo.png" class="card-img-top membImg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Basic Tier</h5>
+                                <h3 class="card-title">Basic Tier</h>
+                                <h2 class="card-text text-dark mb-5">$16/week</h2>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                             <div class="text-center card-footer">
@@ -52,11 +52,12 @@
                     </div>
                     <div class="col">
                         <div class="card h-100" >
-                            <div class="text-center card-header" style="background-color: #2f4f4f; ">
+                            <div class="text-center card-header" style="background-color: silver; ">
                                 <img src="img/sit_logo.png" class="card-img-top membImg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Silver Tier</h5>
+                                <h3 class="card-title">Silver Tier</h3>
+                                <h2 class="card-text text-dark mb-5">$25/week</h2>
                                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
 
                             </div>
@@ -67,11 +68,12 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <div class="text-center card-header" style="background-color: #483c32;">
+                            <div class="text-center card-header" style="background-color: gold;">
                                 <img src="img/sit_logo.png" class="card-img-top membImg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Gold Tier</h5>
+                                <h3 class="card-title">Gold Tier</h3>
+                                <h2 class="card-text text-dark mb-5">$38/month</h2>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                             </div>
                             <div class="text-center card-footer">
@@ -82,6 +84,33 @@
                 </div>
             </div>
         </section>
+        <div class="container px-5 px-lg-5">
+            <div class="row">
+                <div class="text-center card-body">
+                    <h3>MEMBERSHIP FEATURES</h3>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col">
+                    <div class="text-center">
+                        <h3>No Joining Fee</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <h3>No Joining Fee</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <h3>No Joining Fee</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php
+        include "footer.inc.php";
+        ?>
     </body>
 
 </html>

@@ -43,5 +43,8 @@
                 <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
             </div>
         </section>
+        <?php
+        include "footer.inc.php";
+        ?>
     </body>
 </html>
