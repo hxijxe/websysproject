@@ -11716,7 +11716,9 @@ body {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width:70%; 
+  margin-left:15%; 
+  margin-right:15%;
 }
 
 td, th {
@@ -11727,4 +11729,9 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.w3-card-4{
+  margin-left: auto;
+  margin-right: auto;
 }

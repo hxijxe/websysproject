@@ -90,5 +90,8 @@ include "nav.inc.php";
     </table>
 
 </body>
+<?php
+include "footer.inc.php";
+?>
 
 </html>
