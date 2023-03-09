@@ -30,64 +30,88 @@ include "nav.inc.php";
             <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
         </div>
     </section>
-    <div>
-        <label for="location">Location</label>
-        <select name="location" id="location">
-            <option value="Dover">Dover</option>
-            <option value="NP">NP</option>
-            <option value="NYP">NYP</option>
-            <option value="RP">RP</option>
-            <option value="SP">SP</option>
-        </select>
-    </div>
-    <div>
-        <label for="classes">Class</label>
-        <select name="classes" id="classes">
-            <option value="Gym">Gym</option>
-            <option value="Yoga">Yoga</option>
-            <option value="Zumba">Zumba</option>
-        </select>
+    <div class="dropdowncontainer">
+
+        <div class="dropdown">
+            <div class="select">
+                <span>Select Location</span>
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <input type="hidden" name="location">
+            <ul class="dropdown-menu">
+                <li id="Dover">Male</li>
+                <li id="SP">Female</li>
+                <li id="NYP">Female</li>
+                <li id="NP">Female</li>
+                <li id="RP">Female</li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <div class="select">
+                <span>Select Classes</span>
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <input type="hidden" name="location">
+            <ul class="dropdown-menu">
+                <li id="Dover">Yoga</li>
+                <li id="SP">Zumba</li>
+                <li id="NYP">Gym</li>
+                <li id="NP">Cycle Burn</li>
+                <li id="RP">Swimming</li>
+            </ul>
+        </div>
+
     </div>
 
-    <table>
-        <tr>
-            <th>Time</th>
-            <th>Class</th>
-            <th>Instructor</th>
-            <th>Booking</th>
-        </tr>
-        <tr>
-            <td>7am-9am</td>
-            <td>Zumba</td>
-            <td>Ms Leshane</td>
-            <td><a href="#booking">Book Now!</a></td>
-        </tr>
-        <tr>
-            <td>10am-12pm</td>
-            <td>Yoga</td>
-            <td>Mr Bryon</td>
-            <td><a href="#booking">Book Now!</a></td>
-        </tr>
-        <tr>
-            <td>1pm-3pm</td>
-            <td>Gym</td>
-            <td>Ms Faith</td>
-            <td><a href="#booking">Book Now!</a></td>
-        </tr>
-        <tr>
-            <td>4pm-6pm</td>
-            <td>Cycle Burn</td>
-            <td>Mr Ho</td>
-            <td><a href="#booking">Book Now!</a></td>
-        </tr>
-        <tr>
-            <td>8pm-10pm</td>
-            <td>Swimming</td>
-            <td>Mr Jack</td>
-            <td><a href="#booking">Book Now!</a></td>
-        </tr>
+    <h2>All Available Classes</h2>
+    <div style="overflow-x:auto;">
+        <table>
+            <tr>
+                <th>Time Slot</th>
+                <th>Duration</th>
+                <th>Class</th>
+                <th>Instructor</th>
+                <th>Booking</th>
+            </tr>
+            <tr>
+                <td>7am</td>
+                <td>2 hours</td>
+                <td>Zumba</td>
+                <td>Ms Leshane</td>
+                <td><a href="#booking">Book Now!</a></td>
+            </tr>
+            <tr>
+                <td>10am</td>
+                <td>2 hours</td>
+                <td>Yoga</td>
+                <td>Mr Bryon</td>
+                <td><a href="#booking">Book Now!</a></td>
+            </tr>
+            <tr>
+                <td>1pm</td>
+                <td>2 hours</td>
+                <td>Gym</td>
+                <td>Ms Faith</td>
+                <td><a href="#booking">Book Now!</a></td>
+            </tr>
+            <tr>
+                <td>4pm</td>
+                <td>2 hours</td>
+                <td>Cycle Burn</td>
+                <td>Mr Ho</td>
+                <td><a href="#booking">Book Now!</a></td>
+            </tr>
+            <tr>
+                <td>8pm</td>
+                <td>2 hours</td>
+                <td>Swimming</td>
+                <td>Mr Jack</td>
+                <td><a href="#booking">Book Now!</a></td>
+            </tr>
+        </table>
+    </div>
 
-    </table>
 
 </body>
 <?php
