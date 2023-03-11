@@ -17,7 +17,6 @@
                     </div>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="explore.php">Explore</a></li>
                 <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="location.php">Location</a></li>
                 <li class="nav-item"><a class="nav-link" href="login_signup.php">Login/Signup</a></li>

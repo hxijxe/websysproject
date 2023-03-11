@@ -39,11 +39,11 @@ include "nav.inc.php";
             </div>
             <input type="hidden" name="location">
             <ul class="dropdown-menu">
-                <li id="Dover">Male</li>
-                <li id="SP">Female</li>
-                <li id="NYP">Female</li>
-                <li id="NP">Female</li>
-                <li id="RP">Female</li>
+                <li id="Dover">Dover</li>
+                <li id="SP">SP</li>
+                <li id="NYP">NYP</li>
+                <li id="NP">NP</li>
+                <li id="RP">RP</li>
             </ul>
         </div>
 
