@@ -12,8 +12,8 @@
                         Classes
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Time Table</a>
-                        <a class="dropdown-item" href="#">Explore</a>
+                        <a class="dropdown-item" href="classes.php">Time Table</a>
+                        <a class="dropdown-item" href="explore.php">Explore</a>
                     </div>
                 </li>
 
