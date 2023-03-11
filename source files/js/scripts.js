@@ -68,3 +68,17 @@ $('.dropdown .dropdown-menu li').click(function () {
     $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
 });
 /*End Dropdown Menu*/
+
+$(document).ready(function () {
+    $('.openBtn').click(function (e) {
+        setTimeout(function () { $('.popup').removeClass('animationClose').addClass('animationOpen'); }, 100);
+        $('.obscure').fadeIn(50);
+        e.preventDefault();
+    });
+
+    $('.closeBtn, .obscure').click(function (e) {
+        e.preventDefault();
+        setTimeout(function () { $('.obscure').fadeOut(350); }, 50);
+        $('.popup').removeClass('animationOpen').addClass('animationClose');
+    });
+});

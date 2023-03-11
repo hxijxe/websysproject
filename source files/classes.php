@@ -77,10 +77,23 @@ include "nav.inc.php";
             <tr>
                 <td>7am</td>
                 <td>2 hours</td>
-                <td>Zumba</td>
+                <td><a class="openBtn" href="#">Zumba</label></td>
                 <td>Ms Leshane</td>
                 <td><a href="#booking">Book Now!</a></td>
             </tr>
+            <div class="obscure">
+                <div class="popup animationClose">
+                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/mZeFvX3ALKY">
+                    </iframe>
+                    <p>To begin a Zumba tutorial, you'll need some upbeat music and comfortable clothing. 
+                        Start with a warm-up consisting of light cardio moves like jumping jacks or jogging in place. 
+                        Then, move on to learning the basic steps of different dance styles like salsa, merengue, and reggaeton. 
+                        Once you've mastered the basics, add in more complicated routines that combine different dance styles. 
+                        Remember to stay hydrated and take breaks when needed, and have fun dancing to the music!</p>
+                    <a class="closeBtn" href="#">Close</a>
+                </div>
+            </div>
+
             <tr>
                 <td>10am</td>
                 <td>2 hours</td>
