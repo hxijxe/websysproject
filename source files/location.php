@@ -17,7 +17,7 @@ include "nav.inc.php";
 ?>
 
 <body>
-    <section class="about-section text-center">
+    <header class="about-section text-center">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8">
@@ -28,8 +28,15 @@ include "nav.inc.php";
                 </div>
             </div>
         </div>
-    </section>
-    <br>
+    </header>
+    
+
+    <main class ="container">
+        <section id="maps">
+        <h2><u>6 Locations</u></h2><h3> View all locations on map</h3>
+       
+        </section>
+    </main>
 
 
 
