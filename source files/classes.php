@@ -27,7 +27,6 @@ include "nav.inc.php";
                     </p>
                 </div>
             </div>
-            <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
         </div>
     </section>
     <div class="dropdowncontainer">
