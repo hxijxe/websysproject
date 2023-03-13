@@ -1,3 +1,8 @@
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/styles.css">
+
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container px-4 px-lg-5">
         <a class="navbar-brand" href="index.php"><img class="brand-logo" src="img/sit_logo.png" alt="sit logo" style="height: 70px;"></a>
