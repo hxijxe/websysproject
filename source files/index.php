@@ -8,30 +8,45 @@
     </head>
     <?php include "nav.inc.php"; ?>
     <body>
-
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
                 </ol>
+
                 <div class="carousel-inner">
-                    <div class="carousel-item img-fluid active">
-                        <img class="d-block w-100" src="img/gym.jpg" alt="First slide">
+                    <div class="carousel-item active">
+                        <img src="img/gym.jpg" alt="Image 1">
+                        <div class="carousel-caption">
+                            <h3>Image 1</h3>
+                            <p>This is a caption for image 1.</p>
+                        </div>
                     </div>
-                    <div class="carousel-item img-fluid">
-                        <img class="d-block w-100" src="img/cycle.jpg" alt="Second slide">
+
+                    <div class="carousel-item">
+                        <img src="img/cycle.jpg" alt="Image 2">
+                        <div class="carousel-caption">
+                            <h3>Image 2</h3>
+                            <p>This is a caption for image 2.</p>
+                        </div>
                     </div>
-                    <div class="carousel-item img-fluid">
-                        <img class="d-block w-100" src="img/yoga.jpg" alt="Third slide">
+
+                    <div class="carousel-item">
+                        <img src="img/swim.jpg" alt="Image 3">
+                        <div class="carousel-caption">
+                            <h3>Image 3</h3>
+                            <p>This is a caption for image 3.</p>
+                        </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -65,7 +80,6 @@
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
             </div>
         </section>
         <?php
