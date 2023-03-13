@@ -1,6 +1,8 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
 <link rel="stylesheet" href="css/styles.css">
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
