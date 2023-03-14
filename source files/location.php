@@ -32,10 +32,15 @@ include "nav.inc.php";
             <div class="row">
                 <article class="col-sm">
                     <h2>6 Locations</h2>
-                    <h5>View all locations on map</h5>
-                    <!--<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WKqrR1eSDbEUGRTD6MtdDnTMbgEJcM8&ehbc=2E312F" width="800" height="480">
-                    </iframe>-->
-
+                    <h5>View all locations on map</h5>           
+                    <div style="width: 100%; overflow: hidden; height: 600px;">
+                    <iframe 
+                        src="https://www.google.com/maps/d/u/0/embed?mid=1z0KOtzze9G_ZhtuPxXUmr6KQ5EGNXGY&ehbc=2E312F"
+                        width="100%"
+                        height="600"
+                        frameborder="0"
+                        style="border:0; margin-top: -60px;">
+                    </iframe>
                 </article>
 
             </div>
