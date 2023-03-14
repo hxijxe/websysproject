@@ -46,6 +46,191 @@ include "nav.inc.php";
             </div>
         </section>
 
+        <section class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="w3-card-4" style="width:90%">
+                    <img src="img/yoga.jpg" alt="yoga" style="width:100%">
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="">
+                        <div class="section-title">
+                            <h2>SIT @ Dover Gym</h2>
+                        </div>
+                        <div class="">
+                            <a href="https://www.google.com/maps/search/?api=1&amp;query=%20Singapore%20Institute%20of%20Technology" 
+                            class="" target="_blank" rel="noreferrer">
+                            <p>View on map</p>
+                            </a>
+                        </div>
+                        <div class="add-desc">
+                            <p>10 Dover Dr, Singapore 138683</p>
+                        </div>
+                        <div class="contact-desc">
+                            <p>6592 1189</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="w3-card-4" style="width:90%">
+                    <img src="img/yoga.jpg" alt="yoga" style="width:100%">
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="">
+                        <div class="section-title">
+                            <h2>SIT @ NP Gym</h2>
+                        </div>
+                        <div class="">
+                            <a href="https://www.google.com/maps/search/?api=1&amp;query=%20Singapore%20Institute%20of%20Technology%20(SIT@NP)" 
+                            class="" target="_blank" rel="noreferrer">
+                            <p>View on map</p>
+                            </a>
+                        </div>
+                        <div class="add-desc">
+                            <p>537 Clementi Rd, Singapore 599493</p>
+                        </div>
+                        <div class="contact-desc">
+                            <p>6592 1189</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="w3-card-4" style="width:90%">
+                    <img src="img/yoga.jpg" alt="yoga" style="width:100%">
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="">
+                        <div class="section-title">
+                            <h2>SIT @ NYP Gym</h2>
+                        </div>
+                        <div class="">
+                            <a href="https://www.google.com/maps/search/?api=1&amp;query=%20Singapore%20Institute%20of%20Technology%20(SIT@NYP)" 
+                            class="" target="_blank" rel="noreferrer">
+                            <p>View on map</p>
+                            </a>
+                        </div>
+                        <div class="add-desc">
+                            <p>172 Ang Mo Kio Ave 8, Singapore 567739</p>
+                        </div>
+                        <div class="contact-desc">
+                            <p>6592 1189</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="w3-card-4" style="width:90%">
+                    <img src="img/yoga.jpg" alt="yoga" style="width:100%">
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="">
+                        <div class="section-title">
+                            <h2>SIT @ RP Gym</h2>
+                        </div>
+                        <div class="">
+                            <a href="https://www.google.com/maps/search/?api=1&amp;query=%20Singapore%20Institute%20of%20Technology%20(SIT@RP)" 
+                            class="" target="_blank" rel="noreferrer">
+                            <p>View on map</p>
+                            </a>
+                        </div>
+                        <div class="add-desc">
+                            <p>43 Woodlands Ave 9, Singapore 737729</p>
+                        </div>
+                        <div class="contact-desc">
+                            <p>6592 1189</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="w3-card-4" style="width:90%">
+                    <img src="img/yoga.jpg" alt="yoga" style="width:100%">
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="">
+                        <div class="section-title">
+                            <h2>SIT @ SP Gym</h2>
+                        </div>
+                        <div class="">
+                            <a href="https://www.google.com/maps/search/?api=1&amp;query=%20Singapore%20Institute%20of%20Technology%20(SIT@SP)" 
+                            class="" target="_blank" rel="noreferrer">
+                            <p>View on map</p>
+                            </a>
+                        </div>
+                        <div class="add-desc">
+                            <p>510 Dover Rd, Singapore 139660</p>
+                        </div>
+                        <div class="contact-desc">
+                            <p>6592 1189</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="w3-card-4" style="width:90%">
+                    <img src="img/yoga.jpg" alt="yoga" style="width:100%">
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="">
+                        <div class="section-title">
+                            <h2>SIT @ TP Gym</h2>
+                        </div>
+                        <div class="">
+                            <a href="https://www.google.com/maps/search/?api=1&amp;query=%20Singapore%20Institute%20of%20Technology%20(SIT@TP)" 
+                            class="" target="_blank" rel="noreferrer">
+                            <p>View on map</p>
+                            </a>
+                        </div>
+                        <div class="add-desc">
+                            <p>29B Tampines Ave 1, Singapore 528694</p>
+                        </div>
+                        <div class="contact-desc">
+                            <p>6592 1189</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
         <section class="property-grid grid">
             <div class="container">
                 <div class="row">
