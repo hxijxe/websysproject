@@ -7,6 +7,8 @@
     <title>SIT Active Gym Locations</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <?php
@@ -46,6 +48,7 @@ include "nav.inc.php";
             </div>
         </section>
 
+<<<<<<< Updated upstream
         <section class="">
         <div class="container-fluid">
             <div class="row">
@@ -232,54 +235,57 @@ include "nav.inc.php";
         </section>
 
         <section class="property-grid grid">
+=======
+        <section class="location-row row">
+>>>>>>> Stashed changes
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="grid-option">
-                            <form>
-                                <select class="custom-select">
-                                    <option selected>All</option>
-                                    <option value="1">Upcoming</option>
-                                    <option value="2">Zumba</option>
-                                    <option value="3">Yoga</option>
-                                    <option value="4">Gym</option>
-                                </select>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card-box-a card-shadow">
-                            <div class="img-box-a">
-                                <img src="img/sitnyp.jpg" alt="" class="img-a img-fluid">
-                            </div>
-                            <div class="card-overlay">
-                                <div class="card-overlay-a-content">
-                                    <div class="card-header-a">
-                                        <h2 class="card-title-a">
-                                            <a href="#">SIT @ NYP</a>
-
-                                        </h2>
-                                    </div>
-                                    <div class="card-body-a">
-                                        <div class="price-box d-flex">
-                                            <span class="price-a">rent | $ 12.000</span>
-                                        </div>
-                                        <a href="https://www.singaporetech.edu.sg/campus-locations#nyp" class="link-a">Click here to view
-                                            <span class="bi bi-chevron-right"></span>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
+                <div class="row-option">
+                    <form>
+                        <select class="custom-select">
+                            <option selected>All Classes</option>
+                            <option value="1">Upcoming</option>
+                            <option value="2">Zumba</option>
+                            <option value="3">Yoga</option>
+                            <option value="4">Gym</option>
+                        </select>
+                    </form>
                 </div>
-
-
+            </div>
         </section>
 
+        <section class="card">
+            <div class="w3-row">
+                <div class="w3-col s3">
+                    <img src="img/sitnyp.jpg" alt="nyp" style="width:100%">
+                </div>
+                <div class="w3-col s9 w3-white w3-center">
+                    <p>SIT@NYP</p>
+                    <p>Nanyang Polytechnic
+                        172A Ang Mo Kio Avenue 8, Singapore 567739
+                        (beside Blk Q of NYP campus).</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <p>
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="w3-row">
+                <div class="w3-col s3">
+                    <img src="img/npsit.jpg" alt="np" style="width:100%">
+                </div>
+                <div class="w3-col s9 w3-white w3-center">
+                    <p>SIT@NP</p>
+                    <p>Ngee Ann Polytechnic
+                        537 Clementi Road, Singapore 599493</p>
+                </div>
+
+            </div>
+        </section>
     </main>
 
 
