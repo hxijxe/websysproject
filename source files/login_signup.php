@@ -4,90 +4,81 @@
 <head>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/login.css">
+    <script defer src="js/login.js"></script>
     <title>SIT Active Gym</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 </head>
 
 <body>
-    <!-- <section class="about-section text-center">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="text-white mb-4">Login/Sign up</h2>
-                    <p class="text-white-50">
-                        Welcome to SIT Gym
-                        Wanna save a spot in your favourite class?
-                        No problem - we've got you covered. SIT Gym is filled with features designed
-                        to help you at every step of your health and fitness journey.
-                    </p>
-                </div>
-            </div>
+    <div class="container" id="container">
+    
+    <div class="form-container register-container">
+        <form action="#">
+        <h1>Register</h1>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Register</button>
+        <span>or use your account</span>
+        <div class="social-container">
+        <a href="#" class="social">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 0 588 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+        </a>
+        <a href="#" class="social">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 0 588 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+        </a>
         </div>
-    </section> -->
-    <!-- <br> -->
-    <form class="container">
-        
-        <div class="form-container register-container">
-            <form action="#">
-            <h1>Register hire.</h1>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <button>Register</button>
-            <span>or use your account</span>
-            <div class="social-container">
-                <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
-                <a href="#" class="social"><i class="lni lni-google"></i></a>
-                <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
-            </div>
-            </form>
-        </div>
+        </form>
+    </div>
 
-        <div class="form-container login-container">
-            <form action="#">
-            <h1>Login hire.</h1>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <div class="content">
-                <div class="checkbox">
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <label>Remember me</label>
-                </div>
-                <div class="pass-link">
-                <a href="#">Forgot password?</a>
-                </div>
-            </div>
-            <button>Login</button>
-            <span>or use your account</span>
-            <div class="social-container">
-                <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
-                <a href="#" class="social"><i class="lni lni-google"></i></a>
-                <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
-            </div>
-            </form>
+    <div class="form-container login-container">
+        <form action="#">
+        <h1>Login</h1>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <div class="content">
+            <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label>Remember me</label>
+            </div> 
         </div>
+        <div class="content">
+            <div class="pass-link">
+            <a href="#">Forgot password?</a>
+            </div>  
+        </div>
+        <button>Login</button>
+        <span>or use your account</span>
+        <div class="social-container">
+            <a href="#" class="social">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 0 588 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+            </a>
+            <a href="#" class="social">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 0 588 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+            </a>
+        </div>
+        </form>
+    </div>
 
-        <div class="overlay-container">
-            <div class="overlay">
-            <div class="overlay-panel overlay-left">
-                <h1 class="title">Hello <br> friends</h1>
-                <p>if You have an account, login here and have fun</p>
-                <button class="ghost" id="login">Login<i class="lni lni-arrow-left login"></i>
-                </button>
-            </div>
-            <div class="overlay-panel overlay-right">
-                <h1 class="title">Don't have an account? <br> Start your journey with us</h1>
-                <br>
-                <p>Wanna save a spot in your favourite class?
-                        No problem - we've got you covered. SIT Gym is filled with features designed
-                        to help you at every step of your health and fitness journey.</p>
-                <button class="ghost" id="register">Register
-                <i class="lni lni-arrow-right register"></i>
-                </button>
-            </div>
-            </div>
-        </div>  
+    <div class="overlay-container">
+        <div class="overlay">
+        <div class="overlay-panel overlay-left">
+            <h1 class="title">Hello <br>Sitizens</h1>
+            <p>Have an account? <br> Click here to login.</p>
+            <button class="ghost" id="login">Login<i class="lni lni-arrow-left login"></i>
+            </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+            <h1 class="title">Not a member?<br>Start your journey with us</h1>
+            <p>if you don't have an account yet, sign up and start your journey with us!</p>
+            <button class="ghost" id="register">Register
+            <i class="lni lni-arrow-right register"></i>
+            </button>
+        </div>
+        </div>
+    </div>  
+    </div>
         <!-- <div class="column gx-4 gx-lg-5 justify-content-center">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
