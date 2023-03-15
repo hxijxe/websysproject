@@ -27,7 +27,7 @@ include "nav.inc.php";
     </section>
     <div class="dropdowncontainer">
 
-        <div class="dropdown">
+        <div class="location dropdown">
             <div class="select">
                 <span>Select Location</span>
                 <i class="fa fa-chevron-left"></i>
@@ -42,7 +42,7 @@ include "nav.inc.php";
             </ul>
         </div>
 
-        <div class="dropdown">
+        <div class="location dropdown">
             <div class="select">
                 <span>Select Classes</span>
                 <i class="fa fa-chevron-left"></i>
