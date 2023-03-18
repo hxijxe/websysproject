@@ -42,7 +42,7 @@
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                             <div class="text-center card-footer">
-                                <a class="btn btn-secondary mt-3 mb-3" href="registerpage.php">Get Started</a>
+                                <a class="btn btn-secondary mt-3 mb-3" href="login_signup.php">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
 
                             </div>
                             <div class="text-center card-footer">
-                                <a class="btn btn-secondary mt-3 mb-3" href="registerpage.php">Get Started</a>
+                                <a class="btn btn-secondary mt-3 mb-3" href="login_signup.php">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                             </div>
                             <div class="text-center card-footer">
-                                <a class="btn btn-secondary mt-3 mb-3" href="registerpage.php">Get Started</a>
+                                <a class="btn btn-secondary mt-3 mb-3" href="login_signup.php">Get Started</a>
                             </div>
                         </div>
                     </div>
