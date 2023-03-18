@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    
     <?php
+   
 
     echo 'welcome to php <br/>';
    
