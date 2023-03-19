@@ -133,7 +133,7 @@ include "nav.inc.php";
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="img/sitnyp.jpg" alt="nyp_campus">
                 <div class="card-body">
-                    <h5 class="text-muted">Faithio</h5>
+                    <h5 class="text-muted">Jian Rong Rong</h5>
                     <p class="card-text">Great Location for students. It is located at NYP campus and its very accessible to all SIT students</p>
                     <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted">59 mins</small>
