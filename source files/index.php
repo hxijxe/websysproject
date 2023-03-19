@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-<<<<<<< HEAD
 
 <head>
     <link rel="stylesheet" href="css/styles.css">
@@ -14,39 +13,6 @@ include "nav.inc.php";
 ?>
 
 <body>
-    <div id="carouselExampleCrossfade" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-mdb-target="#carouselExampleCrossfade" data-mdb-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-mdb-target="#carouselExampleCrossfade" data-mdb-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-mdb-target="#carouselExampleCrossfade" data-mdb-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100"
-                    alt="Wild Landscape" />
-            </div>
-            <div class="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera" />
-            </div>
-            <div class="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits" />
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCrossfade"
-            data-mdb-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCrossfade"
-            data-mdb-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    
     <header class="masthead">
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
             <div class="d-flex justify-content-center">
@@ -88,7 +54,6 @@ include "nav.inc.php";
                             <p>Our energetic instructors will make you work up a sweat</p>
                         </div>
                     </div>
->>>>>>> 53f1e375aa2b78862411fef9c5e22e493a0f78a5
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -171,4 +136,3 @@ include "nav.inc.php";
 
     </body>
 </html>
->>>>>>> 53f1e375aa2b78862411fef9c5e22e493a0f78a5
