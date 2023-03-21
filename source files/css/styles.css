@@ -8961,6 +8961,11 @@ fieldset:disabled .btn {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-red {
+  --bs-text-opacity: 1;
+  color: rgb(220,20,60)
+}
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
@@ -12673,7 +12678,21 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  /* background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%); */
+}
+
+.about-background {
+  background-image: url("img/gym-bg.jpg");
+  background-color: #cccccc;
+  /* width: 80%;
+  height: 400px;
+  background-size: cover;
+  color: white;
+  padding: 20px; */
+}
+
+.about-sectionbg {
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%)
 }
 
 .about-section p {
@@ -13335,3 +13354,4 @@ h2 {
   max-height: 1080px; /* adjust this value to suit your needs */
   object-fit: cover;
 }
+
