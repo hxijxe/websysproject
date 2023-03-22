@@ -155,7 +155,7 @@ include "nav.inc.php";
                 </div>
 
                 <tr>
-                    <td>8pm</td>
+                    <td>6pm</td>
                     <td>2 hours</td>
                     <td><a class="SopenBtn" href="#">Swim</label></td>
                     <td>Mr Jack</td>

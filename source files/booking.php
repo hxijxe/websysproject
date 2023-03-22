@@ -29,18 +29,41 @@ include "nav.inc.php";
     <section>
         <div class="bookingform">
             <h3>Classes Booking</h3>
-            <form action="/form_processing.php">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <form action="/processBooking.php">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your email...">
 
-                <label for="country">Class</label>
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
+                <label for="className">Choose your Class</label>
+                <select id="className" name="className">
+                    <option value="yoga">Yoga</option>
+                    <option value="zumba">Zumba</option>
+                    <option value="gym">GYM</option>
+                    <option value="cycleBurn">Cycle Burn</option>
+                    <option value="swimming">Swimming</option>
+                </select>
+
+                <label for="date">Choose a Date</label>
+                <input type="date" id="date" name="date" >
+
+                <label for="timeSlot">Choose your Time Slot</label>
+                <select id="timeSlot" name="timeSlot">
+                    <option value="7am-9am">7am-9am</option>
+                    <option value="10am-12pm">10am-12pm</option>
+                    <option value="1pm-3pm">1pm-3pm</option>
+                    <option value="4pm-5pm">4pm-5pm</option>
+                    <option value="6pm-8pm">6pm-8pm</option>
+                </select>
+
+                <label for="instructor">Choose your instructor</label>
+                <select id="instructor" name="instructor">
+                    <option value="leshane">Ms Leshane</option>
+                    <option value="bryon">Mr Bryon</option>
+                    <option value="faith">Ms Faith</option>
+                    <option value="ho">Mr Ho</option>
+                    <option value="jack">Mr Jack</option>
                 </select>
 
                 <input type="submit" value="Submit">
