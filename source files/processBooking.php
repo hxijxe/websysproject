@@ -62,7 +62,7 @@
                 $date = sanitize_input($_POST["date"]);
             }
             if ($success) {
-                echo "<h1>Booking successful!</h1> \n";
+                echo "<h1>Booking successful! View and edit your bookings in your profile page!</h1> \n";
                 echo '<div class="form-group"><a class="btn btn-success" '
                 . 'href="index.php">Back'
                 . '</a></div>';

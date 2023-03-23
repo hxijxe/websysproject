@@ -76,7 +76,7 @@ include "nav.inc.php";
                     <td>2 hours</td>
                     <td><a class="zumbaopenBtn" href="#">Zumba</label></td>
                     <td>Ms Leshane</td>
-                    <td><a href="#">Book Now!</a></td>
+                    <td><a href="booking.php">Book Now!</a></td>
                 </tr>
                 <div class="zumbaobscure">
                     <div class="zumbapopup ZanimationClose">
@@ -96,7 +96,7 @@ include "nav.inc.php";
                     <td>2 hours</td>
                     <td><a class="yogaopenBtn" href="#">Yoga</label></td>
                     <td>Mr Bryon</td>
-                    <td><a href="#">Book Now!</a></td>
+                    <td><a href="booking.php">Book Now!</a></td>
                 </tr>
                 <div class="yogaobscure">
                     <div class="yogapopup YanimationClose">
@@ -118,7 +118,7 @@ include "nav.inc.php";
                     <td>2 hours</td>
                     <td><a class="gymopenBtn" href="#">Gym</label></td>
                     <td>Ms Faith</td>
-                    <td><a href="#booking">Book Now!</a></td>
+                    <td><a href="booking.php">Book Now!</a></td>
                 </tr>
                 <div class="gymobscure">
                     <div class="gympopup GanimationClose">
@@ -138,7 +138,7 @@ include "nav.inc.php";
                     <td>2 hours</td>
                     <td><a class="CopenBtn" href="#">Spin Class</label></td>
                     <td>Mr Ho</td>
-                    <td><a href="#booking">Book Now!</a></td>
+                    <td><a href="booking.php">Book Now!</a></td>
                 </tr>
                 <div class="Cobscure">
                     <div class="Cpopup CanimationClose">
@@ -159,7 +159,7 @@ include "nav.inc.php";
                     <td>2 hours</td>
                     <td><a class="SopenBtn" href="#">Swim</label></td>
                     <td>Mr Jack</td>
-                    <td><a href="#booking">Book Now!</a></td>
+                    <td><a href="booking.php">Book Now!</a></td>
                 </tr>
                 <div class="Sobscure">
                     <div class="Spopup SanimationClose">

@@ -29,7 +29,7 @@ include "nav.inc.php";
     <section>
         <div class="bookingform">
             <h3>Classes Booking</h3>
-            <form action="/processBooking.php">
+            <form action="processBooking.php">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name..">
 
