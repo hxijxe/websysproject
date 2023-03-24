@@ -9,6 +9,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     </head>
 
+    <?php
+    include "nav.inc.php";
+    ?>
 
     <body>
         <main class="container">
@@ -16,20 +19,20 @@
             $email = $pwd_hashed = $pwd = $lname = $fname = $pwd_confirm = $errorMsg = "";
             $success = true;
 
-// check email
+            // check email
             if (empty($_POST["email"])) {
                 $errorMsg .= "Email is required.<br>";
                 $success = false;
             } else {
                 $email = sanitize_input($_POST["email"]);
-// Additional check to make sure e-mail address is well-formed.
+                // Additional check to make sure e-mail address is well-formed.
                 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                     $errorMsg .= "Invalid email format.<br>";
                     $success = false;
                 }
             }
 
-// check password
+            // check password
             if (empty($_POST["pwd"])) {
                 $errorMsg .= "Password is required.<br>";
                 $success = false;
@@ -37,7 +40,7 @@
                 $errorMsg .= "Password Confirmation is required.<br>";
                 $success = false;
             } else {
-// check if password and confirmation password match
+                // check if password and confirmation password match
                 if ($_POST["pwd"] !== $_POST["pwd_confirm"]) {
                     $errorMsg .= "Password must match Password Confirmation.<br>";
                     $success = false;
@@ -46,7 +49,7 @@
                 }
             }
 
-// check name
+            // check name
             if (empty($_POST["lname"])) {
                 $errorMsg .= "Password is required.<br>";
                 $success = false;
@@ -61,18 +64,49 @@
 
             if ($success) {
                 saveMemberToDB();
-                echo "<h1>Registration successful!</h1> \n";
-                echo "<h4>Welcome " . $fname . " " . $lname . "!</h4> \n";
-                echo '<div class="form-group"><a class="btn btn-success" '
-                . 'href="login_signup.php">Log-in'
-                . '</a></div>';
+                echo "<section class='about-section text-center'>
+                        <div class='container px-4 px-lg-5'>
+                            <div class='row gx-4 gx-lg-5 justify-content-center'>
+                                <div class='col-lg-8'>
+                                    <h2 class='text-white mb-4'>Registration successful!</h2>
+                                    <p class='text-white-50'>
+                                        Welcome on board, " . ucfirst($fname) . " " . ucfirst($lname) . "
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                     <div class='container form-group'><button class='btn btn-success' type='button' onclick='returnlogin()'>Return to Login</button></div>
+                        <script>
+                            function returnlogin() {
+                            window.location.href='login_signup.php';
+                            }
+                        </script>";
+//                echo "<h1>Registration successful!</h1> \n";
+//                echo "<h4>Welcome " . $fname . " " . $lname . "!</h4> \n";
+//                echo '<div class="form-group"><a class="btn btn-success" '
+//                . 'href="login_signuplogin_signup.php">Log-in'
+//                . '</a></div>';
             } else {
-                echo '<h1>Oops!</h1>';
-                echo "<h4>The following input errors were detected:</h4>";
-                echo "<p>" . $errorMsg . "</p>";
-                echo '<div class="form-group"><a class="btn btn-danger" '
-                . 'href="login_signup.php">Return to Sign Up'
-                . '</a></div>';
+                echo "<section class='about-section text-center'>
+                        <div class='container px-4 px-lg-5'>
+                            <div class='row gx-4 gx-lg-5 justify-content-center'>
+                                <div class='col-lg-8'>
+                                    <h2 class='text-white mb-4'>Registration unsuccessful!</h2>
+                                    <p class='text-white-50'>
+                                         $errorMsg 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                     <div class='container form-group'><button class='btn btn-warning' type='button' onclick='history.back();'>Return to Login</button></div>";
+//                echo '<h1>Oops!</h1>';
+//                echo "<h4>The following input errors were detected:</h4>";
+//                echo "<p>" . $errorMsg . "</p>";
+//                echo '<div class="form-group"><a class="btn btn-danger" '
+//                . 'href="login_signup.php">Return to Sign Up'
+//                . '</a></div>';
             }
 
 //Helper function that checks input for malicious or unwanted content.

@@ -70,7 +70,7 @@
                                 <div class='col-lg-8'>
                                     <h2 class='text-white mb-4'>Login unsuccessful!</h2>
                                     <p class='text-white-50'>
-                                        " . $errorMsg . "
+                                        $errorMsg 
                                     </p>
                                 </div>
                             </div>
