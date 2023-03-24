@@ -96,7 +96,6 @@
                     $success = false;
                 } else {
                     // Prepare the statement:
-                    $pwd_hashed = $_POST["pwd"];
                     $stmt = $conn->prepare("INSERT INTO webproject5.members (fname, lname, email, password) VALUES (?, ?, ?, ?)");
                     // Bind & execute the query statement:
                     $stmt->bind_param("ssss", $fname, $lname, $email, $pwd_hashed);
