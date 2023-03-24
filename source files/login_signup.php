@@ -55,7 +55,7 @@
                     <input type="email" class="form-control" id="email" required name="email"
                         placeholder="Enter email">
                     <!-- Password -->
-                    <input type="password" class="form-control" id="password" required minlength="8" name="pwd"
+                    <input type="password" class="form-control" id="pwd" required minlength="8" name="pwd"
                         placeholder="Enter password">
                     <!-- Remember me -->
                     <div class="content">
