@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>SIT Active Gym Classes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    </head>
+
+
     <body>
         <main class="container">
             <?php
-            $email = $pwd_hashed = $cfmpassword = $lname = $fname = $errorMsg = "";
+            $email = $pwd_hashed = $pwd = $lname = $fname = $pwd_confirm = $errorMsg = "";
             $success = true;
 
 // check email
@@ -48,23 +58,20 @@
                 $fname = sanitize_input($_POST["fname"]);
             }
 
-//            if (empty($errorMsg)) {
-//                saveMemberToDB();
-//            }
 
             if ($success) {
+                saveMemberToDB();
                 echo "<h1>Registration successful!</h1> \n";
                 echo "<h4>Welcome " . $fname . " " . $lname . "!</h4> \n";
                 echo '<div class="form-group"><a class="btn btn-success" '
-                . 'href="login.php">Log-in'
+                . 'href="login_signup.php">Log-in'
                 . '</a></div>';
-                saveMemberToDB();
             } else {
                 echo '<h1>Oops!</h1>';
                 echo "<h4>The following input errors were detected:</h4>";
                 echo "<p>" . $errorMsg . "</p>";
                 echo '<div class="form-group"><a class="btn btn-danger" '
-                . 'href="register.php">Return to Sign Up'
+                . 'href="login_signup.php">Return to Sign Up'
                 . '</a></div>';
             }
 
@@ -76,21 +83,22 @@
                 return $data;
             }
 
-// Helper function to write the member data to the DB
+            // Helper function to write the member data to the DB
             function saveMemberToDB() {
                 global $fname, $lname, $email, $pwd_hashed, $errorMsg, $success;
-// Create database connection.
+                // Create database connection.
                 $config = parse_ini_file('../../private/db-config.ini');
                 $conn = new mysqli($config['servername'], $config['username'],
                         $config['password'], $config['dbname']);
-// Check connection
+                // Check connection
                 if ($conn->connect_error) {
                     $errorMsg = "Connection failed: " . $conn->connect_error;
                     $success = false;
                 } else {
-// Prepare the statement:
-                    $stmt = $conn->prepare("INSERT INTO members (fname, lname, email, password) VALUES (?, ?, ?, ?)");
-// Bind & execute the query statement:
+                    // Prepare the statement:
+                    $pwd_hashed = $_POST["pwd"];
+                    $stmt = $conn->prepare("INSERT INTO webproject5.members (fname, lname, email, password) VALUES (?, ?, ?, ?)");
+                    // Bind & execute the query statement:
                     $stmt->bind_param("ssss", $fname, $lname, $email, $pwd_hashed);
                     if (!$stmt->execute()) {
                         $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
@@ -103,5 +111,14 @@
             ?>
 
         </main>
+        <?php
+        include "footer.inc.php";
+        ?>
+        <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+        <!--Bootstrap JS-->
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+        </script>
+        <script defer src="js/scripts.js"></script>
     </body>
 </html>
