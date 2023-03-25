@@ -1,6 +1,6 @@
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color:black;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top" style="background-color:black;">
     <div class="container px-4 px-lg-5">
     <a class="navbar-brand px-3" href="index.php"><img class="brand-logo" src="img/sit_logo.png" alt="sit logo" style="height: 80px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
