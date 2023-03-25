@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="css/location.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/location.js"></script>
     <title>SIT Active Gym Locations</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -28,20 +29,27 @@ include "nav.inc.php";
 
 <body>
 
+    <section><p>
+        
+    </p></section>
+
 
     <main class="container">
         <section id="maps">
             <div class="row">
                 <article class="col-sm">
                     <h2>6 Locations</h2>
-                    <h5 class="B3ehW5Q">View all locations on map</h5>
-                    <div style="width: 100%; overflow: hidden; height: 600px;">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WKqrR1eSDbEUGRTD6MtdDnTMbgEJcM8&ehbc=2E312F" width="100%" height="600" frameborder="0" style="border:0; margin-top: -60px;">
-                        </iframe>
-
+                    <h5 class="collapsible">View all locations on map</h5>
+                    <div class="content">
+                        <div style="width: 100%; overflow: hidden; height: 600px;">
+                            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WKqrR1eSDbEUGRTD6MtdDnTMbgEJcM8&ehbc=2E312F" width="100%" height="600" frameborder="0" style="border:0; margin-top: -60px;">
+                            </iframe>
+                        </div>
 
 
                 </article>
+
+              
 
             </div>
         </section>
@@ -62,14 +70,6 @@ include "nav.inc.php";
             </div>
         </section>
 
-<<<<<<< Updated upstream
-        <section class="w3-card">
-            <div class="w3-row">
-
-                <div class="w3-col s3">
-                    <img src="img/sitnyp.jpg" alt="nyp" style="width:100%">
-=======
-
         <div class="main-container">
             <div class="grid-container">
 
@@ -78,16 +78,11 @@ include "nav.inc.php";
                         <div class="card__image">
                             <img src="img/sitnyp.jpg" />
                         </div>
-                        <div class="card__content padding-large--l">
+                        <div class="card__content padding-large">
                             <h2>SIT @ NYP </h2>
                             <div class="rowmap">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
                                     <p class="kD9RoPu">View on map</p>
-
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                                    </svg>
-
 
                                 </a>
                             </div>
@@ -97,24 +92,19 @@ include "nav.inc.php";
                             <div class="card__button">Find Out More</div>
                         </div>
                     </div>
->>>>>>> Stashed changes
                 </div>
+
 
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitnyp.jpg" />
+                            <img src="img/sittp.jpg" />
                         </div>
-                        <div class="card__content padding-large--l">
+                        <div class="card__content padding-large">
                             <h2>SIT @ TP </h2>
-                            <div class="JEeOWtm SEKXxkK">
+                            <div class="rowmap ">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
                                     <p class="kD9RoPu">View on map</p>
-
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                                    </svg>
-
 
                                 </a>
                             </div>
@@ -130,15 +120,11 @@ include "nav.inc.php";
                         <div class="card__image">
                             <img src="img/sitdover.jpg" />
                         </div>
-                        <div class="card__content padding-large--l">
+                        <div class="card__content padding-large">
                             <h2>SIT @ DOVER </h2>
                             <div class="JEeOWtm SEKXxkK">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
                                     <p class="kD9RoPu">View on map</p>
-
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                                    </svg>
                                 </a>
                             </div>
                             <p>Main Campus</p>
@@ -154,15 +140,13 @@ include "nav.inc.php";
                         <div class="card__image">
                             <img src="img/sitrp.jpg" alt="rp" />
                         </div>
-                        <div class="card__content padding-large--l">
+                        <div class="card__content padding-large">
                             <h2>SIT @ RP </h2>
                             <div class="JEeOWtm SEKXxkK">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
                                     <p class="kD9RoPu">View on map</p>
 
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-                                    </svg>
 
 
                                 </a>
@@ -180,17 +164,11 @@ include "nav.inc.php";
                         <div class="card__image">
                             <img src="img/sitsp.jpg" alt="sp" />
                         </div>
-                        <div class="card__content padding-large--l">
-                            <h2>SIT @ RP </h2>
+                        <div class="card__content padding-large">
+                            <h2>SIT @ SP </h2>
                             <div class="JEeOWtm SEKXxkK">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
                                     <p class="kD9RoPu">View on map</p>
-
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                                    </svg>
-
-
                                 </a>
                             </div>
                             <p>Singapore Polytechnic</p>
@@ -204,17 +182,14 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/npsit.jpg" alt="np" />
+                            <img src="img/sitnp.jpg" alt="np" />
                         </div>
-                        <div class="card__content padding-large--l">
-                            <h2>SIT @ RP </h2>
+                        <div class="card__content padding-large">
+                            <h2>SIT @ NP </h2>
                             <div class="JEeOWtm SEKXxkK">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
                                     <p class="kD9RoPu">View on map</p>
 
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                                    </svg>
 
 
                                 </a>
@@ -237,103 +212,14 @@ include "nav.inc.php";
 
 
 
-<<<<<<< Updated upstream
-        <section>
-            <p>
-            </p>
-        </section>
-
-        <section class="w3-card">
-            <div class="w3-row">
-                <div class="w3-col s3">
-                    <img src="img/sitdover.jpg" alt="dover" style="width:100%">
-                </div>
-                <div class="w3-col s9 w3-white w3-center">
-                    <p>SIT @ DOVER</p>
-                    <p>Main Campus
-                        10 Dover Drive Singapore 138683</p>
-                    <p>SIT's main campus is located at Dover Drive, where classes for SIT and joint degree programmes are held. We have five
-                        satellite campuses located across Singapore, within the grounds of a Polytechnic,
-                        offering SIT, joint and overseas university degree programmes.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <section>
-            <p>
-            </p>
-        </section>
-
-        <section class="w3-card">
-            <div class="w3-row">
-                <div class="w3-col s3">
-                    <img src="img/sitrp.jpg" alt="rp" style="width:100%">
-                </div>
-                <div class="w3-col s9 w3-white w3-center">
-                    <p>SIT @ RP</p>
-                    <p>Republic Polytechnic
-                        43 Woodlands Avenue 9, Singapore 737729</p>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section>
-            <p>
-            </p>
-        </section>
-
-        <section class="w3-card">
-            <div class="w3-row">
-                <div class="w3-col s3">
-                    <img src="img/sitsp.jpg" alt="sp" style="width:100%">
-                </div>
-                <div class="w3-col s9 w3-white w3-center">
-                    <p>SIT @ SP</p>
-                    <p>Singapore Polytechnic
-                        510 Dover Road, Singapore 139660</p>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section>
-            <p>
-            </p>
-        </section>
-
-        <section class="w3-card">
-            <div class="w3-row">
-                <div class="w3-col s3">
-                    <img src="img/sittp.jpg" alt="tp" style="width:100%">
-                </div>
-                <div class="w3-col s9 w3-white w3-center">
-                    <p>SIT @ TP</p>
-                    <p>Temasek Polytechnic
-                        Blk 29B Tampines Avenue 1, Singapore 528694</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <p>
-            </p>
-        </section>
 
 
-=======
->>>>>>> Stashed changes
 
 
 
     </main>
 
 
-<<<<<<< Updated upstream
-=======
 
 
 
@@ -355,7 +241,8 @@ include "nav.inc.php";
 
 
 
->>>>>>> Stashed changes
+
+
 </body>
 <?php
 include "footer.inc.php";
