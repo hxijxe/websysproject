@@ -83,13 +83,14 @@ include "nav.inc.php";
                             <div class="rowmap">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
                                     <p class="kD9RoPu">View on map</p>
-
                                 </a>
                             </div>
                             <p>Nanyang Polytechnic</p>
                             <p>172A Ang Mo Kio Avenue 8, Singapore 567739
                                 (beside Blk Q of NYP campus)</p>
+                            <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
                             <div class="card__button">Find Out More</div>
+                            </a>
                         </div>
                     </div>
                 </div>

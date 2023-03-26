@@ -1,0 +1,71 @@
+.about{
+    padding-bottom: 5rem;
+}
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  
+ 
+  .about .row .content button:hover{
+    letter-spacing: .2rem;
+    opacity: .8;
+  }
+
+  /* Ask a Question css */
+.askaqns input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .askaqns input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .askaqns #question{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .askaqns input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: red;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  
+  .askaqns input[type=submit]:hover {
+    opacity: 0.9;
+  }
+  
+  .askaqns {
+    width: 70%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
