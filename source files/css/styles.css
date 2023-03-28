@@ -12836,16 +12836,29 @@ tr:nth-child(even) {
 }
 
 .w3-card-4 {
+  margin: auto;
+  background-color: black;
+}
+.w3-container{
+  width: 90%;
+  margin: auto;
+}
+.w3-card-4 p{
   margin-left: auto;
   margin-right: auto;
+  background-color: black;
+  color: white;
 }
-/*
-h2 {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  padding-left: 70px;
+.w3-card-4 h2{
+  color: white;
+  padding-left: 20px;
 }
-*/
+.w3-card-4 .myBtn{
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+}
+
 /*Styling Selectbox*/
  .dropdowncontainer{
   width: 500px;
@@ -12947,403 +12960,6 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* classes popup style */
-.zumbaopenBtn {
-  padding: 1em 25px;
-  text-align: center;
-  width: 100px;
-  display: block;
-  -webkit-transition: all linear 0.15s;
-  transition: all linear 0.15s;
-  border-radius: 3px;
-  background: #dddddd;
-  font-size: 13px;
-  text-decoration: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: black;
-  z-index: 0;
-}
-
-.yogaopenBtn {
-  padding: 1em 25px;
-  text-align: center;
-  width: 100px;
-  display: block;
-  -webkit-transition: all linear 0.15s;
-  transition: all linear 0.15s;
-  border-radius: 3px;
-  background: white;
-  font-size: 13px;
-  text-decoration: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: black;
-  z-index: 0;
-}
-
-.gymopenBtn {
-  padding: 1em 25px;
-  text-align: center;
-  width: 100px;
-  display: block;
-  -webkit-transition: all linear 0.15s;
-  transition: all linear 0.15s;
-  border-radius: 3px;
-  background: #dddddd;
-  font-size: 13px;
-  text-decoration: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: black;
-  z-index: 0;
-}
-
-/* spin class */
-.CopenBtn {
-  padding: 1em 25px;
-  text-align: center;
-  width: 100px;
-  display: block;
-  -webkit-transition: all linear 0.15s;
-  transition: all linear 0.15s;
-  border-radius: 3px;
-  background: white;
-  font-size: 13px;
-  text-decoration: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: black;
-  z-index: 0;
-}
-
-/* swim class */
-.SopenBtn {
-  padding: 1em 25px;
-  text-align: center;
-  width: 100px;
-  display: block;
-  -webkit-transition: all linear 0.15s;
-  transition: all linear 0.15s;
-  border-radius: 3px;
-  background: #dddddd;
-  font-size: 13px;
-  text-decoration: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: black;
-  z-index: 0;
-}
-
-.zumbaopenBtn:hover {
- background: black;
- color: red;
-}
-
-.yogaopenBtn:hover {
-  background: black;
-  color: red;
-}
-
-.gymopenBtn:hover {
-  background: black;
-  color: red;
-}
-
-.CopenBtn:hover {
-  background: black;
-  color: red;
-}
-
-.SopenBtn:hover {
-  background: black;
-  color: red;
-}
-
-.zumbaobscure {
-  width: 100%;
-  height: 150%;
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  content: '';
-  background: rgba(9, 9, 9, 0.67);
-  z-index: 1;
-}
-
-.yogaobscure{
-  width: 100%;
-  height: 150%;
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  content: '';
-  background: rgba(9, 9, 9, 0.67);
-  z-index: 1;
-}
-
-.gymobscure{
-  width: 100%;
-  height: 150%;
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  content: '';
-  background: rgba(9, 9, 9, 0.67);
-  z-index: 1;
-}
-
-.Cobscure{
-  width: 100%;
-  height: 150%;
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  content: '';
-  background: rgba(9, 9, 9, 0.67);
-  z-index: 1;
-}
-
-.Sobscure {
-  width: 100%;
-  height: 150%;
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  content: '';
-  background: rgba(9, 9, 9, 0.67);
-  z-index: 1;
-}
-
-
-.zumbapopup {
-  width: 70%;
-  height: 50%;
-  padding: 10px 25px;
-  transform: translate(-50%, -50%) scale(0.5);
-  position: relative;
-  top: 50%;
-  left: 50%;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  background: #fff;
-  text-align: center;
-  z-index: 3;
-}
-
-.yogapopup{
-  width: 70%;
-  height: 50%;
-  padding: 10px 25px;
-  transform: translate(-50%, -50%) scale(0.5);
-  position: relative;
-  top: 50%;
-  left: 50%;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  background: #fff;
-  text-align: center;
-  z-index: 3;
-}
-
-.gympopup{
-  width: 70%;
-  height: 50%;
-  padding: 10px 25px;
-  transform: translate(-50%, -50%) scale(0.5);
-  position: relative;
-  top: 50%;
-  left: 50%;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  background: #fff;
-  text-align: center;
-  z-index: 3;
-}
-
-.Cpopup{
-  width: 70%;
-  height: 50%;
-  padding: 10px 25px;
-  transform: translate(-50%, -50%) scale(0.5);
-  position: relative;
-  top: 50%;
-  left: 50%;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  background: #fff;
-  text-align: center;
-  z-index: 3;
-}
-
-.Spopup {
-  width: 70%;
-  height: 50%;
-  padding: 10px 25px;
-  transform: translate(-50%, -50%) scale(0.5);
-  position: relative;
-  top: 50%;
-  left: 50%;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  background: #fff;
-  text-align: center;
-  z-index: 3;
-}
-
-.zumbapopup .closeBtn {
-  display: inline-block;
-  position: relative;
-  bottom: 20px;
-  right: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-  line-height: 10px;
-}
-.yogapopup .closeBtn {
-  display: inline-block;
-  position: relative;
-  bottom: 20px;
-  right: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-  line-height: 10px;
-}
-.gympopup .closeBtn {
-  display: inline-block;
-  position: relative;
-  bottom: 20px;
-  right: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-  line-height: 10px;
-}
-
-.Cpopup .closeBtn {
-  display: inline-block;
-  position: relative;
-  bottom: 20px;
-  right: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-  line-height: 10px;
-}
-
-.Spopup .closeBtn {
-  display: inline-block;
-  position: relative;
-  bottom: 20px;
-  right: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-  line-height: 10px;
-}
-
-
-.ZanimationOpen,
-.ZanimationClose {
-  display: block;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
-}
-
-.ZanimationOpen {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.ZanimationClose {
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%) scale(.5);
-  transform: translate(-50%, -50%) scale(.5);
-}
-
-.YanimationOpen,
-.YanimationClose {
-  display: block;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
-}
-
-.YanimationOpen {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.YanimationClose {
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%) scale(.5);
-  transform: translate(-50%, -50%) scale(.5);
-}
-
-.GanimationOpen,
-.GanimationClose {
-  display: block;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
-}
-
-.GanimationOpen {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.GanimationClose {
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%) scale(.5);
-  transform: translate(-50%, -50%) scale(.5);
-}
-
-.CanimationOpen,
-.CanimationClose {
-  display: block;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
-}
-
-.CanimationOpen {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.CanimationClose {
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%) scale(.5);
-  transform: translate(-50%, -50%) scale(.5);
-}
-
-.SanimationOpen,
-.SanimationClose {
-  display: block;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
-}
-
-.SanimationOpen {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.SanimationClose {
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%) scale(.5);
-  transform: translate(-50%, -50%) scale(.5);
-}
 
 @media screen and (max-width: 600px) {
   .popup {
@@ -13354,8 +12970,9 @@ h2 {
 
 .responsive-iframe {
   position: relative;
-  width: 70%;
-  height: 70%;
+  margin: auto;
+  width: 100%;
+  height: 80%;
 }
 
 .carousel-text-bg {
@@ -13482,3 +13099,75 @@ h2 {
     color: #fff;
     text-align: center;
   }
+
+/* The Modal (background) */
+.exploremodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  margin: auto;
+  width: 100%; /* 80% width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.exploremodal .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.exploremodal .close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.exploremodal .close:hover,
+.exploremodal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.exploremodal .modal-header {
+  padding: 2px 16px;
+  background-color: black;
+  color: white;
+}
+
+.exploremodal .modal-body {padding: 2px 16px;}
+
+.exploremodal .modal-footer {
+  padding: 2px 16px;
+  background-color: black;
+  color: black;
+}

@@ -48,11 +48,11 @@
                             strength, balance, reduce stress and anxiety, 
                             and promote overall health and wellness.</p>
                         <p><a href="/source files/classes.php">Book Now!</a></p>
-                        <p><button class="myBtn" id="myBtn">Learn More!</button></p>
+                        <p><a class="btn btn-secondary mt-3 mb-3" id="myBtn">Learn More!</a></p>
                     </div>
                 </div>
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal" class="exploremodal">
 
                     <!-- Modal content -->
                     <div class="modal-content">
