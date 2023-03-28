@@ -31,11 +31,9 @@ include "nav.inc.php";
                 <div class="col-lg-8">
                     <h2 class="text-red mb-4">Our Story</h2>
                     <p class="text-black-50">
-                    Since our humble beginnings in 2023, we have become one of the largest fitness brands in the world, 
-                    and the largest in Asia. A trusted and enduring brand, we have an unrivalled network in the region, 
-                    with knowledgeable teams, new technology and world class clubs. Through the years, we’ve seen a lot of changes and 
-                    we’ve come a long way. But our purpose remains clear: we are the fitness leaders who inspire people to go further in life.
-
+                    Since our humble beginnings in 2023, we started this company with a mission to bring fitness accessibility for everyone
+                    affiliated with SIT. Our purpose is to ensure that the members of SIT have an outlet to take care of their physical well-being
+                    while giving their best to the institute.
                     With more than 2,000 members around the region, we’re always looking for new ways 
                     to support and inspire them – and not just in the gym.
                     </p>
