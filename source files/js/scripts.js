@@ -1,8 +1,8 @@
 /*!
-* Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
+ * Start Bootstrap - Grayscale v7.0.5 (https://startbootstrap.com/theme/grayscale)
+ * Copyright 2013-2022 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+ */
 //
 // Scripts
 // 
@@ -24,82 +24,59 @@ $('.dropdowncontainer .dropdown .dropdown-menu li').click(function () {
 /*End Dropdown Menu*/
 
 
-$(document).ready(function () {
-    $('.zumbaopenBtn').click(function (e) {
-        $('.responsive-iframe').attr('src', 'https://www.youtube.com/embed/mZeFvX3ALKY');
-        setTimeout(function () { $('.zumbapopup').removeClass('ZanimationClose').addClass('ZanimationOpen'); }, 100);
-        $('.zumbaobscure').fadeIn(50);
-        e.preventDefault();
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+    modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+    var iframe = modal.querySelector('iframe');
+    var iframeSrc = iframe.src;
+    iframe.src = '';
+    iframe.src = iframeSrc;
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+    var iframe = modal.querySelector('iframe');
+    var iframeSrc = iframe.src;
+    iframe.src = '';
+    iframe.src = iframeSrc;
+};
+
+function filterTable() {
+    var location = document.querySelector("#locationDropdown").value;
+    var classType = document.querySelector("#classDropdown").value;
+
+    var rows = document.querySelectorAll("tr");
+    rows.forEach(function (row) {
+        var rowLocation = row.dataset.location;
+        var rowClassType = row.dataset.class;
+
+        if ((location === "All" || location === rowLocation) && (classType === "All" || classType === rowClassType)) {
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+        }
     });
+}
 
-    $('.closeBtn, .zumbaobscure').click(function (e) {
-        e.preventDefault();
-        setTimeout(function () { $('.zumbaobscure').fadeOut(350); }, 50);
-        $('.responsive-iframe').removeAttr('src');
-        $('.zumbapopup').removeClass('ZanimationOpen').addClass('ZanimationClose');
-
-    });
-
-    $('.yogaopenBtn').click(function (e) {
-        $('.responsive-iframe').attr('src', 'https://www.youtube.com/embed/v7AYKMP6rOE');
-        setTimeout(function () { $('.yogapopup').removeClass('YanimationClose').addClass('YanimationOpen'); }, 100);
-        $('.yogaobscure').fadeIn(50);
-        e.preventDefault();
-    });
-
-    $('.closeBtn, .yogaobscure').click(function (e) {
-        e.preventDefault();
-        setTimeout(function () { $('.yogaobscure').fadeOut(350); }, 50);
-        $('.responsive-iframe').removeAttr('src');
-        $('.yogapopup').removeClass('YanimationOpen').addClass('YanimationClose');
-    });
-
-    $('.gymopenBtn').click(function (e) {
-        $('.responsive-iframe').attr('src', 'https://www.youtube.com/embed/zcTBdZcmUp0');
-        setTimeout(function () { $('.gympopup').removeClass('GanimationClose').addClass('GanimationOpen'); }, 100);
-        $('.gymobscure').fadeIn(50);
-        e.preventDefault();
-    });
-
-    $('.closeBtn, .gymobscure').click(function (e) {
-        e.preventDefault();
-        setTimeout(function () { $('.gymobscure').fadeOut(350); }, 50);
-        $('.responsive-iframe').removeAttr('src');
-        $('.gympopup').removeClass('GanimationOpen').addClass('GanimationClose');
-    });
-
-    $('.CopenBtn').click(function (e) {
-        $('.responsive-iframe').attr('src', 'https://www.youtube.com/embed/4Hl1WAGKjMc');
-        setTimeout(function () { $('.Cpopup').removeClass('CanimationClose').addClass('CanimationOpen'); }, 100);
-        $('.Cobscure').fadeIn(50);
-        e.preventDefault();
-    });
-
-    $('.closeBtn, .Cobscure').click(function (e) {
-        e.preventDefault();
-        setTimeout(function () { $('.Cobscure').fadeOut(350); }, 50);
-        $('.responsive-iframe').removeAttr('src');
-        $('.Cpopup').removeClass('CanimationOpen').addClass('CanimationClose');
-    });
-
-    $('.SopenBtn').click(function (e) {
-        $('.responsive-iframe').attr('src', 'https://www.youtube.com/embed/uiI6Z_0Q2Io');
-        setTimeout(function () { $('.Spopup').removeClass('SanimationClose').addClass('SanimationOpen'); }, 100);
-        $('.Sobscure').fadeIn(50);
-        e.preventDefault();
-    });
-
-    $('.closeBtn, .Sobscure').click(function (e) {
-        e.preventDefault();
-        setTimeout(function () { $('.Sobscure').fadeOut(350); }, 50);
-        $('.responsive-iframe').removeAttr('src');
-        $('.Spopup').removeClass('SanimationOpen').addClass('SanimationClose');
-    });
-
-     
-
-
-});
+document.querySelector("#locationDropdown").addEventListener("change", filterTable);
+document.querySelector("#classDropdown").addEventListener("change", filterTable);
 
 // // Login/Register
 // const registerButton = document.getElementById("register");
