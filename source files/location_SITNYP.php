@@ -28,7 +28,7 @@ include "nav.inc.php";
                     <h1 class="text-white mb-4">SIT @ NYP </h1>
                     <p class="text-white mb-4">172 Ang Mo Kio Ave 8, Singapore 567739</p>
                     <div class="rowmap">
-                                    <a href="https://www.google.com/maps/d/u/0/edit?mid=1zqE0wiF732PcdZtvRt2RSVW6UYJLZ1s&usp=sharing" class="RX4Lf26" target="_blank" rel="noreferrer">
+                                    <a href="https://goo.gl/maps/GTgQQDEU93pAnhkP6" class="RX4Lf26" target="_blank" rel="noreferrer">
                                         <p class="kD9RoPu">View on map</p>
                                     </a>
                                 </div>

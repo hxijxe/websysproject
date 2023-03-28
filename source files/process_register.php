@@ -82,11 +82,6 @@
                             window.location.href='login_signup.php';
                             }
                         </script>";
-//                echo "<h1>Registration successful!</h1> \n";
-//                echo "<h4>Welcome " . $fname . " " . $lname . "!</h4> \n";
-//                echo '<div class="form-group"><a class="btn btn-success" '
-//                . 'href="login_signuplogin_signup.php">Log-in'
-//                . '</a></div>';
             } else {
                 echo "<section class='about-section text-center'>
                         <div class='container px-4 px-lg-5'>
@@ -101,12 +96,7 @@
                         </div>
                     </section>
                      <div class='container form-group'><button class='btn btn-warning' type='button' onclick='history.back();'>Return to Login</button></div>";
-//                echo '<h1>Oops!</h1>';
-//                echo "<h4>The following input errors were detected:</h4>";
-//                echo "<p>" . $errorMsg . "</p>";
-//                echo '<div class="form-group"><a class="btn btn-danger" '
-//                . 'href="login_signup.php">Return to Sign Up'
-//                . '</a></div>';
+
             }
 
 //Helper function that checks input for malicious or unwanted content.

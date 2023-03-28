@@ -13,20 +13,17 @@
     ?>
 
     <body>
-        <section class="about-section text-center">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
-                        <p class="text-white-50">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                            The theme is open source, and you can use it for any purpose, personal or commercial.
-                        </p>
-                    </div>
-                </div>
+<header class="about-section text-center">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 ">
+            <div class="col-lg-8" style="text-align: left;">
+                <h4 style="color: red;">Membership</h4>
+                <h1 class="text-white mb-4">3 Tiers to choose from </h1>
             </div>
-        </section>
+        </div>
+    </div>
+
+</header>
 
         <section class="projects-section bg-body" id="projects">
             <div class="container px-5 px-lg-5">
@@ -39,7 +36,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">Basic Tier</h3>
                                 <h2 class="card-text text-dark mb-5">$16/week</h2>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">Basic Tier is recommended for beginners who wish to start their fitness journey at a slower pace. Maximum 1 class per week.</p>
                             </div>
                             <div class="text-center card-footer">
                                 <a class="btn btn-secondary mt-3 mb-3" href="login_signup.php">Get Started</a>
@@ -54,7 +51,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">Silver Tier</h3>
                                 <h2 class="card-text text-dark mb-5">$25/week</h2>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text">Silver Tier is recommended for amateurs who wish to commit more time to their physical well-being. Maximum 3 classes per week. </p>
 
                             </div>
                             <div class="text-center card-footer">
@@ -70,7 +67,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">Gold Tier</h3>
                                 <h2 class="card-text text-dark mb-5">$38/month</h2>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text">Gold Tier is recommended for fitness junkies who exercise on a daily basis or even twice a day. Unlimited classes per week.</p>
                             </div>
                             <div class="text-center card-footer">
                                 <a class="btn btn-secondary mt-3 mb-3" href="login_signup.php">Get Started</a>
@@ -94,14 +91,35 @@
                 </div>
                 <div class="col">
                     <div class="text-center">
-                        <h3>No Joining Fee</h3>
+                        <h3>Multiple Locations</h3>
                     </div>
                 </div>
                 <div class="col">
                     <div class="text-center">
-                        <h3>No Joining Fee</h3>
+                        <h3>Variety of Classes</h3>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="container px-5 px-lg-5" style = "padding-top: 5rem; padding-bottom:2rem">
+            <h1 style = "padding-bottom: 2rem">Frequently Asked Questions</h1>
+            <div class ="col-lg-12 col-12 g-0">
+                <h4> What do I have to bring for my workout? </h4>
+                <p> Do bring a towel for hygiene purposes. Show up in outfit that is appropriate for physical fitness. 
+                    Consider bringing a change of clothes as well, we do have shower facilities! 
+                </p>
+                <h4> What is the eligibility for membership? </h4>
+                <p> You have to be one of the following: A SIT student, staff, or alumni. 
+
+                </p>
+                <h4> Can I patron more than one location?  </h4>
+                <p> Yes, you can visit any of our 6 locations if you are a member!
+                </p>
+                <h4> Does becoming a member allow me to get better grades in school? </h4>
+                <p> We cannot guarantee that your grades will improve. However, it is proven that
+                    exercising helps to destress and this may help you to focus in your studies!
+                </p>
             </div>
         </div>
         <?php
