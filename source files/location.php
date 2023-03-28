@@ -108,7 +108,7 @@ include "nav.inc.php";
                             <p>172A Ang Mo Kio Avenue 8, Singapore 567739
                                 (beside Blk Q of NYP campus)</p>
                             <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
-                                <div class="card__button">Find Out More</div>
+                                <div class="card__button btn">Find Out More</div>
                             </a>
                         </div>
                     </div>
@@ -128,7 +128,7 @@ include "nav.inc.php";
                             </div>
                             <p>Temasek Polytechnic</p>
                             <p>Blk 29B Tampines Avenue 1, Singapore 528694</p>
-                            <div class="card__button">Find Out More</div>
+                            <div class="card__button btn">Find Out More</div>
                         </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@ include "nav.inc.php";
                             <p>Main Campus</p>
                             <p>10 Dover Drive Singapore 138683</p>
 
-                            <div class="card__button">Find Out More</div>
+                            <div class="card__button btn">Find Out More</div>
                         </div>
                     </div>
                 </div>
@@ -172,7 +172,7 @@ include "nav.inc.php";
                             <p>Republic Polytechnic</p>
                             <p>Republic Polytechnic 43 Woodlands Avenue 9, Singapore 737729</p>
 
-                            <div class="card__button">Find Out More</div>
+                            <div class="card__button btn">Find Out More</div>
                         </div>
                     </div>
                 </div>
@@ -192,7 +192,7 @@ include "nav.inc.php";
                             <p>Singapore Polytechnic</p>
                             <p> 510 Dover Road, Singapore 139660</p>
 
-                            <div class="card__button">Find Out More</div>
+                            <div class="card__button btn">Find Out More</div>
                         </div>
                     </div>
                 </div>
@@ -215,7 +215,7 @@ include "nav.inc.php";
                             <p>Ngee Ann Polytechnic</p>
                             <p> 537 Clementi Road, Singapore 599493</p>
 
-                            <div class="card__button">Find Out More</div>
+                            <div class="card__button btn">Find Out More</div>
                         </div>
                     </div>
                 </div>
