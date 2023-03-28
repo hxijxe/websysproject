@@ -84,6 +84,27 @@ include "nav.inc.php";
                         echo "</tr>";
                     }
                     ?>
+                    <script>
+                        // Function to delete booking row
+                        function deleteRow(bookingId) {
+                            // Send AJAX request to server to delete booking row
+                            $.ajax({
+                                type: "POST",
+                                url: "delete_booking.php",
+                                data: { booking_id: bookingId },
+                                success: function(response) {
+                                    // Remove deleted row from table
+                                    $("#booking-" + bookingId).remove();
+                                    // Show success message
+                                    alert(response);
+                                },
+                                error: function(xhr, status, error) {
+                                    // Show error message
+                                    alert("Error: " + error);
+                                }
+                            });
+                        }
+                    </script>
                     </tbody>
                 </table>
             </div>
