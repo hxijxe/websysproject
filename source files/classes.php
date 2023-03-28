@@ -33,7 +33,7 @@ include "nav.inc.php";
 
         <div>
             <label for="locationDropdown">Location:</label>
-            <select id="locationDropdown">
+            <select id="locationDropdown" onchange="filterTable()">
                 <option value="All">All</option>
                 <option value="Dover">Dover</option>
                 <option value="SP">SP</option>
@@ -44,7 +44,7 @@ include "nav.inc.php";
             </select>
 
             <label for="classDropdown">Class:</label>
-            <select id="classDropdown">
+            <select id="classDropdown" onchange="filterTable()">
                 <option value="All">All</option>
                 <option value="YOGA">YOGA</option>
                 <option value="ZUMBA">ZUMBA</option>
