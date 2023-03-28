@@ -56,6 +56,7 @@ include "nav.inc.php";
     </div>
 
     <h2 class="py-3 my-3">All Available Classes</h2>
+    <a class="btn btn-secondary mt-3 mb-3" href="booking.php">Book Now!</a>
     <div class="mb-5" style="overflow-x:auto;">
         <?php
         $timeslot = $duration = $class = $instructor = $location = $errorMsg = "";
