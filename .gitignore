@@ -1,1 +1,6 @@
 /source files/.idea/
+.idea/workspace.xml
+.idea/webServers.xml
+.idea/sshConfigs.xml
+.idea/php.xml
+.idea/deployment.xml
