@@ -44,6 +44,7 @@ include "nav.inc.php";
                             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WKqrR1eSDbEUGRTD6MtdDnTMbgEJcM8&ehbc=2E312F" width="100%" height="600" frameborder="0" style="border:0; margin-top: -60px;">
                             </iframe>
                         </div>
+                    </div>
                 </article>
             </div>
         </section>
