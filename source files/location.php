@@ -4,7 +4,9 @@
 <head>
     <link rel="stylesheet" href="css/location.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/countdown.css">
     <script defer src="js/location.js"></script>
+    <script defer src="js/countdown.js"></script>
     <title>SIT Active Gym Locations</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -25,16 +27,19 @@ include "nav.inc.php";
             </div>
         </div>
     </div>
+
 </header>
 
 <body>
 
-    <section><p>
-        
-    </p></section>
+    <section>
+        <p>
 
+        </p>
+    </section>
 
     <main class="container">
+
         <section id="maps">
             <div class="row">
                 <article class="col-sm">
@@ -45,11 +50,9 @@ include "nav.inc.php";
                             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WKqrR1eSDbEUGRTD6MtdDnTMbgEJcM8&ehbc=2E312F" width="100%" height="600" frameborder="0" style="border:0; margin-top: -60px;">
                             </iframe>
                         </div>
-
-
                 </article>
 
-              
+
 
             </div>
         </section>
@@ -70,8 +73,51 @@ include "nav.inc.php";
             </div>
         </section>
 
+
+
         <div class="main-container">
             <div class="grid-container">
+
+
+                <div class="card card--featured">
+                    <div class="card__side-by-side--m">
+                        <div class="card__image">
+                            <img src="img/sitnew.jpg" />
+                            <div id="clockdiv">
+                                <div>
+                                    <span class="days"></span>
+                                    <div class="smalltext">Days</div>
+                                </div>
+                                <div>
+                                    <span class="hours"></span>
+                                    <div class="smalltext">Hours</div>
+                                </div>
+                                <div>
+                                    <span class="minutes"></span>
+                                    <div class="smalltext">Minutes</div>
+                                </div>
+                                <div>
+                                    <span class="seconds"></span>
+                                    <div class="smalltext">Seconds</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card__content padding-large">
+                            <h2>COMING SOON!</h2>
+                            <div class="rowmap">
+                                <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
+                                    <p class="kD9RoPu">View on map</p>
+                                </a>
+                            </div>
+                            <p>SIT @ PUNGGOL</p>
+                            <p>Reimagining Education as an Applied Learning University</p>
+                            <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
+                                <div class="card__button">Find Out More</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
@@ -89,11 +135,13 @@ include "nav.inc.php";
                             <p>172A Ang Mo Kio Avenue 8, Singapore 567739
                                 (beside Blk Q of NYP campus)</p>
                             <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
-                            <div class="card__button">Find Out More</div>
+                                <div class="card__button">Find Out More</div>
                             </a>
                         </div>
                     </div>
                 </div>
+
+
 
 
                 <div class="card card--featured">

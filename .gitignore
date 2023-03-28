@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+/.idea/deployment.xml
+/.idea/php.xml
+/.idea/sshConfigs.xml
+/.idea/webServers.xml
+=======
+/source files/.idea/
+.idea/workspace.xml
+.idea/webServers.xml
+.idea/sshConfigs.xml
+.idea/php.xml
+.idea/deployment.xml
+*.xml
+>>>>>>> origin/main
+*.xml

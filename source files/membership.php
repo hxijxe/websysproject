@@ -37,7 +37,7 @@
                                 <img src="img/sit_logo.png" class="card-img-top membImg" alt="...">
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Basic Tier</h>
+                                <h3 class="card-title">Basic Tier</h3>
                                 <h2 class="card-text text-dark mb-5">$16/week</h2>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>

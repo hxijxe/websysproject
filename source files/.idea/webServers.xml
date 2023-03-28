@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="6a8af7d5-7d4b-4d6d-a147-87373aafc5ed" name="websysproject" url="http://35.212.241.67/source files/index.php">
-        <fileTransfer rootFolder="/var/www/html/source files" accessType="SFTP" host="35.212.241.67" port="22" sshConfigId="62ffd6a3-c8ae-450a-9f92-46d31d383df6" sshConfig="dev@35.212.241.67:22 password">
+      <webServer id="6a8af7d5-7d4b-4d6d-a147-87373aafc5ed" name="websysproject" url="http://35.212.241.67/webproject5/index.php">
+        <fileTransfer rootFolder="/var/www/html/webproject5" accessType="SFTP" host="35.212.241.67" port="22" sshConfigId="62ffd6a3-c8ae-450a-9f92-46d31d383df6" sshConfig="dev@35.212.241.67:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

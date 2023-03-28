@@ -13129,3 +13129,9 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+.bookbtn {
+    border-radius: 12px;
+    background-color: red;
+    color: black;
+}
