@@ -67,8 +67,12 @@ include "nav.inc.php";
                     $query = "SELECT * FROM webproject5.booking WHERE email = '$email'";
                     $result = mysqli_query($conn, $query);
 
+
+
                     // Display user data in table
                     while ($row = mysqli_fetch_assoc($result)) {
+                        $deletequery = "DELETE FROM webproject5.booking WHERE booking_id =" . $row['booking_id'];
+                        echo "<tr id='booking-" . $row['booking_id'] . "'>";
                         echo "<tr>";
                         echo "<td>" . $row['name'] . "</td>";
                         echo "<td>" . $row['email'] . "</td>";
@@ -76,7 +80,7 @@ include "nav.inc.php";
                         echo "<td>" . $row['date'] . "</td>";
                         echo "<td>" . $row['timeslot'] . "</td>";
                         echo "<td>" . $row['instructor'] . "</td>";
-                        echo "<td><button onclick=\"deleteRow('" . $row['id'] . "')\">Delete</button></td>";
+                        echo "<td><button onclick=\"deleteRow('" . $row['booking_id'] . "')\">Delete</button></td>";
                         echo "</tr>";
                     }
                     ?>
