@@ -1,3 +1,56 @@
+<?php
+
+
+// include "includes/authenticate.inc.php";
+
+
+$success = 0;
+if ($success = 0) {
+    $username = "";
+    $pwd = "";
+}
+
+
+function sanitize_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+
+// Check if form was submitted
+if (isset($_POST['submit'])) { // Check if form was submitted
+
+
+    $username = sanitize_input($_POST['username']); // Get input text
+    $pwd = $_POST['pwd'];
+    if ($username == "admin1" && $pwd == "12345678") {
+        $success = 1;
+    } else {
+        $success = 2;
+    }
+}
+
+//check code
+if (isset($_POST['submitcode'])) {
+    if (sanitize_input($code) == $randomString) {
+        //*****rmb to change directory once server up */
+        session_start();
+        $_SESSION['login'] = "valid";
+        echo '<script>alert("done ' . $_SESSION["login"] . '")</script>';
+        echo '<script>window.location = "viewBookings.php";
+        </script>';
+        header("Location: viewBookings.php");
+        exit();
+    }
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en-GB">
 
@@ -12,74 +65,60 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
+</body>
+<?php
+include "nav.inc.php";
+?>
 
-
-<html>
-
-<body>
-    <?php
-    include "nav.inc.php";
-    ?>
-    <div class="container-login100">
-        <form class="login100-form validate-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <span class="login100-form-title">
-                Admin Login
-            </span>
-            <p>
-                For members, please go to the
-                <a href="login_signup.php">Register page</a>.
-            </p>
-            <div class="wrap-input100 validate-input" data-validate="Username is required">
-                <input class="input100" type="text" id="username" name="username" placeholder="Enter Username" label="username" required>
-                <span class="focus-input100"></span>
-            </div>
-            <div class="wrap-input100 validate-input" data-validate="Password is required">
-                <input class="input100" type="password" id="password" name="password" placeholder="Enter password" label="password" required>
-                <span class="focus-input100"></span>
-            </div>
-            <div class="row" id="indexerror">
-                <?php
-                if (!empty($errorMsg)) {
-                    echo "<div class='alert alert-danger alert-dismissible fade show' style='margin-bottom:20px;'> " . $errorMsg . "</div>";
-                }
-                ?>
-            </div>
-            <div class="container-login100-form-btn">
-                <button class="login100-form-btn" type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
-
-
-    <!-- <main class="container-login">
-        </section>
-        <h1>Admin Login</h1>
+<main>
+    <div class="fcontainer">
+        <!-- <img src="img/sit_logo.png" alt="Logo"> -->
+        <h2>Admin Login</h2>
         <p>
             For members, please go to the
             <a href="login_signup.php">Register page</a>.
         </p>
-        <form action="admin_login.php" method="post">
-            <div class="wrap-input100 validate-input">
-                <label for="username">Username:</label>
-                <input class="input100" type="username" id="username" name="username" required placeholder="Enter username">
-                <span class="focus-input100"></span>
-            </div>
+        <?php
 
-            <div class="wrap-input100 validate-input">
-                <label for="pwd">Password:</label>
-                <input class="input100" type="password" id="pwd" name="pwd" required placeholder="Enter password">
-            </div>
+        if ($success == 0 || $success == 2) {
+            echo "<form action=\"#\" method=\"post\" name=\"login\">" .
+                "<div class=\"input-field\">" .
+                "<label for=\"username\" >Username:</label>" .
+                "<input type=\"text\" id=\"username\" name=\"username\" class=\"field\" required>" .
+                "</div>" .
+                "<div class=\"input-field\">" .
+                "<label for=\"pwd\">Password:</label>" .
+                "<input type=\"password\" id=\"pwd\" name=\"pwd\" class=\"field\"  required>" .
+                "</div>" .
+                "<button type=\"submit\" name=\"submit\" class=\"abtn\">Login</button></form>";
+        } ?>
+        <?php
 
-            <div class="form-group">
-                <button class="btn btn-primary" type="submit">Log In</button>
-            </div>
+        if ($success == 1) {
+            // sendmail();
+            // echo "<br><br>Check mail for 2FA code";
+            echo "<form action=\"\" method=\"post\" name=\"login\">" .
+                "<div class='input-field'>" .
+                "<label for='code'> Code:</label>" .
+                "<input type='text' id='code' name='code' class='field' required>" .
+                "</div>" .
+                "<button type='submit' name='submitcode' class='abtn'>Submit code</button>";
+        } else if ($success == 2) {
+            echo "<br><label>Username or password incorrect<label><br>";
+        }
 
+
+
+        ?>
         </form>
-    </main> -->
 
-    <?php
-    include "footer.inc.php";
-    ?>
+    </div>
+
+</main>
+
+<?php
+include "footer.inc.php";
+?>
 </body>
 
 </html>
