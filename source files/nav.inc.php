@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 
 
 <nav class="navbar navbar-expand-xl navbar-dark bg-black fixed-top">
@@ -9,27 +12,56 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="membership.php">Membership</a></li>
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Classes
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="classes.php">Time Table</a>
-                        <a class="dropdown-item" href="explore.php">Explore</a>
-                    </div>
-                </li>
 
-                <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="location.php">Location</a></li>
-                <li class="nav-item"><a class="nav-link" href="about_us.php">About Us</a></li>
-            </ul>
-            <div>
-                <a href="profile.php" class="nav-btn">Profile</a>
-                <a href="login_signup.php" class="nav-btn">Login/Signup</a>
-            </div>
+            <?php if (! isset($_SESSION["logged_in"])): ?>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="membership.php">Membership</a></li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Classes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="classes.php">Time Table</a>
+                            <a class="dropdown-item" href="explore.php">Explore</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.php">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.php">About Us</a></li>
+                </ul>
+                <div>
+    <!--                <a href="profile.php" class="nav-btn">Profile</a>-->
+                    <a href="login_signup.php" class="nav-btn"> Login/Signup</a>
+                </div>
+            <?php endif; ?>
+
+            <?php if (isset($_SESSION["logged_in"])): ?>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="membership.php">Membership</a></li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Classes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="classes.php">Time Table</a>
+                            <a class="dropdown-item" href="explore.php">Explore</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.php">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.php">About Us</a></li>
+                </ul>
+                <div>
+                    <a href="profile.php" class="nav-btn"> Profile</a>
+                    <a href="logout.php" class="nav-btn"> Logout</a>
+                </div>
+            <?php
+            endif;
+            ?>
         </div>
     </div>
 </nav>

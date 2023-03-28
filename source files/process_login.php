@@ -120,7 +120,7 @@
                         $_SESSION['email'] = $email;
                         $_SESSION['member_id'] = $row["member_id"];
                         $_SESSION["logged_in"] = true;
-//                        header("location: index.php");
+                        header("location: index.php");
 
                         // Check if the password matches:
                         if (!password_verify($_POST["pwd"], $pwd_hashed))
