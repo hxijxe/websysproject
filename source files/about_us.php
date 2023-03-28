@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/aboutus.css">
     <title>SIT Active Gym About Us</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -13,37 +14,36 @@ include "nav.inc.php";
 ?>
 
 <body>
-    <section class="about-section about-background text-center">
+    <header class="about-section text-center">
         <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="text-black mb-4">WHO WE ARE</h2>
-                    <p class="text-black-50">
-                        Keeping students fit since 2009
-                    </p>
+            <div class="row gx-4 gx-lg-5 ">
+                <div class="col-lg-8" style="text-align: left;">
+                    <h4 style="color: red;">About Us</h4>
+                    <h1 class="text-white mb-4">Get to know us better </h1>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="about-section text-center">
+    </header>
+
+    <section class="text-center about">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8">
                     <h2 class="text-red mb-4">Our Story</h2>
                     <p class="text-black-50">
-                    Since our humble beginnings in 1993, we have become one of the largest fitness brands in the world, 
-                    and the largest in Southeast Asia. A trusted and enduring brand, we have an unrivalled network in the region, 
+                    Since our humble beginnings in 2023, we have become one of the largest fitness brands in the world, 
+                    and the largest in Asia. A trusted and enduring brand, we have an unrivalled network in the region, 
                     with knowledgeable teams, new technology and world class clubs. Through the years, we’ve seen a lot of changes and 
                     we’ve come a long way. But our purpose remains clear: we are the fitness leaders who inspire people to go further in life.
 
-                    With more than 230,000 members around the region, we’re always looking for new ways 
+                    With more than 2,000 members around the region, we’re always looking for new ways 
                     to support and inspire them – and not just in the gym.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about-section about-background text-center">
+    <section class="text-center about">
         <div class="container px-5 px-lg-5">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -91,10 +91,25 @@ include "nav.inc.php";
             </div>
         </div>
     </section>
+    <section class="about">
+        <div class="askaqns">
+            <h3>Ask Us a Question</h3>
+            <form action="processquestion.php">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
 
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your email...">
 
-</body>
+                <label for="question">Question</label>
+                <textarea id="question" name="question" requireed placeholder ="Your question..."></textarea>
+                
 
+                <input type="submit" value="Submit">
+                
+            </form>
+        </div>
+    </section>
 
 
 <?php
