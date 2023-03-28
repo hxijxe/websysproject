@@ -13,18 +13,6 @@
     include "nav.inc.php";
     ?>
     <body>
-<!--        <section class="about-section text-center">-->
-<!--            <div class="container px-4 px-lg-5">-->
-<!--                <div class="row gx-4 gx-lg-5 justify-content-center">-->
-<!--                    <div class="col-lg-8">-->
-<!--                        <h2 class="text-white mb-4">Classes</h2>-->
-<!--                        <p class="text-white-50">-->
-<!--                            Book your class shift now!-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
         <main class="container">
         <?php
             $email = $pwd = $fname = $lname = $errorMsg = "";
@@ -77,10 +65,6 @@
                         </div>
                     </section>
                      <div class='container form-group'><button class='btn btn-warning' type='button' onclick='history.back();'>Return to Login</button></div>";
-//                echo "<h1 class='container'>Oops!</h1>";
-//                echo "<h2 class='container'>The following errors were detected:</h2>";
-//                echo "<p class='container'>" . $errorMsg . "</p>";
-//                echo "<div class='container form-group'><button class='btn btn-warning' type='button' onclick='history.back();'>Return to Login</button></div>";
             }
             
             //Helper function that checks input for malicious or unwanted content.
@@ -129,19 +113,27 @@
                         $lname = $row["lname"];
                         $pwd_hashed = $row["password"];
 
+                        // storing user information in a session
+                        session_start();
+                        $_SESSION['fname'] = $fname;
+                        $_SESSION['lname'] = $lname;
+                        $_SESSION['email'] = $email;
+                        $_SESSION['member_id'] = $row["member_id"];
+                        $_SESSION["logged_in"] = true;
+//                        header("location: index.php");
+
                         // Check if the password matches:
                         if (!password_verify($_POST["pwd"], $pwd_hashed))
                         {
                             // Don't be too specific with the error message - hackers don't
                             // need to know which one they got right or wrong. :)
-//                            $errorMsg = "Email not found or password doesn't match...";
-                            $errorMsg = " password doesn't match...";
+                            $errorMsg = "Email not found or password doesn't match.";
                             $success = false;
                         }
                     }
                     else
                     {
-                        $errorMsg = "Email not found or password doesn't match...";
+                        $errorMsg = "Email not found or password doesn't match.";
                         $success = false;
                     }
 
