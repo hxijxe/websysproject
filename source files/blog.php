@@ -31,18 +31,22 @@ include "nav.inc.php";
   <div class="album py-5 bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+
+        
+        <div class="col-md-4" >
           <div class="card mb-4 box-shadow">
             <img class="card-img-top" src="img/swim.jpg" alt="swim">
-            <div class="card-body">
+            <div class="card-body" >
               <h5 class="text-muted">Hai Jie Di Lai</h5>
               <p class="card-text">I enjoy the flexible timetable of booking the classes for swimming.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">3 mins</small>
+                <a href="blog_article_haijiedilai.php"class="text-muted" >3 mins</a>
               </div>
             </div>
           </div>
         </div>
+       
+
         <div class="col-md-4">
           <div class="card mb-4 box-shadow">
             <img class="card-img-top" src="img/yoga.jpg" alt="swim">
