@@ -29,7 +29,7 @@ include "nav.inc.php";
     <section>
         <div class="bookingform">
             <h3>Classes Booking</h3>
-            <form action="processBooking.php">
+            <form action="processBooking.php" method="POST">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name..">
 
@@ -48,8 +48,8 @@ include "nav.inc.php";
                 <label for="date">Choose a Date</label>
                 <input type="date" id="date" name="date" >
 
-                <label for="timeSlot">Choose your Time Slot</label>
-                <select id="timeSlot" name="timeSlot">
+                <label for="timeslot">Choose your Time Slot</label>
+                <select id="timeslot" name="timeslot">
                     <option value="7am-9am">7am-9am</option>
                     <option value="10am-12pm">10am-12pm</option>
                     <option value="1pm-3pm">1pm-3pm</option>

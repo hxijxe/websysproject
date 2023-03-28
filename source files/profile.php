@@ -2,10 +2,12 @@
 <html lang="en-GB">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <title>SIT Active Gym About Us</title>
+    <title>SIT Active Gym Classes</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <?php include 'protect.php'?>
 </head>
 
 <?php
@@ -13,18 +15,16 @@ include "nav.inc.php";
 ?>
 
 <body>
-    <section class="about-section about-background text-center">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="text-black mb-4">My Profile</h2>
-                    <p class="text-black-50">
-                        Keeping students fit since 2009
-                    </p>
-                </div>
+<header class="about-section text-center">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 ">
+            <div class="col-lg-8" style="text-align: left;">
+                <h4 style="color: red;">My Profile</h4>
+                <h1 class="text-white mb-4">Keeping students fit since 2009!</h1>
             </div>
         </div>
-    </section>
+    </div>
+</header>
 
     <main>
         <section>
@@ -37,7 +37,51 @@ include "nav.inc.php";
                 Booking Information
             </h2>
             <div>
-                <a class="btn btn-cancel" href="#">Cancel Booking</a>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>className</th>
+                        <th>date</th>
+                        <th>timeslot</th>
+                        <th>instructor</th>
+                        <th>action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    $timeslot = $duration = $class = $instructor = $location = $errorMsg = "";
+                    $success = true;
+                    // Create database connection.
+                    $config = parse_ini_file('../../private/db-config.ini');
+                    $conn = new mysqli($config['servername'], $config['username'],
+                        $config['password'], $config['dbname']);
+                    // Check connection
+                    if ($conn->connect_error) {
+                        $errorMsg = "Connection failed: " . $conn->connect_error;
+                        $success = false;
+                    }
+                    // Retrieve user data from SQL table based on email in session
+                    $email = $_SESSION['email'];
+                    $query = "SELECT * FROM webproject5.booking WHERE email = '$email'";
+                    $result = mysqli_query($conn, $query);
+
+                    // Display user data in table
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo "<tr>";
+                        echo "<td>" . $row['name'] . "</td>";
+                        echo "<td>" . $row['email'] . "</td>";
+                        echo "<td>" . $row['className'] . "</td>";
+                        echo "<td>" . $row['date'] . "</td>";
+                        echo "<td>" . $row['timeslot'] . "</td>";
+                        echo "<td>" . $row['instructor'] . "</td>";
+                        echo "<td><button onclick=\"deleteRow('" . $row['id'] . "')\">Delete</button></td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                    </tbody>
+                </table>
             </div>
         </section>
 

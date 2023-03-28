@@ -51,15 +51,35 @@
                 $name = sanitize_input($_POST["name"]);
             }
 
-            if (!empty($_POST["name"])) {
-                $name = sanitize_input($_POST["name"]);
-            }
 //check date
             if (empty($_POST["date"])) {
                 $errorMsg .= "date is required.<br>";
                 $success = false;
             } else {
                 $date = sanitize_input($_POST["date"]);
+            }
+            // check class name
+            if (empty($_POST["className"])) {
+                $errorMsg .= "Class name is required.<br>";
+                $success = false;
+            } else {
+                $className = sanitize_input($_POST["className"]);
+            }
+
+            // check timeslot
+            if (empty($_POST["timeslot"])) {
+                $errorMsg .= "Timeslot is required.<br>";
+                $success = false;
+            } else {
+                $timeslot = sanitize_input($_POST["timeslot"]);
+            }
+
+            // check instructor
+            if (empty($_POST["instructor"])) {
+                $errorMsg .= "Instructor is required.<br>";
+                $success = false;
+            } else {
+                $instructor = sanitize_input($_POST["instructor"]);
             }
             if ($success) {
                 echo "<h1>Booking successful! View and edit your bookings in your profile page!</h1> \n";
