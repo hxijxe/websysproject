@@ -18,25 +18,19 @@
 include "nav.inc.php";
 ?>
 
-<header class="about-section text-center">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 ">
-            <div class="col-lg-8" style="text-align: left;">
-                <h4 style="color: red;">Locations</h4>
-                <h1 class="text-white mb-4">Find a gym near you </h1>
-            </div>
-        </div>
-    </div>
 
-</header>
 
 <body>
-
-    <section>
-        <p>
-
-        </p>
-    </section>
+    <header class="about-section text-center">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 ">
+                <div class="col-lg-8" style="text-align: left;">
+                    <h1 style="color: red;">Locations</h1>
+                    <h2 class="text-white mb-4">Find a gym near you </h2>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main class="container">
 
@@ -51,38 +45,16 @@ include "nav.inc.php";
                             </iframe>
                         </div>
                 </article>
-
-
-
             </div>
         </section>
-
-        <section class="location-row row">
-            <div class="container">
-                <div class="row-option">
-                    <form>
-                        <select class="custom-select">
-                            <option selected>All Classes</option>
-                            <option value="1">Upcoming</option>
-                            <option value="2">Zumba</option>
-                            <option value="3">Yoga</option>
-                            <option value="4">Gym</option>
-                        </select>
-                    </form>
-                </div>
-            </div>
-        </section>
-
 
 
         <div class="main-container">
-            <div class="grid-container">
-
-
+            <div class="grid-container row">
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitnew.jpg" />
+                            <img src="img/sitnew.jpg" alt="new campus"/>
                             <div id="clockdiv">
                                 <div>
                                     <span class="days"></span>
@@ -122,7 +94,7 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitnyp.jpg" />
+                            <img src="img/sitnyp.jpg" alt="sit nyp" />
                         </div>
                         <div class="card__content padding-large">
                             <h2>SIT @ NYP </h2>
@@ -140,14 +112,10 @@ include "nav.inc.php";
                         </div>
                     </div>
                 </div>
-
-
-
-
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sittp.jpg" />
+                            <img src="img/sittp.jpg" alt="sit tp" />
                         </div>
                         <div class="card__content padding-large">
                             <h2>SIT @ TP </h2>
@@ -167,7 +135,7 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitdover.jpg" />
+                            <img src="img/sitdover.jpg" alt="sit dover"/>
                         </div>
                         <div class="card__content padding-large">
                             <h2>SIT @ DOVER </h2>
@@ -187,7 +155,7 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitrp.jpg" alt="rp" />
+                            <img src="img/sitrp.jpg" alt="sit rp" />
                         </div>
                         <div class="card__content padding-large">
                             <h2>SIT @ RP </h2>
@@ -211,7 +179,7 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitsp.jpg" alt="sp" />
+                            <img src="img/sitsp.jpg" alt="sit sp" />
                         </div>
                         <div class="card__content padding-large">
                             <h2>SIT @ SP </h2>
@@ -231,7 +199,7 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitnp.jpg" alt="np" />
+                            <img src="img/sitnp.jpg" alt="sit np"/>
                         </div>
                         <div class="card__content padding-large">
                             <h2>SIT @ NP </h2>
@@ -250,58 +218,23 @@ include "nav.inc.php";
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
-
-
-
-
-
-
-
-
-
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <!--Bootstrap JS-->
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+    </script>
+    <script defer src="js/scripts.js"></script>
 
 </body>
+
 <?php
 include "footer.inc.php";
 ?>
-<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-</script>
-<!--Bootstrap JS-->
-<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
-</script>
-<script defer src="js/scripts.js"></script>
+
 
 
 </html>

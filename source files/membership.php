@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 
-    <head>
-        <link rel="stylesheet" href="css/styles.css">
-        <title>SIT Active Gym Membership</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    </head>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>SIT Active Gym Membership</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
 
-    <?php
-    include "nav.inc.php";
-    ?>
+<?php
+include "nav.inc.php";
+?>
 
-    <body>
-<header class="about-section text-center">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 ">
-            <div class="col-lg-8" style="text-align: left;">
-                <h4 style="color: red;">Membership</h4>
-                <h1 class="text-white mb-4">3 Tiers to choose from </h1>
+<body>
+    <header class="about-section text-center">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 ">
+                <div class="col-lg-8" style="text-align: left;">
+                    <h1 style="color: red;">Membership</h1>
+                    <h2 class="text-white mb-4">3 Tiers to choose from </h2>
+                </div>
             </div>
         </div>
-    </div>
 
-</header>
+    </header>
 
+    <main>
         <section class="projects-section bg-body" id="projects">
             <div class="container px-5 px-lg-5">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -103,40 +104,43 @@
         </div>
 
         <div class="container px-5 px-lg-5" style = "padding-top: 5rem; padding-bottom:2rem">
-            <h1 style = "padding-bottom: 2rem">Frequently Asked Questions</h1>
+            <h2 style = "padding-bottom: 2rem">Frequently Asked Questions</h2>
             <div class ="col-lg-12 col-12 g-0">
-                <h4> What do I have to bring for my workout? </h4>
+                <h3> What do I have to bring for my workout? </h3>
                 <p> Do bring a towel for hygiene purposes. Show up in outfit that is appropriate for physical fitness. 
                     Consider bringing a change of clothes as well, we do have shower facilities! 
                 </p>
-                <h4> What is the eligibility for membership? </h4>
+                <h3> What is the eligibility for membership? </h3>
                 <p> You have to be one of the following: A SIT student, staff, or alumni. 
 
                 </p>
-                <h4> Can I patron more than one location?  </h4>
+                <h3> Can I patron more than one location?  </h3>
                 <p> Yes, you can visit any of our 6 locations if you are a member!
                 </p>
-                <h4> Does becoming a member allow me to get better grades in school? </h4>
+                <h3> Does becoming a member allow me to get better grades in school? </h3>
                 <p> We cannot guarantee that your grades will improve. However, it is proven that
                     exercising helps to destress and this may help you to focus in your studies!
                 </p>
             </div>
         </div>
-        <?php
-        include "footer.inc.php";
-        ?>
-                <!--jQuery-->
-                <script defer
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous">
-        </script>
-        <!--Bootstrap JS-->
-        <script defer
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-            integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-            crossorigin="anonymous">
-        </script>
-    </body>
+    
+    </main>
+    <?php
+    include "footer.inc.php";
+    ?>
+    <!--jQuery-->
+    <script defer
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <!--Bootstrap JS-->
+    <script defer
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous">
+    </script>
+    
+</body>
 
 </html>

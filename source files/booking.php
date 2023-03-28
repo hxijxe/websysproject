@@ -14,62 +14,62 @@ include "nav.inc.php";
 ?>
 
 <body>
-    <section class="about-section text-center">
+    <header class="about-section text-center">
         <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="text-white mb-4">Classes</h2>
-                    <p class="text-white-50">
-                        Book your class shift now!
-                    </p>
+            <div class="row gx-4 gx-lg-5 ">
+                <div class="col-lg-8" style="text-align: left;">
+                    <h1 style="color: red;">Classes</h1>
+                    <h2 class="text-white mb-4">Book your class shift now! </h2>
                 </div>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="bookingform">
-            <h3>Classes Booking</h3>
-            <form action="processBooking.php" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name..">
+    </header>
+    <main>
+        <section>
+            <div class="bookingform">
+                <h2>Classes Booking</h2>
+                <form action="processBooking.php" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Your email...">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your email...">
 
-                <label for="className">Choose your Class</label>
-                <select id="className" name="className">
-                    <option value="yoga">Yoga</option>
-                    <option value="zumba">Zumba</option>
-                    <option value="gym">GYM</option>
-                    <option value="cycleBurn">Cycle Burn</option>
-                    <option value="swimming">Swimming</option>
-                </select>
+                    <label for="className">Choose your Class</label>
+                    <select id="className" name="className">
+                        <option value="yoga">Yoga</option>
+                        <option value="zumba">Zumba</option>
+                        <option value="gym">GYM</option>
+                        <option value="cycleBurn">Cycle Burn</option>
+                        <option value="swimming">Swimming</option>
+                    </select>
 
-                <label for="date">Choose a Date</label>
-                <input type="date" id="date" name="date" >
+                    <label for="date">Choose a Date</label>
+                    <input type="date" id="date" name="date" >
 
-                <label for="timeslot">Choose your Time Slot</label>
-                <select id="timeslot" name="timeslot">
-                    <option value="7am-9am">7am-9am</option>
-                    <option value="10am-12pm">10am-12pm</option>
-                    <option value="1pm-3pm">1pm-3pm</option>
-                    <option value="4pm-5pm">4pm-5pm</option>
-                    <option value="6pm-8pm">6pm-8pm</option>
-                </select>
+                    <label for="timeslot">Choose your Time Slot</label>
+                    <select id="timeslot" name="timeslot">
+                        <option value="7am-9am">7am-9am</option>
+                        <option value="10am-12pm">10am-12pm</option>
+                        <option value="1pm-3pm">1pm-3pm</option>
+                        <option value="4pm-5pm">4pm-5pm</option>
+                        <option value="6pm-8pm">6pm-8pm</option>
+                    </select>
 
-                <label for="instructor">Choose your instructor</label>
-                <select id="instructor" name="instructor">
-                    <option value="leshane">Ms Leshane</option>
-                    <option value="bryon">Mr Bryon</option>
-                    <option value="faith">Ms Faith</option>
-                    <option value="ho">Mr Ho</option>
-                    <option value="jack">Mr Jack</option>
-                </select>
+                    <label for="instructor">Choose your instructor</label>
+                    <select id="instructor" name="instructor">
+                        <option value="leshane">Ms Leshane</option>
+                        <option value="bryon">Mr Bryon</option>
+                        <option value="faith">Ms Faith</option>
+                        <option value="ho">Mr Ho</option>
+                        <option value="jack">Mr Jack</option>
+                    </select>
 
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </section>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
     <?php
     include "footer.inc.php";
     ?>

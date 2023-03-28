@@ -13,6 +13,7 @@
         include "nav.inc.php";
     ?>
 <body>
+    <main>
     <section class="login_signup">
         <!-- Register container -->
         <div class="container mt-5" id="container" style="min-height: 960px">
@@ -26,10 +27,10 @@
                     <input type="text" class="form-control" id="lname" required maxlength="45" name="lname"
                         placeholder="Enter last name">
                     <!-- Email -->
-                    <input type="email" class="form-control" id="email" required name="email"
+                    <input type="email" class="form-control" id="registeremail" required name="email"
                         placeholder="Enter email">
                     <!-- Password -->
-                    <input type="password" class="form-control" id="pwd" required minlength="8" name="pwd"
+                    <input type="password" class="form-control" id="registerpwd" required minlength="8" name="pwd"
                         placeholder="Enter password">
                     <!-- Confirm password -->
                     <input type="password" class="form-control" id="pwd_confirm" required minlength="8" name="pwd_confirm"
@@ -63,10 +64,10 @@
                 <form action="process_login.php" method="post">
                     <h1>Login</h1>
                     <!-- Email -->
-                    <input type="email" class="form-control" id="email" required name="email"
+                    <input type="email" class="form-control" id="loginemail" required name="email"
                         placeholder="Enter email">
                     <!-- Password -->
-                    <input type="password" class="form-control" id="pwd" required minlength="8" name="pwd"
+                    <input type="password" class="form-control" id="loginpwd" required minlength="8" name="pwd"
                         placeholder="Enter password">
                     <!-- Remember me -->
                     <div class="content">
@@ -114,21 +115,25 @@
             </div>  
         </div>
     </section>
-            <?php
-            include "footer.inc.php";
-            ?>
-        <!--jQuery-->
-        <script defer
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous">
-        </script>
-        <!--Bootstrap JS-->
-        <script defer
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-            integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-            crossorigin="anonymous">
-        </script>
-    </body>
+    </main>
+
+    <?php
+    include "footer.inc.php";
+    ?>
+
+    <!--jQuery-->
+    <script defer
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <!--Bootstrap JS-->
+    <script defer
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous">
+    </script>
+    
+</body>
 
 </html>
