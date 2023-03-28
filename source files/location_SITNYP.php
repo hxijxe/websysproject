@@ -35,38 +35,71 @@ include "nav.inc.php";
                 </div>
             </div>
         </div>
-</header>
+    </header>
 
 
 
-    <main class="container">
 
-        <div class="main-container">
-            <div class="grid-container">
+    <div class="container">
 
-                <div class="card card--featured">
-                    <div class="card__side-by-side--m">
-                        <div class="card__image">
-                            <img src="img/sitnyp.jpg" />
-                        </div>
-                        <div class="card__content padding-large">
-                            <h2>SIT @ NYP </h2>
-                            <div class="rowmap">
-                                <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
-                                    <p class="kD9RoPu">View on map</p>
-                                </a>
-                            </div>
-                            <p>Nanyang Polytechnic</p>
-                            <p>172A Ang Mo Kio Avenue 8, Singapore 567739
-                                (beside Blk Q of NYP campus)</p>
-                            <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
-                            <div class="card__button">Find Out More</div>
-                            </a>
-                        </div>
+        <!-- Picture -->
+        <div class="row">
+            <img src="img/gym-bg.jpg" alt="..." >
+        </div>
+        <!-- Information -->
+        <div class="row" style= "padding-top: 5rem">
+            <div class="col-sm-4 text-center">
+                <div>
+                <p> Operating Hours</p></div>
+                <div>
+                <p> Monday-Friday: 9:00am - 9:00pm</p></div>
+                <div>
+                <p> Saturday: 9:00am - 10:00pm</p></div>
+                <div>
+                <p> Sunday: 9:00am - 5:00pm</p></div>
+            </div>
+
+            <div class="col-sm-4 text-center">
+                <div>
+                <p> Contact Us</p></div>
+                <div>
+                <p> Telephone: 6543 2109</p></div>  
+                <div>
+                <p> Email: Nyp@sitgym.com</p></div>             
+            </div>
+
+            <div class="col-sm-4 text-center">
+                <a class="btn btn-secondary mt-3 mb-3" href="classes.php">View timetable</a>
+            </div>
+
+        </div>
+
+        <div class="row" style="padding-top:5rem; padding-bottom:5rem">
+            <div class="row">
+                <div>
+                    <h3> Classes offered</h3></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <div>
+                        <p> Yoga</p> <img src="img/yoga.jpg" alt="..." class="img-fluid"></div> 
+
                     </div>
+                    <div class="col-sm-4 text-center">
+                        <div>
+                        <p> Zumba</p><img src="img/zumba.jpg" alt="..." class="img-fluid"></div> 
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <div>
+                        <p> Gym</p><img src="img/gym.jpg" alt="..." class="img-fluid"></div> 
+                </div>
+                <div class="row">
+                    <a class="btn btn-secondary mt-3 mb-3" href="explore.php">Explore classes</a>
                 </div>
             </div>
         </div>
+    </div>
+
 
 
 
