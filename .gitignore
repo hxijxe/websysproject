@@ -4,3 +4,4 @@
 .idea/sshConfigs.xml
 .idea/php.xml
 .idea/deployment.xml
+*.xml
