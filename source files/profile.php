@@ -80,6 +80,7 @@ include "nav.inc.php";
                         echo "<td>" . $row['date'] . "</td>";
                         echo "<td>" . $row['timeslot'] . "</td>";
                         echo "<td>" . $row['instructor'] . "</td>";
+                        echo "<td><button onclick=\"updateRow('" . $row['booking_id'] . "')\">Update</button></td>";
                         echo "<td><button onclick=\"deleteRow('" . $row['booking_id'] . "')\">Delete</button></td>";
                         echo "</tr>";
                     }
