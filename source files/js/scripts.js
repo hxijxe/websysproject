@@ -78,22 +78,6 @@ function filterTable() {
 document.querySelector("#locationDropdown").addEventListener("change", filterTable);
 document.querySelector("#classDropdown").addEventListener("change", filterTable);
 
-
-function deleteRow(booking_id) {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            // handle response from PHP script
-            console.log(xhr.responseText);
-            // remove row from table
-            var row = document.getElementById('booking-' + booking_id);
-            row.parentNode.removeChild(row);
-        }
-    };
-    xhr.open('POST', 'delete_booking.php', true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.send('booking_id=' + booking_id);
-}
 // // Login/Register
 // const registerButton = document.getElementById("register");
 // const loginButton = document.getElementById("login");

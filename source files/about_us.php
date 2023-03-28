@@ -93,20 +93,28 @@ include "nav.inc.php";
     </section>
     <section class="about">
         <div class="askaqns">
-            <h3>Ask Us a Question</h3>
-            <form action="processquestion.php">
+            <h3>Give Us a Feedback</h3>
+            <form action="process_aboutus.php" method="post">
+
+                <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name..">
+                </div>
 
+                <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Your email...">
-
-                <label for="question">Question</label>
-                <textarea id="question" name="question" requireed placeholder ="Your question..."></textarea>
+                <input type="email" id="email" name="email" required placeholder="Your email..."></input>
+                </div>
                 
+                <div class="form-group">
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" name="feedback" requireed placeholder ="Your feedback..."></textarea>
+                </div>
 
+                <div class="form-group">
                 <input type="submit" value="Submit">
-                
+                </div>
+
             </form>
         </div>
     </section>
