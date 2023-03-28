@@ -66,7 +66,7 @@ include "nav.inc.php";
                         echo "<td>" . $row['fname'] . "</td>";
                         echo "<td>" . $row['lname'] . "</td>";
                         echo "<td>" . $row['email'] . "</td>";
-                        echo "<td><a href='update_user.php?member_id=" . $row['member_id'] . "'>Update</a></td>";
+                        echo "<td><button onclick=\"location.href='update_user.php?member_id=" . $row['member_id'] . "'\">Update</button></td>";
                         echo "</tr>";
                     }
                     ?>
