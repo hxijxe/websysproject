@@ -31,6 +31,48 @@ include "nav.inc.php";
             <h2>
                 Personal Information
             </h2>
+            <div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    $fname = $lanme = $email = $errorMsg = "";
+                    $success = true;
+                    // Create database connection.
+                    $config = parse_ini_file('../../private/db-config.ini');
+                    $conn = new mysqli($config['servername'], $config['username'],
+                        $config['password'], $config['dbname']);
+                    // Check connection
+                    if ($conn->connect_error) {
+                        $errorMsg = "Connection failed: " . $conn->connect_error;
+                        $success = false;
+                    }
+                    // Retrieve user data from SQL table based on email in session
+                    $member_id = $_SESSION['member_id'];
+                    $query = "SELECT * FROM webproject5.members WHERE member_id = '$member_id'";
+                    $result = mysqli_query($conn, $query);
+
+                    // Display user data in table
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo "<tr id='member-" . $row['member_id'] . "'>";
+                        echo "<tr>";
+                        echo "<td>" . $row['fname'] . "</td>";
+                        echo "<td>" . $row['lname'] . "</td>";
+                        echo "<td>" . $row['email'] . "</td>";
+                        echo "<td><a href='update_user.php?member_id=" . $row['member_id'] . "'>Update</a></td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <section>
             <h2>
@@ -80,7 +122,6 @@ include "nav.inc.php";
                         echo "<td>" . $row['date'] . "</td>";
                         echo "<td>" . $row['timeslot'] . "</td>";
                         echo "<td>" . $row['instructor'] . "</td>";
-                        echo "<td><button onclick=\"updateRow('" . $row['booking_id'] . "')\">Update</button></td>";
                         echo "<td><button onclick=\"deleteRow('" . $row['booking_id'] . "')\">Delete</button></td>";
                         echo "</tr>";
                     }
