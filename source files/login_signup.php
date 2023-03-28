@@ -34,6 +34,17 @@
                     <!-- Confirm password -->
                     <input type="password" class="form-control" id="pwd_confirm" required minlength="8" name="pwd_confirm"
                             placeholder="Confirm password">
+
+                    <div class="membershipType">
+                        <input class="big" type="radio" id="basic" name="basic" value="Basic"/>
+                        <label class="">Basic</label>
+                    </div>
+
+                    <!--radio button on membership type-->
+
+
+
+                    <!-- Register button -->
                     <button type="submit">Register</button>
                     <!-- Register using social media -->
                     <span>or use your account</span>
