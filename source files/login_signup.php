@@ -35,6 +35,10 @@ include "nav.inc.php";
                         <div class="membershipType">
                             <input class="big" type="radio" id="basic" name="basic" value="Basic" />
                             <label class="">Basic</label>
+                            <input class="big" type="radio" id="silver" name="silver" value="silver" />
+                            <label class="">Silver</label>
+                            <input class="big" type="radio" id="gold" name="gold" value="gold" />
+                            <label class="">Gold</label>
                         </div>
 
                         <!--radio button on membership type-->
@@ -77,7 +81,7 @@ include "nav.inc.php";
                         <!-- Forget password -->
                         <div class="content">
                             <div class="pass-link">
-                                <a href="#">Forgot password?</a>
+                                <a href="reset_password.php">Forgot password?</a>
                             </div>
                         </div>
                         <button type="submit">Login</button>
