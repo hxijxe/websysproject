@@ -56,7 +56,16 @@ include "nav.inc.php";
                 <div class='card__side-by-side--m'>
                     <div class='card__image'>
                         <img src='img/sitnew.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260' alt="new campus">
-                        <div id="clockdiv">
+                    </div>
+                    <div class='card__content padding-large--l' style="width:100%">
+                        <h2>COMING SOON!</h2>
+                        <div class="rowmap">
+                            <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
+                                <p class="kD9RoPu">View on map</p>
+                            </a>
+                        </div>
+                        <p>SIT @ PUNGGOL</p>
+                        <div class="clockdiv" id="clockdiv">
                             <div>
                                 <span class="days"></span>
                                 <div class="smalltext">Days</div>
@@ -74,15 +83,6 @@ include "nav.inc.php";
                                 <div class="smalltext">Seconds</div>
                             </div>
                         </div>
-                    </div>
-                    <div class='card__content padding-large--l'>
-                        <h2>COMING SOON!</h2>
-                        <div class="rowmap">
-                            <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
-                                <p class="kD9RoPu">View on map</p>
-                            </a>
-                        </div>
-                        <p>SIT @ PUNGGOL</p>
                         <p>Reimagining Education as an Applied Learning University</p>
                         <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
                             <div class="card__button btn-primary">Find Out More</div>
@@ -98,7 +98,7 @@ include "nav.inc.php";
                     <div class='card__image'>
                         <img src='img/sitnyp.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260' alt="sit nyp">
                     </div>
-                    <div class='card__content padding-large--l'>
+                    <div class='card__content padding-large--l' style="width:100%">
                         <h2>SIT @ NYP</h2>
                         <div class="rowmap">
                             <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -122,7 +122,7 @@ include "nav.inc.php";
                     <div class='card__image'>
                         <img src='img/sittp.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260' alt="sit tp">
                     </div>
-                    <div class='card__content padding-large--l'>
+                    <div class='card__content padding-large--l' style="width:100%">
                         <h2>SIT @ TP</h2>
                         <div class="rowmap">
                             <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -145,7 +145,7 @@ include "nav.inc.php";
                     <div class='card__image'>
                         <img src='img/sitdover.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260' alt="sit dover">
                     </div>
-                    <div class='card__content padding-large--l'>
+                    <div class='card__content padding-large--l' style="width:100%">
                         <h2>SIT @ DOVER</h2>
                         <div class="rowmap">
                             <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -168,7 +168,7 @@ include "nav.inc.php";
                     <div class='card__image'>
                         <img src='img/sitrp.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260' alt="sit rp">
                     </div>
-                    <div class='card__content padding-large--l'>
+                    <div class='card__content padding-large--l' style="width:100%">
                         <h2>SIT @ RP</h2>
                         <div class="rowmap">
                             <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -191,7 +191,7 @@ include "nav.inc.php";
                     <div class='card__image'>
                         <img src='img/sitsp.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260' alt="sit sp">
                     </div>
-                    <div class='card__content padding-large--l'>
+                    <div class='card__content padding-large--l' style="width:100%">
                         <h2>SIT @ SP</h2>
                         <div class="rowmap">
                             <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -214,7 +214,7 @@ include "nav.inc.php";
                     <div class='card__image'>
                         <img src='img/sitnp.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260' alt="sit np">
                     </div>
-                    <div class='card__content padding-large--l'>
+                    <div class='card__content padding-large--l' style="width:100%">
                         <h2>SIT @ NP</h2>
                         <div class="rowmap">
                             <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">

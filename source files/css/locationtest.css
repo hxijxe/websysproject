@@ -109,6 +109,8 @@
 .padding-large--l {
     padding: 1.6rem;
 }
+
+
 @media (max-width: 413px) {
     .grid-container {
         grid-template-columns: 1fr 1fr;
