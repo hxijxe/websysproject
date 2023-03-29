@@ -40,10 +40,11 @@ include "nav.inc.php";
                                 <p class="card-text">Basic Tier is recommended for beginners who wish to start their fitness journey at a slower pace. Maximum 1 class per week.</p>
                             </div>
                             <div class="text-center card-footer">
-                                <a class="btn btn-secondary mt-3 mb-3" href="login_signup.php">Get Started</a>
+                                <a class="btn btn-secondary mt-3 mb-3" href="profile.php">Get Started</a>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col">
                         <div class="card h-100" >
                             <div class="text-center card-header" style="background-color: silver; ">
@@ -56,7 +57,7 @@ include "nav.inc.php";
 
                             </div>
                             <div class="text-center card-footer">
-                                <a class="btn btn-secondary mt-3 mb-3" href="login_signup.php">Get Started</a>
+                                <a class="btn btn-secondary mt-3 mb-3" href="profile.php">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -71,7 +72,7 @@ include "nav.inc.php";
                                 <p class="card-text">Gold Tier is recommended for fitness junkies who exercise on a daily basis or even twice a day. Unlimited classes per week.</p>
                             </div>
                             <div class="text-center card-footer">
-                                <a class="btn btn-secondary mt-3 mb-3" href="login_signup.php">Get Started</a>
+                                <a class="btn btn-secondary mt-3 mb-3" href="profile.php">Get Started</a>
                             </div>
                         </div>
                     </div>

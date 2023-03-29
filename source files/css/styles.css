@@ -13079,26 +13079,7 @@ tr:nth-child(even) {
   display: flex;
   justify-content: flex-start;
 }
-#cdtimer {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 0px;
-}
 
-.mr-auto {
-  margin-right: auto !important;
-}
-
-.carousel-caption2 {
-    position: absolute;
-    right: 15%;
-    bottom: 25rem;
-    left: 40%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: center;
-  }
 
 /* The Modal (background) */
 .exploremodal {

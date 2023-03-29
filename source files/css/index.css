@@ -1,0 +1,107 @@
+
+#clockdiv {
+    font-family: sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -43%);
+   
+    
+}
+
+#clockdiv > div{
+  padding: 10px;
+  border-radius: 3px;
+  background: #ff0000;
+  display: inline-block;
+  font-size: 30px;
+}
+
+#clockdiv div > span{
+  padding: 15px;
+  border-radius: 3px;
+  background: #000000;
+  display: inline-block;
+}
+
+#cdtimer {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.carousel-caption2 {
+    position: absolute;
+    right: 25%;
+    bottom: 20rem;
+    left: 25%;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-caption3 {
+  position: absolute;
+  right: 15%;
+  bottom: 10rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+.js8uwi {
+  font-size: 15px;
+}
+
+.carousel-inner2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-height: 960px;
+}
+
+
+@media (max-width: 768px) {
+  #clockdiv {
+    font-size: 20px;
+    top: 40%;
+    transform: translate(-50%, -40%);
+  }
+
+  #clockdiv > div {
+    font-size: 20px;
+  }
+
+  #clockdiv div > span {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .carousel-caption2 {
+    top: 40%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .carousel-caption3 {
+    bottom: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .js8uwi {
+    font-size: 12px;
+  }
+}
