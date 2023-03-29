@@ -8,6 +8,8 @@
     <title>SIT Active Gym</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <?php
 include "nav.inc.php";
@@ -138,6 +140,8 @@ include "nav.inc.php";
     <!--Bootstrap JS-->
     <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
     </script>
+
+    <script defer src="js/scripts.js"></script>
 
 </body>
 
