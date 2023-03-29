@@ -84,7 +84,7 @@ include "nav.inc.php";
                         </div>
                         <button type="submit">Login</button>
                         <p>
-                            <a href="admin_login.php">Admin login page</a>.
+                            <a href="admin_login.php">Admin Login</a>
                         </p>
                         <!-- Login using social media -->
                         <span>or use your account</span>
