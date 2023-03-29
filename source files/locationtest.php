@@ -56,6 +56,24 @@ include "nav.inc.php";
                 <div class='card__side-by-side--m'>
                     <div class='card__image'>
                         <img src='img/sitnew.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260' alt="new campus">
+                        <div id="clockdiv">
+                            <div>
+                                <span class="days"></span>
+                                <div class="smalltext">Days</div>
+                            </div>
+                            <div>
+                                <span class="hours"></span>
+                                <div class="smalltext">Hours</div>
+                            </div>
+                            <div>
+                                <span class="minutes"></span>
+                                <div class="smalltext">Minutes</div>
+                            </div>
+                            <div>
+                                <span class="seconds"></span>
+                                <div class="smalltext">Seconds</div>
+                            </div>
+                        </div>
                     </div>
                     <div class='card__content padding-large--l'>
                         <h2>COMING SOON!</h2>
