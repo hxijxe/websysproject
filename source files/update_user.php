@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $member_id = $_POST["member_id"];
     $fname = $_POST["fname"];
     $lname = $_POST["lname"];
-    $tier = $_POST['tier'];
+    $tier = $_POST["tier"];
 
     // Create database connection
     $config = parse_ini_file('../../private/db-config.ini');
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $success = false;
     } else {
         // Update member data in SQL table
-        $query = "UPDATE webproject5.members SET fname='$fname', lname='$lname', tier='$tier', WHERE member_id='$member_id'";
+        $query = "UPDATE webproject5.members SET fname='$fname', lname='$lname', tier='$tier' WHERE member_id='$member_id'";
         if (mysqli_query($conn, $query)) {
             $errorMsg = "Member data updated successfully";
             echo "<script>alert('$errorMsg'); window.location.href='profile.php';</script>";
@@ -89,14 +89,17 @@ if (!$success) {
     <input type="text" name="lname" value="<?php echo $lname; ?>"><br>
 
     <label for="tier">Tier:</label>
-    <input class="big" type="radio" id="basic" name="membership" value="Basic" />
+    <input class="big" type="radio" id="basic" name="tier" value="Basic" />
     <label for="basic">Basic</label>
 
-    <input class="big" type="radio" id="silver" name="membership" value="Silver" />
+    <input class="big" type="radio" id="silver" name="tier" value="Silver" />
     <label for="silver">Silver</label>
 
-    <input class="big" type="radio" id="gold" name="membership" value="Gold" />
+    <input class="big" type="radio" id="gold" name="tier" value="Gold" />
     <label for="gold">Gold</label>
+
+    <input type="submit" value="Update">
+
 </form>
 </div>
 </body>
