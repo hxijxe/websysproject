@@ -52,7 +52,7 @@
 }
 
 .login_signup a:hover {
-  color: #4bb6b7;
+  color:  #ED1C25;
 }
 
 .login_signup .content {
@@ -84,8 +84,8 @@
 .login_signup button {
   position: relative;
   border-radius: 20px;
-  border: 1px solid #4bb6b7;
-  background-color: #4bb6b7;
+  border: 1px solid  #ED1C25;
+  background-color:  #ED1C25;
   color: #fff;
   font-size: 15px;
   font-weight: 700;
@@ -297,7 +297,7 @@
 }
 
 .login_signup .social-container a {
-  border: 1px solid #dddddd;
+  border: 1px solid  #ED1C25;
   border-radius: 50%;
   display: inline-flex;
   justify-content: center;
@@ -309,5 +309,59 @@
 }
 
 .login_signup .social-container a:hover {
-  border: 1px solid #4bb6b7;
+  border: 1px solid  #ED1C25;
+}
+
+/*CSS for password validation*/
+
+#registerpwd {
+  position: relative;
+  padding-right: 52px;
+  border: none;
+  outline: none;
+  transition: .2s;
+}
+
+.password-validation .icon i {
+  color: #ED1C25;
+  line-height: 45px;
+  font-size: 25px;
+  position: absolute;
+  right: 22px;
+  top: 45px;
+}
+
+.password-validation .valid-checks {
+  margin: 20px 0;
+  padding: 20px 25px;
+  background-color: black;
+  border-radius: 25px;
+  transition: .2s ease;
+  opacity: 1;
+}
+
+.password-validation .valid-checks ul {
+  list-style-type: none;
+}
+
+.password-validation .valid-checks li {
+  position: relative;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 8px 0;
+  color:  #ED1C25;
+  transition: .2s ease;
+}
+.password-validation .valid-checks li i{
+  font-size: 20px;
+  margin-right: 8px;
+}
+.password-validation .valid-checks li.checked {
+  color: white;
+  font-weight: 500;
+}
+
+.password-validation .hide {
+  opacity: 0;
+  visibility:hidden;
 }

@@ -5,7 +5,7 @@ session_start();
 
 <nav class="navbar navbar-expand-xl navbar-dark bg-black fixed-top">
     <div class="container px-4 px-lg-5">
-        <a class="navbar-brand flexstart" href="index.php"><img class="brand-logo" src="img/sit_logo.png" alt="sit logo" style="height: 80px;"></a>
+        <a class="navbar-brand flexstart" href="index.php"><img class="brand-logo" src="img/sit_logo.png" alt="sit logo" style="max-height: 70px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
