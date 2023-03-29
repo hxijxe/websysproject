@@ -25,23 +25,23 @@ $('.dropdowncontainer .dropdown .dropdown-menu li').click(function () {
 
 
 // Get the modal
-var modalYoga = document.getElementById("myModalYoga");
+var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btnYoga = document.getElementById("myBtnYoga");
+var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var spanYoga = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
-btnYoga.onclick = function () {
-    modalYoga.style.display = "block";
+btn.onclick = function () {
+    modal.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
-spanYoga.onclick = function () {
-    modalYoga.style.display = "none";
-    var iframe = modalYoga.querySelector('iframe');
+span.onclick = function () {
+    modal.style.display = "none";
+    var iframe = modal.querySelector('iframe');
     var iframeSrc = iframe.src;
     iframe.src = '';
     iframe.src = iframeSrc;
@@ -49,44 +49,10 @@ spanYoga.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-    if (event.target === modalYoga) {
-        modalYoga.style.displayF = "none";
+    if (event.target === modal) {
+        modal.style.display = "none";
     }
-    var iframe = modalYoga.querySelector('iframe');
-    var iframeSrc = iframe.src;
-    iframe.src = '';
-    iframe.src = iframeSrc;
-};
-
-// Get the modal
-var modalZumba = document.getElementById("myModalZumba");
-
-// Get the button that opens the modal
-var btnZumba = document.getElementById("myBtnZumba");
-
-// Get the <span> element that closes the modal
-var spanZumba = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btnZumba.onclick = function () {
-    modalZumba.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-spanZumba.onclick = function () {
-    modalZumba.style.display = "none";
-    var iframe = modalZumba.querySelector('iframe');
-    var iframeSrc = iframe.src;
-    iframe.src = '';
-    iframe.src = iframeSrc;
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target === modalZumba) {
-        modalZumba.style.displayF = "none";
-    }
-    var iframe = modalZumba.querySelector('iframe');
+    var iframe = modal.querySelector('iframe');
     var iframeSrc = iframe.src;
     iframe.src = '';
     iframe.src = iframeSrc;

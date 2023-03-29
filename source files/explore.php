@@ -44,11 +44,11 @@
                                 strength, balance, reduce stress and anxiety, 
                                 and promote overall health and wellness.</p>
                             <p><a href="classes.php">Book Now!</a></p>
-                            <p><a class="btn btn-secondary mt-3 mb-3" id="myBtnYoga">Learn More!</a></p>
+                            <p><a class="btn btn-secondary mt-3 mb-3" id="myBtn">Learn More!</a></p>
                         </div>
                     </div>
                     <!-- The Modal -->
-                    <div id="myModalYoga" class="exploremodal">
+                    <div id="myModal" class="exploremodal">
 
                         <!-- Modal content -->
                         <div class="modal-content">
@@ -86,34 +86,8 @@
                                 It also helps to burn calories and reduce stress, anxiety, and depression. 
                                 Zumba classes provide a social atmosphere that can increase motivation and make exercise more enjoyable.</p>
                             <p><a href="classes.php">Book Now!</a></p>
-                            <p><a class="btn btn-secondary mt-3 mb-3" id="myBtnZumba">Learn More!</a></p>
+                            
                         </div>
-                    </div>
-                    <!-- The Modal -->
-                    <div id="myModalZumba" class="exploremodal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <span class="close" >&times;</span>
-                                <h2>Yoga</h2>
-                            </div>
-                            <div class="modal-body">
-                                <iframe id="video" class="responsive-iframe" src="https://www.youtube.com/embed/mZeFvX3ALKY&t">
-                                </iframe>
-                                <p>Zumba is a fun and energetic dance fitness program that combines Latin and international
-                                    music with easy-to-follow dance moves. It was created in the 1990s by Colombian dancer and choreographer
-                                    Alberto Perez, and has since become popular worldwide. Zumba classes typically last for an hour and
-                                    involve high-intensity interval training and resistance training, which can help improve
-                                    cardiovascular health, burn calories, and build muscle. Participants of all ages and fitness levels
-                                    can enjoy Zumba, as the routines can be modified to suit individual needs. Overall,
-                                    Zumba is a great way to get fit and have fun at the same time.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <h3>Modal Footer</h3>
-                            </div>
-                        </div>
-
                     </div>
                 
                 </div>
