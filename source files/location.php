@@ -18,25 +18,19 @@
 include "nav.inc.php";
 ?>
 
-<header class="about-section text-center">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 ">
-            <div class="col-lg-8" style="text-align: left;">
-                <h4 style="color: red;">Locations</h4>
-                <h1 class="text-white mb-4">Find a gym near you </h1>
-            </div>
-        </div>
-    </div>
 
-</header>
 
 <body>
-
-    <section>
-        <p>
-
-        </p>
-    </section>
+    <header class="about-section text-center">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 ">
+                <div class="col-lg-8" style="text-align: left;">
+                    <h1 style="color: red;">Locations</h1>
+                    <h2 class="text-white mb-4">Find a gym near you </h2>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main class="container">
 
@@ -50,39 +44,18 @@ include "nav.inc.php";
                             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WKqrR1eSDbEUGRTD6MtdDnTMbgEJcM8&ehbc=2E312F" width="100%" height="600" frameborder="0" style="border:0; margin-top: -60px;">
                             </iframe>
                         </div>
+                    </div>
                 </article>
-
-
-
             </div>
         </section>
-
-        <section class="location-row row">
-            <div class="container">
-                <div class="row-option">
-                    <form>
-                        <select class="custom-select">
-                            <option selected>All Classes</option>
-                            <option value="1">Upcoming</option>
-                            <option value="2">Zumba</option>
-                            <option value="3">Yoga</option>
-                            <option value="4">Gym</option>
-                        </select>
-                    </form>
-                </div>
-            </div>
-        </section>
-
 
 
         <div class="main-container">
-            <div class="grid-container">
-
-
+            <div class="grid-container row">
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitnew.jpg" />
+                            <img src="img/sitnew.jpg" alt="new campus"/>
                             <div id="clockdiv">
                                 <div>
                                     <span class="days"></span>
@@ -103,7 +76,7 @@ include "nav.inc.php";
                             </div>
 
                         </div>
-                        <div class="card__content padding-large">
+                        <div class="card__content padding-large" style="width:100%">
                             <h2>COMING SOON!</h2>
                             <div class="rowmap">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -113,7 +86,7 @@ include "nav.inc.php";
                             <p>SIT @ PUNGGOL</p>
                             <p>Reimagining Education as an Applied Learning University</p>
                             <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
-                                <div class="card__button">Find Out More</div>
+                                <div class="card__button btn-primary">Find Out More</div>
                             </a>
                         </div>
                     </div>
@@ -122,9 +95,9 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitnyp.jpg" />
+                            <img src="img/sitnyp.jpg" alt="sit nyp" />
                         </div>
-                        <div class="card__content padding-large">
+                        <div class="card__content padding-large" style="width:100%">
                             <h2>SIT @ NYP </h2>
                             <div class="rowmap">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -135,21 +108,17 @@ include "nav.inc.php";
                             <p>172A Ang Mo Kio Avenue 8, Singapore 567739
                                 (beside Blk Q of NYP campus)</p>
                             <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
-                                <div class="card__button">Find Out More</div>
+                                <div class="card__button  btn-primary">Find Out More</div>
                             </a>
                         </div>
                     </div>
                 </div>
-
-
-
-
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sittp.jpg" />
+                            <img src="img/sittp.jpg" alt="sit tp" />
                         </div>
-                        <div class="card__content padding-large">
+                        <div class="card__content padding-large" style="width:100%">
                             <h2>SIT @ TP </h2>
                             <div class="rowmap ">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -159,7 +128,7 @@ include "nav.inc.php";
                             </div>
                             <p>Temasek Polytechnic</p>
                             <p>Blk 29B Tampines Avenue 1, Singapore 528694</p>
-                            <div class="card__button">Find Out More</div>
+                            <div class="card__button  btn-primary">Find Out More</div>
                         </div>
                     </div>
                 </div>
@@ -167,9 +136,9 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitdover.jpg" />
+                            <img src="img/sitdover.jpg" alt="sit dover"/>
                         </div>
-                        <div class="card__content padding-large">
+                        <div class="card__content padding-large" style="width:100%">
                             <h2>SIT @ DOVER </h2>
                             <div class="JEeOWtm SEKXxkK">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -179,7 +148,7 @@ include "nav.inc.php";
                             <p>Main Campus</p>
                             <p>10 Dover Drive Singapore 138683</p>
 
-                            <div class="card__button">Find Out More</div>
+                            <div class="card__button  btn-primary">Find Out More</div>
                         </div>
                     </div>
                 </div>
@@ -187,9 +156,9 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitrp.jpg" alt="rp" />
+                            <img src="img/sitrp.jpg" alt="sit rp" />
                         </div>
-                        <div class="card__content padding-large">
+                        <div class="card__content padding-large" style="width:100%">
                             <h2>SIT @ RP </h2>
                             <div class="JEeOWtm SEKXxkK">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -203,7 +172,7 @@ include "nav.inc.php";
                             <p>Republic Polytechnic</p>
                             <p>Republic Polytechnic 43 Woodlands Avenue 9, Singapore 737729</p>
 
-                            <div class="card__button">Find Out More</div>
+                            <div class="card__button  btn-primary">Find Out More</div>
                         </div>
                     </div>
                 </div>
@@ -211,9 +180,9 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitsp.jpg" alt="sp" />
+                            <img src="img/sitsp.jpg" alt="sit sp" />
                         </div>
-                        <div class="card__content padding-large">
+                        <div class="card__content padding-large" style="width:100%">
                             <h2>SIT @ SP </h2>
                             <div class="JEeOWtm SEKXxkK">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -223,7 +192,7 @@ include "nav.inc.php";
                             <p>Singapore Polytechnic</p>
                             <p> 510 Dover Road, Singapore 139660</p>
 
-                            <div class="card__button">Find Out More</div>
+                            <div class="card__button  btn-primary">Find Out More</div>
                         </div>
                     </div>
                 </div>
@@ -231,9 +200,9 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitnp.jpg" alt="np" />
+                            <img src="img/sitnp.jpg" alt="sit np"/>
                         </div>
-                        <div class="card__content padding-large">
+                        <div class="card__content padding-large" style="width:100%">
                             <h2>SIT @ NP </h2>
                             <div class="JEeOWtm SEKXxkK">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
@@ -246,62 +215,27 @@ include "nav.inc.php";
                             <p>Ngee Ann Polytechnic</p>
                             <p> 537 Clementi Road, Singapore 599493</p>
 
-                            <div class="card__button">Find Out More</div>
+                            <div class="card__button  btn-primary">Find Out More</div>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
-
-
-
-
-
-
-
-
-
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <!--Bootstrap JS-->
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+    </script>
+    <script defer src="js/scripts.js"></script>
 
 </body>
+
 <?php
 include "footer.inc.php";
 ?>
-<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-</script>
-<!--Bootstrap JS-->
-<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
-</script>
-<script defer src="js/scripts.js"></script>
+
 
 
 </html>

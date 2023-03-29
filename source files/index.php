@@ -14,6 +14,7 @@ include "nav.inc.php";
 ?>
 
 <body>
+    <main>
     <section>
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -137,6 +138,7 @@ include "nav.inc.php";
                 </div>
             </div>
         </section>
+        </main>
 
         <?php
         include "footer.inc.php";

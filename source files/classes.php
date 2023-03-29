@@ -15,82 +15,83 @@ include "nav.inc.php";
 ?>
 
 <body>
-<section class="about-section text-center">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="text-white mb-4">Classes</h2>
-                <p class="text-white-50">
-                    Book your class shift now!
-                </p>
+    <header class="about-section text-center">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 ">
+                <div class="col-lg-8" style="text-align: left;">
+                    <h1 style="color: red;">Classes</h1>
+                    <h2 class="text-white mb-4">Book your class shift now! </h2>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-<div class="container text-center">
-    <div class="dropdowncontainer">
+    <main>
+        <div class="container text-center">
+            <div class="dropdowncontainer">
 
-        <div>
-            <label for="locationDropdown">Location:</label>
-            <select id="locationDropdown" onchange="filterTable()">
-                <option value="All">All</option>
-                <option value="Dover">Dover</option>
-                <option value="SP">SP</option>
-                <option value="NYP">NYP</option>
-                <option value="NP">NP</option>
-                <option value="TP">TP</option>
-                <option value="RP">RP</option>
-            </select>
+                <div>
+                    <label for="locationDropdown">Location:</label>
+                    <select id="locationDropdown" onchange="filterTable()">
+                        <option value="All">All</option>
+                        <option value="Dover">Dover</option>
+                        <option value="SP">SP</option>
+                        <option value="NYP">NYP</option>
+                        <option value="NP">NP</option>
+                        <option value="TP">TP</option>
+                        <option value="RP">RP</option>
+                    </select>
 
-            <label for="classDropdown">Class:</label>
-            <select id="classDropdown" onchange="filterTable()">
-                <option value="All">All</option>
-                <option value="YOGA">YOGA</option>
-                <option value="ZUMBA">ZUMBA</option>
-                <option value="GYM">GYM</option>
-                <option value="SPIN Class">SPIN Class</option>
-                <option value="SWIM">SWIM</option>
-            </select>
+                    <label for="classDropdown">Class:</label>
+                    <select id="classDropdown" onchange="filterTable()">
+                        <option value="All">All</option>
+                        <option value="YOGA">YOGA</option>
+                        <option value="ZUMBA">ZUMBA</option>
+                        <option value="GYM">GYM</option>
+                        <option value="SPIN Class">SPIN Class</option>
+                        <option value="SWIM">SWIM</option>
+                    </select>
+                </div>
+            </div>
+
+            <h2 class="py-3 my-3">All Available Classes</h2>
+            <a class="btn btn-secondary mt-3 mb-3" href="booking.php">Book Now!</a>
+            <div class="mb-5" style="overflow-x:auto;">
+                <?php
+                $timeslot = $duration = $class = $instructor = $location = $errorMsg = "";
+                $success = true;
+                // Create database connection.
+                $config = parse_ini_file('../../private/db-config.ini');
+                $conn = new mysqli($config['servername'], $config['username'],
+                    $config['password'], $config['dbname']);
+                // Check connection
+                if ($conn->connect_error) {
+                    $errorMsg = "Connection failed: " . $conn->connect_error;
+                    $success = false;
+                }
+                // Prepare the statement:
+                $sql = "SELECT timeslot, duration, class, instructor, location FROM webproject5.timetable";
+                $result = $conn->query($sql);
+                // Bind & execute the query statement:
+                if ($result->num_rows > 0) {
+                    echo "<table><tr><th>Time Slot</th><th>Duration</th><th>Class</th><th>Instructor</th><th>Location</th></tr>";
+                    //output data of each row
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<tr data-location=\"" . $row["location"] . "\" data-class=\"" . $row["class"] . "\">";
+                        echo "<td>" . $row["timeslot"] . "</td><td>" . $row["duration"] . "</td><td>" . $row["class"] . "</td><td>" . $row["instructor"] . "</td><td>" . $row["location"] . "</td>";
+                        echo "</tr>";
+                    }
+                    echo "</table>";
+                } else {
+                    echo '0 results';
+                }
+
+                $conn->close();
+                ?>
+            </div>
         </div>
-    </div>
+    </main>
 
-    <h2 class="py-3 my-3">All Available Classes</h2>
-    <a class="btn btn-secondary mt-3 mb-3" href="booking.php">Book Now!</a>
-    <div class="mb-5" style="overflow-x:auto;">
-        <?php
-        $timeslot = $duration = $class = $instructor = $location = $errorMsg = "";
-        $success = true;
-        // Create database connection.
-        $config = parse_ini_file('../../private/db-config.ini');
-        $conn = new mysqli($config['servername'], $config['username'],
-            $config['password'], $config['dbname']);
-        // Check connection
-        if ($conn->connect_error) {
-            $errorMsg = "Connection failed: " . $conn->connect_error;
-            $success = false;
-        }
-        // Prepare the statement:
-        $sql = "SELECT timeslot, duration, class, instructor, location FROM webproject5.timetable";
-        $result = $conn->query($sql);
-        // Bind & execute the query statement:
-        if ($result->num_rows > 0) {
-            echo "<table><tr><th>Time Slot</th><th>Duration</th><th>Class</th><th>Instructor</th><th>Location</th></tr>";
-            //output data of each row
-            while ($row = $result->fetch_assoc()) {
-                echo "<tr data-location=\"" . $row["location"] . "\" data-class=\"" . $row["class"] . "\">";
-                echo "<td>" . $row["timeslot"] . "</td><td>" . $row["duration"] . "</td><td>" . $row["class"] . "</td><td>" . $row["instructor"] . "</td><td>" . $row["location"] . "</td>";
-                echo "</tr>";
-            }
-            echo "</table>";
-        } else {
-            echo '0 results';
-        }
-
-        $conn->close();
-        ?>
-    </div>
-</div>
 <?php
 include "footer.inc.php";
 ?>

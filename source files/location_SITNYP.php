@@ -37,114 +37,78 @@ include "nav.inc.php";
         </div>
     </header>
 
+    <main>
+        <div class="container">
 
-
-
-    <div class="container">
-
-        <!-- Picture -->
-        <div class="row">
-            <img src="img/gym-bg.jpg" alt="..." >
-        </div>
-        <!-- Information -->
-        <div class="row" style= "padding-top: 5rem">
-            <div class="col-sm-4 text-center">
-                <div>
-                <p> Operating Hours</p></div>
-                <div>
-                <p> Monday-Friday: 9:00am - 9:00pm</p></div>
-                <div>
-                <p> Saturday: 9:00am - 10:00pm</p></div>
-                <div>
-                <p> Sunday: 9:00am - 5:00pm</p></div>
-            </div>
-
-            <div class="col-sm-4 text-center">
-                <div>
-                <p> Contact Us</p></div>
-                <div>
-                <p> Telephone: 6543 2109</p></div>  
-                <div>
-                <p> Email: Nyp@sitgym.com</p></div>             
-            </div>
-
-            <div class="col-sm-4 text-center">
-                <a class="btn btn-secondary mt-3 mb-3" href="classes.php">View timetable</a>
-            </div>
-
-        </div>
-
-        <div class="row" style="padding-top:5rem; padding-bottom:5rem">
+            <!-- Picture -->
             <div class="row">
-                <div>
-                    <h3> Classes offered</h3></div>
+                <img src="img/gym-bg.jpg" alt="..." >
+            </div>
+            <!-- Information -->
+            <div class="row" style= "padding-top: 5rem">
+                <div class="col-sm-4 text-center">
+                    <div>
+                    <p> Operating Hours</p></div>
+                    <div>
+                    <p> Monday-Friday: 9:00am - 9:00pm</p></div>
+                    <div>
+                    <p> Saturday: 9:00am - 10:00pm</p></div>
+                    <div>
+                    <p> Sunday: 9:00am - 5:00pm</p></div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4 text-center">
-                        <div>
-                        <p> Yoga</p> <img src="img/yoga.jpg" alt="..." class="img-fluid"></div> 
 
-                    </div>
-                    <div class="col-sm-4 text-center">
-                        <div>
-                        <p> Zumba</p><img src="img/zumba.jpg" alt="..." class="img-fluid"></div> 
-                    </div>
-                    <div class="col-sm-4 text-center">
-                        <div>
-                        <p> Gym</p><img src="img/gym.jpg" alt="..." class="img-fluid"></div> 
+                <div class="col-sm-4 text-center">
+                    <div>
+                    <p> Contact Us</p></div>
+                    <div>
+                    <p> Telephone: 6543 2109</p></div>  
+                    <div>
+                    <p> Email: Nyp@sitgym.com</p></div>             
                 </div>
+
+                <div class="col-sm-4 text-center">
+                    <a class="btn btn-secondary mt-3 mb-3" href="classes.php">View timetable</a>
+                </div>
+
+            </div>
+
+            <div class="row" style="padding-top:5rem; padding-bottom:5rem">
                 <div class="row">
-                    <a class="btn btn-secondary mt-3 mb-3" href="explore.php">Explore classes</a>
+                    <div>
+                        <h2> Classes offered</h3></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 text-center">
+                            <div>
+                            <p> Yoga</p> <img src="img/yoga.jpg" alt="..." class="img-fluid"></div> 
+
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div>
+                            <p> Zumba</p><img src="img/zumba.jpg" alt="..." class="img-fluid"></div> 
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div>
+                            <p> Gym</p><img src="img/gym.jpg" alt="..." class="img-fluid"></div> 
+                    </div>
+                    <div class="row">
+                        <a class="btn btn-secondary mt-3 mb-3" href="explore.php">Explore classes</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- JQuery -->
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <!--Bootstrap JS-->
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+    </script>
+    <script defer src="js/scripts.js"></script>
 </body>
+
 <?php
 include "footer.inc.php";
 ?>
-<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-</script>
-<!--Bootstrap JS-->
-<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
-</script>
-<script defer src="js/scripts.js"></script>
-
 
 </html>
