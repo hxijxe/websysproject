@@ -75,8 +75,8 @@ include "nav.inc.php";
                                 </div>
                             </div>
 
-                        </div>
-                        <div class="card__content padding-large" style="width:100%">
+                            </div>
+                            <div class="card__content padding-large" style="width:100%">
                             <h2>COMING SOON!</h2>
                             <div class="rowmap">
                                 <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
