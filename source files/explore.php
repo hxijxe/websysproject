@@ -113,8 +113,8 @@
 
 
                     <div class="w3-card-4" style="width:80%">
-                        <img src="img/cycle.jpg" alt="cycle" style="width:100%">
                         <h2>Cycle Burn</h2>
+                        <img src="img/cycle.jpg" alt="cycle" style="width:100%">
                         <div class="w3-container w3-center">
                             <p>Spin classes offer a variety of benefits for physical and mental health. 
                                 They provide a low-impact cardiovascular workout that can improve endurance, burn calories, 
