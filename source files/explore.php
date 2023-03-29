@@ -44,16 +44,16 @@
                                 strength, balance, reduce stress and anxiety, 
                                 and promote overall health and wellness.</p>
                             <p><a href="classes.php">Book Now!</a></p>
-                            <p><a class="btn btn-secondary mt-3 mb-3" id="myBtn">Learn More!</a></p>
+                            <p><button class="btn btn-secondary mt-3 mb-3" id="myBtnYoga">Learn More!</button></p>
                         </div>
                     </div>
                     <!-- The Modal -->
-                    <div id="myModal" class="exploremodal">
+                    <div id="myModalYoga" class="exploremodal">
 
                         <!-- Modal content -->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <span class="close" >&times;</span>
+                                <span class="closeYoga" >&times;</span>
                                 <h2>Yoga</h2>
                             </div>
                             <div class="modal-body">
@@ -86,10 +86,9 @@
                                 It also helps to burn calories and reduce stress, anxiety, and depression. 
                                 Zumba classes provide a social atmosphere that can increase motivation and make exercise more enjoyable.</p>
                             <p><a href="classes.php">Book Now!</a></p>
-                            
+                            <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=mZeFvX3ALKY'" target="_blank">Learn More!</a></p>
                         </div>
                     </div>
-                
                 </div>
 
                 <div class="w3-container">
@@ -105,6 +104,7 @@
                                 and improve body composition by reducing body fat and increasing lean muscle tissue. 
                                 Additionally, weight training can improve mental health by reducing stress and anxiety.</p>
                             <p><a href="classes.php">Book Now!</a></p>
+                            <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=zxDqvJoaR2c'" target="_blank">Learn More!</a></p>
                         </div>
                     </div>
                 </div>
@@ -122,6 +122,7 @@
                                 and reduce the risk of injury. 
                                 They provide a fun and social atmosphere that can increase motivation and reduce stress.</p>
                             <p><a href="classes.php">Book Now!</a></p>
+                            <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=CsF-bpdNJvA'" target="_blank">Learn More!</a></p>
                         </div>
                     </div>
                 </div>
@@ -138,7 +139,7 @@
                                 Swimming is also a great stress-reliever, promoting relaxation and reducing anxiety. 
                                 Additionally, it is a great exercise option for people of all ages and fitness levels.</p>
                             <p><a href="classes.php">Book Now!</a></p>
-
+                            <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=NFtknwZZh5o'" target="_blank">Learn More!</a></p>
                         </div>
                     </div>
                 </div>
