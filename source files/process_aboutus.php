@@ -62,7 +62,7 @@
                 echo "<div style= 'padding-bottom: 5rem; padding-top: 5rem'>";
                 echo "<h1 ;>feedback submitted successfully!</h1>";
                 echo "<h2>Thank you for your feedback, $name</h2>";
-                echo "<form action='index.php method='post' style= 'padding-top: 10rem'><button class='btn btn-success btn-lg'>Back to Home</button></form>";
+                echo "<form action='index.php' style= 'padding-top: 10rem'><button class='btn btn-success btn-lg'>Back to Home</button></form>";
                 echo "</div>";
             }   
             else
@@ -99,10 +99,10 @@
                     $name = $_POST["name"];
                     $email = $_POST["email"];
                     $feedback = $_POST["feedback"];
-                    // $stmt = $conn->prepare("INSERT INTO webproject5.feedback (name, email, className, date, timeslot, instructor) VALUES (?, ?, ?, ?, ?, ?)");
+                    $stmt = $conn->prepare("INSERT INTO webproject5.feedback (name, email, feedback) VALUES (?, ?, ?)");
 
 // Bind & execute the query statement:
-                    $stmt->bind_param("ssssss", $name, $email, $feedback);
+                    $stmt->bind_param("sss", $name, $email, $feedback);
                     if (!$stmt->execute()) {
                         $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
                         $success = false;
