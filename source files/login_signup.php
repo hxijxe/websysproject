@@ -104,7 +104,7 @@ include "nav.inc.php";
                         </div>
                         <button type="submit">Login</button>
                         <p>
-                            <a href="admin_login.php">Admin Login</a>
+                            <a href="adminlogin.php">Admin Login</a>
                         </p>
                         <!-- Login using social media -->
                         <span>or use your account</span>
@@ -130,7 +130,7 @@ include "nav.inc.php";
                             <p>Have an account? <br> Click here to login.</p>
                             <p>
                                 For admin login
-                                <a href="admin_login.php">Admin page</a>.
+                                <a href="adminlogin.php">Admin page</a>.
                             </p>
                             <button class="ghost" id="login">Login<i class="lni lni-arrow-left login"></i>
                             </button>

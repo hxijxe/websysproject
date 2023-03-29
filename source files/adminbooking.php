@@ -81,57 +81,6 @@ include "nav.inc.php";
             $conn->close();
         }
 
-        // Start with PHPMailer class
-        use PHPMailer\PHPMailer\PHPMailer;
-        use PHPMailer\PHPMailer\Exception;
-
-        function sendMail($word, $email, $name, $date, $pax)
-        {
-            require 'vendor/autoload.php';
-            // create a new object
-            $mail = new PHPMailer();
-            try {
-                $mail->SMTPDebug = 2;
-                $mail->isSMTP();
-                $mail->SMTPDebug = 0;
-                $mail->Host       = 'smtp.gmail.com;';
-                $mail->SMTPAuth   = true;
-                $mail->Username   = 'inf1005projgg@gmail.com';
-                $mail->Password   = 'sglaenqyimrrdjxw';
-                $mail->SMTPSecure = 'tls';
-                $mail->Port       = 587;
-                //sender
-                $mail->setFrom('inf1005projgg@gmail.com');
-                //receipient   
-                $mail->addAddress($email);
-                $mail->Subject = 'Pork Island Restaurant Reservation';
-
-                //can check below link out to make a nicer email
-                // https://goocoder.com/phpmailer-with-html-template/
-                if ($word == "accepted") {
-                    //$mail->isHTML(true);                                 
-                    $mail->Body = "Hello " . $name . ",
-
-Your reservation on " . $date . " for " . $pax . " pax have been accepted. We look forward to serving you!
-If you would like to cancel your reservation, please head to http://35.208.243.155/team02/booking.php.
-
-Sincerely,
-Pork Island admin";
-                } else {
-                    $mail->Body = "Hello " . $name . ",
-
-Your reservation on " . $date . " for " . $pax . " pax have been declined. We seek your understanding and look forward to having you around soon!
-If you would like to make another reservation, please kindly head over to http://35.208.243.155/team02/booking.php or http://35.208.243.155/team02/events.php for events booking.
-                
-Sincerely,
-Pork Island admin";
-                }
-                $mail->send();
-                echo "done" . $pax . " pax";
-            } catch (Exception $e) {
-                echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}. <br> Please contact us.";
-            }
-        }
 
         function retrieveDB()
         {
