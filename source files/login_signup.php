@@ -33,17 +33,15 @@ include "nav.inc.php";
                         <input type="password" class="form-control" id="pwd_confirm" required minlength="8" name="pwd_confirm" placeholder="Confirm password">
 
                         <div class="membershipType">
-                            <input class="big" type="radio" id="basic" name="basic" value="Basic" />
-                            <label class="">Basic</label>
-                            <input class="big" type="radio" id="silver" name="silver" value="silver" />
-                            <label class="">Silver</label>
-                            <input class="big" type="radio" id="gold" name="gold" value="gold" />
-                            <label class="">Gold</label>
+                            <input class="big" type="radio" id="basic" name="membership" value="Basic" />
+                            <label for="basic">Basic</label>
+
+                            <input class="big" type="radio" id="silver" name="membership" value="Silver" />
+                            <label for="silver">Silver</label>
+
+                            <input class="big" type="radio" id="gold" name="membership" value="Gold" />
+                            <label for="gold">Gold</label>
                         </div>
-
-                        <!--radio button on membership type-->
-
-
 
                         <!-- Register button -->
                         <button type="submit">Register</button>

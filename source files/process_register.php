@@ -120,9 +120,9 @@
                     $success = false;
                 } else {
                     // Prepare the statement:
-                    $stmt = $conn->prepare("INSERT INTO webproject5.members (fname, lname, email, password) VALUES (?, ?, ?, ?)");
+                    $stmt = $conn->prepare("INSERT INTO webproject5.members (fname, lname, email, password, tier) VALUES (?, ?, ?, ?, ?)");
                     // Bind & execute the query statement:
-                    $stmt->bind_param("ssss", $fname, $lname, $email, $pwd_hashed);
+                    $stmt->bind_param("sssss", $fname, $lname, $email, $pwd_hashed, $_POST['membership']);
                     if (!$stmt->execute()) {
                         $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
                         $success = false;
