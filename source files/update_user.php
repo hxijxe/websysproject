@@ -24,10 +24,9 @@ include "nav.inc.php";
         </div>
     </div>
 </header>
-<h1>Update Member</h1>
 <?php
 // Initialize variables
-$fname = $lname = $errorMsg = "";
+$fname = $lname = $tier = $errorMsg = "";
 $success = true;
 
 // Check if form was submitted
@@ -36,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $member_id = $_POST["member_id"];
     $fname = $_POST["fname"];
     $lname = $_POST["lname"];
+    $tier = $_POST['tier'];
 
     // Create database connection
     $config = parse_ini_file('../../private/db-config.ini');
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $success = false;
     } else {
         // Update member data in SQL table
-        $query = "UPDATE webproject5.members SET fname='$fname', lname='$lname' WHERE member_id='$member_id'";
+        $query = "UPDATE webproject5.members SET fname='$fname', lname='$lname', tier='$tier', WHERE member_id='$member_id'";
         if (mysqli_query($conn, $query)) {
             $errorMsg = "Member data updated successfully";
             echo "<script>alert('$errorMsg'); window.location.href='profile.php';</script>";
@@ -70,6 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set input values to current member data
     $fname = $row["fname"];
     $lname = $row["lname"];
+    $tier = $row["tier"];
 }
 ?>
 <?php
@@ -78,14 +79,26 @@ if (!$success) {
     echo "<p>Error: $errorMsg</p>";
 }
 ?>
+<div class="bookingform">
+    <h2>Update Member</h2>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
     <input type="hidden" name="member_id" value="<?php echo $member_id; ?>">
     <label for="fname">First Name:</label>
     <input type="text" name="fname" value="<?php echo $fname; ?>"><br>
     <label for="lname">Last Name:</label>
     <input type="text" name="lname" value="<?php echo $lname; ?>"><br>
-    <input type="submit" value="Update">
+
+    <label for="tier">Tier:</label>
+    <input class="big" type="radio" id="basic" name="membership" value="Basic" />
+    <label for="basic">Basic</label>
+
+    <input class="big" type="radio" id="silver" name="membership" value="Silver" />
+    <label for="silver">Silver</label>
+
+    <input class="big" type="radio" id="gold" name="membership" value="Gold" />
+    <label for="gold">Gold</label>
 </form>
+</div>
 </body>
 <?php
 include "footer.inc.php";
