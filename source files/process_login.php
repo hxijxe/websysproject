@@ -32,7 +32,31 @@
                  $success = false;
              }
             }
-            authenticateUser();
+
+            // Password validation
+            if (empty($_POST["pwd"])) {
+                $errorMsg .= "Password is required.<br>";
+                $success = false;
+            } else {
+                $pwd = sanitize_input($_POST["pwd"]);
+            }
+
+//            // When the user logs in with "remember me" checked
+//            if (isset($_POST['checkbox'])) {
+//                // Set a cookie with the user's email and password
+//                setcookie('email', $email, time() + (86400 * 30), '/');  // Cookie expires in 30 days
+//                setcookie('password', $pwd, time() + (86400 * 30), '/');  // Cookie expires in 30 days
+//            }
+//
+//            // When the user visits the site in the future
+//            if (isset($_COOKIE['email']) && isset($_COOKIE['password'])) {
+//                // Automatically log the user in using the stored credentials
+//                $email = $_COOKIE['email'];
+//                $pwd = $_COOKIE['password'];
+//                // Check if the credentials are valid and log the user in
+                authenticateUser();
+//            }
+
             //Display the message
             if ($success) {
                 echo "<section class='about-section text-center'>
@@ -117,7 +141,7 @@
                         $pwd_hashed = $row["password"];
 
                         // storing user information in a session
-                        session_start();
+//                        session_start();
                         $_SESSION['fname'] = $fname;
                         $_SESSION['lname'] = $lname;
                         $_SESSION['email'] = $email;
