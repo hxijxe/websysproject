@@ -35,9 +35,9 @@
       font-weight: 100;
       text-align: center;
       font-size: 30px;
-      position: absolute;
-      top: 50%;
-      left: 24%;
+      position: relative;
+      /*top: 50%;*/
+      /*left: 24%;*/
       transform: translate(-50%, -43%);
      
       
@@ -62,3 +62,21 @@
     font-size: 16px;
     
   }
+
+/* media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .upcoming {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .details {
+        margin-right: 0;
+    }
+
+    #clockdiv {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
+}

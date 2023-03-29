@@ -55,7 +55,7 @@ include "nav.inc.php";
                 <div class="card card--featured">
                     <div class="card__side-by-side--m">
                         <div class="card__image">
-                            <img src="img/sitnew.jpg" alt="new campus"/>
+                            <img src="img/sitnew.jpg" width="460" height="345" alt="new campus"/>
                             <div id="clockdiv">
                                 <div>
                                     <span class="days"></span>
