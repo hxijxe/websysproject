@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
 <?php
 include "nav.inc.php";
@@ -21,7 +22,7 @@ include "nav.inc.php";
             <!-- Register container -->
             <div class="container mt-5" id="container" style="min-height: 960px">
                 <div class="form-container register-container">
-                    <form action="process_register.php" method="post" novalidate>
+                    <form action="process_register.php" method="post">
                         <h1>Register</h1>
                         <!-- First name -->
                         <input type="text" class="form-control" id="fname" required maxlength="45" name="fname" placeholder="Enter first name">
@@ -31,9 +32,26 @@ include "nav.inc.php";
                         <input type="email" class="form-control" id="registeremail" required name="email" placeholder="Enter email">
                         <!-- Password -->
                         <input type="password" class="form-control" id="registerpwd" required minlength="8" name="pwd" placeholder="Enter password">
+                        <!--Password validation checker-->
+                        <section class="password-validation">
+                            <div class="icon">
+                                <i class='show bx bx-show hide'></i>
+                                <i class='slash bx bx-hide'></i>
+                            </div>
+                            <div class="valid-checks hide">
+                                <ul class="checklist">
+                                    <li class="a"><i class='bx bx-check' ></i>Lowercase letter</li>
+                                    <li><i class='bx bx-check' ></i>Uppercase letter</li>
+                                    <li><i class='bx bx-check' ></i>Number</li>
+                                    <li><i class='bx bx-check' ></i>At least 8 characters</li>
+                                </ul>
+                            </div>
+                        </section>
+
                         <!-- Confirm password -->
                         <input type="password" class="form-control" id="pwd_confirm" required minlength="8" name="pwd_confirm" placeholder="Confirm password">
 
+                        <!--membership type-->
                         <div class="membershipType">
                             <input class="big" type="radio" id="basic" name="membership" value="Basic" />
                             <label for="basic">Basic</label>
