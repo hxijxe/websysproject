@@ -14,16 +14,16 @@ include "nav.inc.php";
 ?>
 
 <body>
-  <header class="about-section text-center">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 ">
-                <div class="col-lg-8" style="text-align: left;">
-                    <h1 style="color: red;">Blog</h1>
-                    <h2 class="text-white mb-4">Stay up to date with the current fitness scene. </h2>
-                </div>
+<header class="about-section text-center">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 ">
+            <div class="col-lg-8" style="text-align: left;">
+                <h1 style="color: red;">Blog</h1>
+                <h2 class="text-white mb-4">Stay up to date with the current fitness scene.</h2>
             </div>
         </div>
-  </header>
+    </div>
+</header>
 
   <main>
     <div class="album py-5 bg-light">

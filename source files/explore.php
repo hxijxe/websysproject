@@ -15,21 +15,16 @@
     ?>
 
     <body>
-        <header class="about-section text-center">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h1 class="text-red mb-4">Let's move together</h1>
-                        <p class="text-white-50">
-                            SIT Gym offers a unique approach to health and fitness.
-                            Our exercise experiences are thoughtfully designed to incorporate intelligent programming and enjoyable movements,
-                            resulting in a harmonious blend of both. Our offerings are diverse, ranging from yoga to HIIT,
-                            giving you the freedom to move your body in the way that suits you best.
-                        </p>
-                    </div>
+    <header class="about-section text-center">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 ">
+                <div class="col-lg-8" style="text-align: left;">
+                    <h1 style="color: red;">Explore</h1>
+                    <h2 class="text-white mb-4">Find out more about activities here!</h2>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
         <main>
             <section class="card">

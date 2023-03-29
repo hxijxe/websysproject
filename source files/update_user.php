@@ -29,13 +29,53 @@ include "nav.inc.php";
 $fname = $lname = $tier = $errorMsg = "";
 $success = true;
 
+function sanitize_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+
 // Check if form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get input values
     $member_id = $_POST["member_id"];
     $fname = $_POST["fname"];
     $lname = $_POST["lname"];
+    $email = $_POST["email"];
     $tier = $_POST["tier"];
+
+    // check email
+    if (empty($_POST["email"])) {
+        $errorMsg .= "Email is required.<br>";
+        $success = false;
+    } else {
+        $email = sanitize_input($_POST["email"]);
+        // Additional check to make sure e-mail address is well-formed.
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $errorMsg .= "Invalid email format.<br>";
+            $success = false;
+        }
+    }
+
+// check name
+    if (empty($_POST["lname"])) {
+        $errorMsg .= "Name is required.<br>";
+        $success = false;
+    } else {
+        $lname = sanitize_input($_POST["lname"]);
+    }
+
+    if (!empty($_POST["fname"])) {
+        $fname = sanitize_input($_POST["fname"]);
+    }
+    if (empty($_POST["tier"])) {
+        $errorMsg .= "tier is required.<br>";
+        $success = false;
+    }else {
+        $tier = sanitize_input($_POST["tier"]);
+    }
 
     // Create database connection
     $config = parse_ini_file('../../private/db-config.ini');
@@ -47,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $success = false;
     } else {
         // Update member data in SQL table
-        $query = "UPDATE webproject5.members SET fname='$fname', lname='$lname', tier='$tier' WHERE member_id='$member_id'";
+        $query = "UPDATE webproject5.members SET fname='$fname', lname='$lname', email='$email', tier='$tier' WHERE member_id='$member_id'";
         if (mysqli_query($conn, $query)) {
             $errorMsg = "Member data updated successfully";
             echo "<script>alert('$errorMsg'); window.location.href='profile.php';</script>";
@@ -70,6 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set input values to current member data
     $fname = $row["fname"];
     $lname = $row["lname"];
+    $email = $row["email"];
     $tier = $row["tier"];
 }
 ?>
@@ -87,6 +128,9 @@ if (!$success) {
     <input type="text" name="fname" value="<?php echo $fname; ?>"><br>
     <label for="lname">Last Name:</label>
     <input type="text" name="lname" value="<?php echo $lname; ?>"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" value="<?php echo $email; ?>"><br>
 
     <label for="tier">Tier:</label>
     <input class="big" type="radio" id="basic" name="tier" value="Basic" />

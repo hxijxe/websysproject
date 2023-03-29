@@ -51,7 +51,7 @@
 
             // check name
             if (empty($_POST["lname"])) {
-                $errorMsg .= "Password is required.<br>";
+                $errorMsg .= "Last name is required.<br>";
                 $success = false;
             } else {
                 $lname = sanitize_input($_POST["lname"]);
