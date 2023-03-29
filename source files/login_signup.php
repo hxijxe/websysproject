@@ -78,7 +78,7 @@
                     <!-- Forget password -->
                     <div class="content">
                         <div class="pass-link">
-                        <a href="#">Forgot password?</a>
+                        <a href="forgot_password.php">Forgot password?</a>
                         </div>  
                     </div>
                     <button type="submit">Login</button>
