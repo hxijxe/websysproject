@@ -38,12 +38,13 @@ include "nav.inc.php";
                         <th>First Name</th>
                         <th>Last name</th>
                         <th>Email</th>
+                        <th>Tier</th>
                         <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php
-                    $fname = $lanme = $email = $errorMsg = "";
+                    $fname = $lanme = $email = $tier = $errorMsg = "";
                     $success = true;
                     // Create database connection.
                     $config = parse_ini_file('../../private/db-config.ini');
@@ -66,7 +67,8 @@ include "nav.inc.php";
                         echo "<td>" . $row['fname'] . "</td>";
                         echo "<td>" . $row['lname'] . "</td>";
                         echo "<td>" . $row['email'] . "</td>";
-                        echo "<td><button onclick=\"location.href='update_user.php?member_id=" . $row['member_id'] . "'\">Update</button></td>";
+                        echo "<td>" . $row['tier'] . "</td>";
+                        echo '<td><a class="btn btn-secondary mt-3 mb-3" href="update_user.php?member_id=' . $row['member_id'] . '">Update</a></td>';
                         echo "</tr>";
                     }
                     ?>
@@ -88,7 +90,7 @@ include "nav.inc.php";
                         <th>date</th>
                         <th>timeslot</th>
                         <th>instructor</th>
-                        <th>action</th>
+                        <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -122,7 +124,7 @@ include "nav.inc.php";
                         echo "<td>" . $row['date'] . "</td>";
                         echo "<td>" . $row['timeslot'] . "</td>";
                         echo "<td>" . $row['instructor'] . "</td>";
-                        echo "<td><button onclick=\"deleteRow('" . $row['booking_id'] . "')\">Delete</button></td>";
+                        echo '<td><a class="btn btn-secondary mt-3 mb-3" href="#" onclick="deleteRow(\'' . $row['booking_id'] . '\')">Delete</a></td>';
                         echo "</tr>";
                     }
                     ?>

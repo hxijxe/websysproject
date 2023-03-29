@@ -48,7 +48,7 @@
                                 Regular practice of yoga can improve flexibility,
                                 strength, balance, reduce stress and anxiety, 
                                 and promote overall health and wellness.</p>
-                            <p><a href="xclasses.php">Book Now!</a></p>
+                            <p><a href="classes.php">Book Now!</a></p>
                             <p><a class="btn btn-secondary mt-3 mb-3" id="myBtn">Learn More!</a></p>
                         </div>
                     </div>
