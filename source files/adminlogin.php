@@ -23,8 +23,8 @@ include "nav.inc.php";
             <form>
                 <h2>Admin Login</h2>
 
-                <label for="username"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" required>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
 
                 <label for="password"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="password" required>
@@ -38,7 +38,7 @@ include "nav.inc.php";
         $success = 0;
         if ($success = 0) {
             $email = "";
-            $pwd  = "";
+            $password  = "";
             $errorMsg = "";
         }
 
@@ -72,8 +72,8 @@ include "nav.inc.php";
                     $row = mysqli_fetch_assoc($result);
 
                     $email = sanitize_input($_POST['email']);
-                    $pwd = $_POST['pwd'];
-                    if ($email == $row['email'] && $pwd == $row['password']) {
+                    $password = $_POST['pwd'];
+                    if ($email == $row['email'] && $password == $row['password']) {
                         $success = 1;
                         header("Location:admindashboard.php");
                         exit;
