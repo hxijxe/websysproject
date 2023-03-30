@@ -322,48 +322,47 @@
   transition: .2s;
 }
 
+.password-validation .icon {
+  margin-right: 10px;
+}
+
 .password-validation .icon i {
-  color: #ED1C25;
-  line-height: 45px;
-  font-size: 25px;
-  position: absolute;
-  right: 22px;
-  top: 263px
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.password-validation .icon i.show:hover {
+  color: var(--primary-color);
+}
+
+.password-validation .icon i.hide:hover {
+  color: var(--primary-color);
 }
 
 .password-validation .valid-checks {
-  margin: 20px 0;
-  padding: 20px 25px;
-  background-color: black;
-  border-radius: 25px;
-  transition: .2s ease;
-  opacity: 1;
+  margin-left: 10px;
 }
 
 .password-validation .valid-checks ul {
-  list-style-type: none;
+  list-style: none;
+  padding-left: 0;
 }
 
 .password-validation .valid-checks li {
-  position: relative;
-  font-size: 15px;
-  font-weight: 300;
-  margin: 8px 0;
-  color:  #ED1C25;
-  transition: .2s ease;
-}
-.password-validation .valid-checks li i{
-  font-size: 20px;
-  margin-right: 8px;
-}
-.password-validation .valid-checks li.checked {
-  color: white;
-  font-weight: 500;
+  margin-bottom: 5px;
+  color: var(--secondary-color);
 }
 
-.password-validation .hide {
-  opacity: 0;
-  visibility:hidden;
+.password-validation .valid-checks li .bx-check {
+  color: var(--primary-color);
+}
+
+.password-validation .valid-checks li.invalid {
+  color: red;
+}
+
+.password-validation .valid-checks.hidden {
+  display: none;
 }
 
 .membershipType {
@@ -382,3 +381,11 @@
 .membershipType input[type="radio"] {
   margin-right: 5px;
 }
+
+.password-validation {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: var(--font-size);
+}
+
