@@ -26,10 +26,10 @@ include "nav.inc.php";
                 <div class="col-lg-8" style="text-align: left;">
                     <h1 style="color: red;">Locations</h1>
                     <h2 class="text-white mb-4">SIT @ NYP </h2>
-                    <p class="text-white mb-4">172 Ang Mo Kio Ave 8, Singapore 567739</p>
+                    <address class="text-white mb-4">172 Ang Mo Kio Ave 8, Singapore 567739</address>
                     <div class="rowmap">
-                                    <a href="https://goo.gl/maps/GTgQQDEU93pAnhkP6" class="RX4Lf26" target="_blank" rel="noreferrer">
-                                        <p class="kD9RoPu">View on map</p>
+                                    <a href="https://goo.gl/maps/GTgQQDEU93pAnhkP6" class="view-map" target="_blank" rel="noreferrer">
+                                        <p class="text-white">View on map</p>
                                     </a>
                                 </div>
                 </div>
@@ -48,7 +48,7 @@ include "nav.inc.php";
             <div class="row" style= "padding-top: 5rem">
                 <div class="col-sm-4 text-center">
                     <div>
-                    <p> Operating Hours</p></div>
+                    <h3> Operating Hours</h3></div>
                     <div>
                     <p> Monday-Friday: 9:00am - 9:00pm</p></div>
                     <div>
@@ -59,11 +59,11 @@ include "nav.inc.php";
 
                 <div class="col-sm-4 text-center">
                     <div>
-                    <p> Contact Us</p></div>
+                    <h3> Contact Us</h3></div>
                     <div>
                     <p> Telephone: 6543 2109</p></div>  
                     <div>
-                    <p> Email: Nyp@sitgym.com</p></div>             
+                    <a href = "mailto: sitbookingresource@gmail.com">Email: sitbookingresource@gmail.com</a></div>             
                 </div>
 
                 <div class="col-sm-4 text-center">
@@ -80,16 +80,16 @@ include "nav.inc.php";
                     <div class="row">
                         <div class="col-sm-4 text-center">
                             <div>
-                            <p> Yoga</p> <img src="img/yoga.jpg" alt="..." class="img-fluid"></div> 
+                            <h3> Yoga</h3> <img src="img/yoga.jpg" alt="..." class="img-fluid"></div> 
 
                         </div>
                         <div class="col-sm-4 text-center">
                             <div>
-                            <p> Zumba</p><img src="img/zumba.jpg" alt="..." class="img-fluid"></div> 
+                            <h3> Zumba</h3><img src="img/zumba.jpg" alt="..." class="img-fluid"></div> 
                         </div>
                         <div class="col-sm-4 text-center">
                             <div>
-                            <p> Gym</p><img src="img/gym.jpg" alt="..." class="img-fluid"></div> 
+                            <h3> Gym</h3><img src="img/gym.jpg" alt="..." class="img-fluid"></div> 
                     </div>
                     <div class="row">
                         <a class="btn btn-secondary mt-3 mb-3" href="explore.php">Explore classes</a>

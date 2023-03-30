@@ -148,3 +148,7 @@
 		padding: 3.2rem;
 	}
 }
+
+.view-map p:hover{
+	text-decoration: underline;
+}
