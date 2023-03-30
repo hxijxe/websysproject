@@ -1,60 +1,3 @@
-<?php
-        $success = 0;
-        if ($success = 0) {
-            $email = "";
-            $password  = "";
-            $errorMsg = "";
-        }
-
-
-        //Helper function that checks input for malicious or unwanted content.
-        function sanitize_input($data)
-        {
-            $data = trim($data);
-            $data = stripslashes($data);
-            $data = htmlspecialchars($data);
-            return $data;
-        }
-
-        //check if form was submitted
-        if (isset($_POST['submit'])) {
-
-            // Create database connection.
-            $config = parse_ini_file('../../private/db-config.ini');
-            $conn = new mysqli($config['servername'], $config['username'], $config['password'], $config['dbname']);
-
-            // Check connection,
-            if ($conn->connect_error) {
-                $errorMsg = "Connection failed: " . $conn->connect_error;
-                echo '<script>alert(' . $errorMsg . ')</script>';
-                $success = false;
-            } else {
-                // Prepare the statement:
-                try {
-                    $sql = "SELECT * FROM webproject5.adminuser WHERE email=?";
-                    $result = $conn->query($sql);
-                    $row = mysqli_fetch_assoc($result);
-
-                    $email = sanitize_input($_POST['email']);
-                    $password = $_POST['password'];
-                    if ($email == $row['email'] && $password == $row['password']) {
-                        $success = 1;
-                        header("Location:admindashboard.php");
-                        exit;
-                    } else {
-                        $success = 2;
-                    }
-                } catch (Exception $ex) {
-                    echo '<script>alert(' . $ex . ')</script>';
-                }
-            }
-            $conn->close();
-        }
-        ?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,7 +20,7 @@ include "nav.inc.php";
 <body>
     <main id="adl">
         <div class="fcontainer">
-            <form action = "adminlogin.php" method="post">
+            <form action = "process_adminlogin.php" method="post">
                 <h2>Admin Login</h2>
 
                 <label for="email"><b>Email</b></label>
@@ -86,7 +29,7 @@ include "nav.inc.php";
                 <label for="password"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="password" required>
 
-                <button type="submit">Login</button>
+                <button type="submit" value="submit">Login</button>
             </form>
         </div>
 

@@ -36,7 +36,7 @@ include "nav.inc.php";
 
                 <h2 class="py-3 my-3">Add Classes</h2>
                 <div class="classform">
-                    <form action="processBooking.php" method="POST">
+                    <form action="process_addclass.php" method="POST">
                         <label for="location">Location</label>
                         <select id="location" name="location">
                             <option value="Dover">Dover</option>
@@ -54,8 +54,8 @@ include "nav.inc.php";
                         </select>
 
 
-                        <label for="className">Choose Class</label>
-                        <select id="className" name="className">
+                        <label for="class">Choose Class</label>
+                        <select id="class" name="class">
                             <option value="yoga">Yoga</option>
                             <option value="zumba">Zumba</option>
                             <option value="gym">GYM</option>
@@ -65,11 +65,11 @@ include "nav.inc.php";
 
                         <label for="timeslot">Choose your Time Slot</label>
                         <select id="timeslot" name="timeslot">
-                            <option value="7am-9am">7am-9am</option>
-                            <option value="10am-12pm">10am-12pm</option>
-                            <option value="1pm-3pm">1pm-3pm</option>
-                            <option value="4pm-5pm">4pm-5pm</option>
-                            <option value="6pm-8pm">6pm-8pm</option>
+                            <option value="7am">7am-9am</option>
+                            <option value="10am">10am-12pm</option>
+                            <option value="1pm">1pm-3pm</option>
+                            <option value="4pm">4pm-5pm</option>
+                            <option value="6pm">6pm-8pm</option>
                         </select>
 
                         <label for="instructor">Choose your instructor</label>
@@ -81,109 +81,10 @@ include "nav.inc.php";
                             <option value="jack">Mr Jack</option>
                         </select>
 
-                        <!-- <input type="submit" value="Submit"> -->
-                        <button class="btn btn-secondary mt-3 mb-3" type="submit">Make Changes</button>
+<!--                         <input type="submit" value="Submit">-->
+                        <button class="btn btn-secondary mt-3 mb-3" type="submit" value="submit">Add Class</button>
                     </form>
-                    <?php
-                    $timeslot = $duration = $class = $instructor = $location = $errorMsg = "";
-                    $success = true;
 
-                    //Helper function that checks input for malicious or unwanted content.
-                    function sanitize_input($data)
-                    {
-                        $data = trim($data);
-                        $data = stripslashes($data);
-                        $data = htmlspecialchars($data);
-                        return $data;
-                    }
-
-                    // check email
-                    if (empty($_POST["timeslot"])) {
-                        $errorMsg .= "timeslot is required.<br>";
-                        $success = false;
-                    }
-                    // } else {
-                    //     $timeslot = sanitize_input($_POST["email"]);
-                    // }
-
-
-                    // check name
-                    if (empty($_POST["duration"])) {
-                        $errorMsg .= "Duration is required.<br>";
-                        $success = false;
-                    }
-                    // } else {
-                    //     $name = sanitize_input($_POST["timeslot"]);
-                    // }
-
-                    if (!empty($_POST["class"])) {
-                        $errorMsg .= "Duration is required.<br>";
-                        $success = false;
-                    }
-
-                    if (!empty($_POST["instructor"])) {
-                        $errorMsg .= "Duration is required.<br>";
-                        $success = false;
-                    }
-
-                    if (!empty($_POST["location"])) {
-                        $errorMsg .= "location is required.<br>";
-                        $success = false;
-                    }
-
-
-
-                    //helper function to write the member data to the DB 
-                    function saveClasstoDB()
-                    {
-                        global $timeslot, $duration, $class, $instructor, $location, $errorMsg;
-
-
-
-                        // Create database connection.
-                        $config = parse_ini_file('../../private/db-config.ini');
-                        $conn = new mysqli(
-                            $config['servername'],
-                            $config['username'],
-                            $config['password'],
-                            $config['dbname']
-                        );
-                        // Check connection
-                        if ($conn->connect_error) {
-                            $errorMsg = "Connection failed: " . $conn->connect_error;
-                            $success = false;
-                        } else {
-                            $timeslot = $_POST['timeslot'];
-                            $duration = $_POST['duration'];
-                            $class = $_POST['className'];
-                            $instructor = $_POST['instructor'];
-                            $location = $_POST['location'];
-                            $stmt = $conn->prepare("INSERT INTO webproject5.timetable (timeslot, duration, class, instructor, location)Values(?,?,?,?)");
-
-                            // Bind & execute the query statement:
-                            $stmt->bind_param("ssss", $timeslot, $duration, $class, $instructor, $location);
-                            if (!$stmt->execute()) {
-                                $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
-                                $success = false;
-                            }
-                            if ($success) {
-                                saveClassToDB();
-                                echo "<div style= 'padding-bottom: 5rem; padding-top: 5rem'>";
-                                echo "<h1 ;>Class added successfully!</h1>";
-                                echo "<form action='admindashboard.php' style= 'padding-top: 10rem'><button class='btn btn-success btn-lg'>Back to Dashboard</button></form>";
-                                echo "</div>";
-                            } else {
-                                echo "<h1>Oops!</h1>";
-                                echo "<h2>The following input errors were detected:</h2>";
-                                echo "<p>" . $errorMsg . "</p>";
-
-                                echo "<form action='admindashboard.php' method='post' ><button class='btn btn-danger btn-lg'>Return to Dashboard</button></form>";
-                            }
-                            $stmt->close();
-                        }
-                        $conn->close();
-                    }
-                    ?>
 
                 </div>
 
@@ -211,15 +112,15 @@ include "nav.inc.php";
                             $success = false;
                         }
                         // Prepare the statement:
-                        $sql = "SELECT timeslot, duration, class, instructor, location FROM webproject5.timetable";
+                        $sql = "SELECT name, email, feedback, rating FROM webproject5.feedback";
                         $result = $conn->query($sql);
                         // Bind & execute the query statement:
                         if ($result->num_rows > 0) {
-                            echo "<table><tr><th>Time Slot</th><th>Duration</th><th>Class</th><th>Instructor</th><th>Location</th></tr>";
+                            echo "<table><tr><th>Name</th><th>Email</th><th>Feedback</th><th>Rating</th></tr>";
                             //output data of each row
                             while ($row = $result->fetch_assoc()) {
-                                echo "<tr data-location=\"" . $row["location"] . "\" data-class=\"" . $row["class"] . "\">";
-                                echo "<td>" . $row["timeslot"] . "</td><td>" . $row["duration"] . "</td><td>" . $row["class"] . "</td><td>" . $row["instructor"] . "</td><td>" . $row["location"] . "</td>";
+                                echo "<tr data-name=\"" . $row["name"] . "\" data-email=\"" . $row["email"] . "\" data-feedback=\"" . $row["feedback"]  . "\" data-rating=\"" . $row["rating"] . "\">";
+                                echo "<td>" . $row["name"] . "</td><td>" . $row["email"] . "</td><td>" . $row["feedback"] . "</td><td>" . $row["rating"] . "</td>";
                                 echo "</tr>";
                             }
                             echo "</table>";
@@ -245,17 +146,15 @@ include "nav.inc.php";
 
 
 </body>
-<!-- <div>
-        //<?php
-            //include "footer.inc.php";
-            //
-            ?>
-        <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-        </script>
-        <-Bootstrap JS-->
-<!-- <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
-        </script>
-        <script defer src="js/scripts.js"></script>
-    </div> -->
+<?php
+include "footer.inc.php";
+?>
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+</script>
+<!--Bootstrap JS-->
+<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+</script>
+<script defer src="js/scripts.js"></script>
+<script defer src="js/logout.js"></script>
 
 </html>
