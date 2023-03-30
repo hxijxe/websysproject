@@ -46,6 +46,10 @@ if (isset($_POST['submit'])) { // Check if form was submitted
             $pwd = $_POST['pwd'];
             if ($username == $row['username'] && $pwd == $row['password']) {
                 $success = 1;
+                echo '<script>window.location = "adminbooking.php";
+                    </script>';
+                header("Location: adminbooking.php");
+                exit();
             } else {
                 $success = 2;
             }
@@ -55,52 +59,6 @@ if (isset($_POST['submit'])) { // Check if form was submitted
     }
     $conn->close();
 }
-
-//check code
-if (isset($_POST['submitcode'])) {
-
-    $code = sanitize_input($_POST['code']);
-
-
-    // Create database connection.
-    $config = parse_ini_file('../../private/db-config.ini');
-    $conn = new mysqli(
-        // $config['servername'],
-        $config['username'],
-        $config['password'],
-        $config['dbname']
-    );
-    // Check connection
-    if ($conn->connect_error) {
-        $errorMsg = "Connection failed: " . $conn->connect_error;
-        echo '<script>alert(' . $errorMsg . ')</script>';
-    } else {
-        // Prepare the statement:
-        try {
-            $sql = "select * from inf1005.admin LIMIT 1;";
-            $result = $conn->query($sql);
-            $row   = mysqli_fetch_row($result);
-            //retrieve from "code" column. when send email for 2FA, code column in db will be updated, so we compare from, db
-            // $code1=$row[3];
-            if ($code == $code1) {
-
-                session_start();
-                $_SESSION['login'] = $code;
-                echo '<script>window.location = "adminbooking.php";
-                    </script>';
-                header("Location: adminbooking.php");
-                exit();
-            } else {
-                $success = 3;
-            }
-        } catch (Exception $ex) {
-            echo '<script>alert(' . $ex . ')</script>';
-        }
-    }
-    $conn->close();
-}
-
-
 
 
 ?>
