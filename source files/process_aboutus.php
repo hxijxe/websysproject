@@ -56,6 +56,12 @@
                 $name = sanitize_input($_POST["name"]);
             }
 
+// Check rating
+            if (($_POST["name"]) == -1) {
+                $errorMsg .= "Rating is required.<br>";
+                $success = false;
+            }
+
             if ($success)
             {
                 saveFeedbackToDB();
@@ -84,7 +90,7 @@
 
 // Helper function to write the member data to the DB
             function saveFeedbackToDB() {
-                global $name, $email, $feedback, $errorMsg, $success;
+                global $name, $email, $feedback, $errorMsg, $rating, $success;
                 
 // Create database connection.
                 $config = parse_ini_file('../../private/db-config.ini');
@@ -99,10 +105,11 @@
                     $name = $_POST["name"];
                     $email = $_POST["email"];
                     $feedback = $_POST["feedback"];
-                    $stmt = $conn->prepare("INSERT INTO webproject5.feedback (name, email, feedback) VALUES (?, ?, ?)");
+                    $rating = $_POST["rating"];
+                    $stmt = $conn->prepare("INSERT INTO webproject5.feedback (name, email, feedback, rating) VALUES (?, ?, ?,?)");
 
 // Bind & execute the query statement:
-                    $stmt->bind_param("sss", $name, $email, $feedback);
+                    $stmt->bind_param("sss", $name, $email, $feedback, $rating);
                     if (!$stmt->execute()) {
                         $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
                         $success = false;
