@@ -365,3 +365,20 @@
   opacity: 0;
   visibility:hidden;
 }
+
+.membershipType {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.membershipType label {
+  display: flex;
+  align-items: center;
+}
+
+.membershipType input[type="radio"] {
+  margin-right: 5px;
+}

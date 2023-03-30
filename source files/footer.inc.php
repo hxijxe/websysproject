@@ -13,7 +13,6 @@
                 <li class="nav-item"><a class="nav-link px-2 text-muted" href="classes.php">Classes</a></li>
                 <li class="nav-item"><a class="nav-link px-2 text-muted" href="blog.php">Blog</a></li>
                 <li class="nav-item"><a class="nav-link px-2 text-muted" href="location.php">Location</a></li>
-                <li class="nav-item"><a class="nav-link px-2 text-muted" href="login_signup.php">Login/Signup</a></li>
                 <li class="nav-item"><a class="nav-link px-2 text-muted" href="about_us.php">About Us</a></li>
             </ul>
         </div>

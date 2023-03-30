@@ -15,7 +15,7 @@ include "nav.inc.php";
 
 <body>
     <main>
-        <section>
+        <section style="padding-top: 50px;">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
