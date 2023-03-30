@@ -141,7 +141,7 @@ include "nav.inc.php";
         integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
         crossorigin="anonymous">
     </script>
-    
+    <script defer src="js/logout.js"></script>
 </body>
 
 </html>
