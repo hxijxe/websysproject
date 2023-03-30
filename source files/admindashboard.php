@@ -30,9 +30,7 @@ include "nav.inc.php";
             <input id="tab1" type="radio" name="tabs" checked>
             <label for="tab1">Manage Classes</label>
             <input id="tab2" type="radio" name="tabs">
-            <label for="tab2">Manage Blogposts</label>
-            <input id="tab3" type="radio" name="tabs">
-            <label for="tab3">Manage Feedback</label>
+            <label for="tab2">Manage Feedback</label>
 
             <section id="content1">
 
@@ -83,26 +81,7 @@ include "nav.inc.php";
 
             </section>
 
-
-            <section id="content2 ">
-                <div class="table-wrapper">
-                    <h3>Update Blogposts</h3>
-
-                    <table class="fl-table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Feedback</th>
-                                <th>Rating</th>
-
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-            </section>
-
-            <section id="content3">
+            <section id="content2">
                 <div class="table-wrapper">
                     <h3>View Feedback:</h3>
                     <table class="fl-table">

@@ -32,24 +32,24 @@ include "nav.inc.php";
                         <!-- Email -->
                         <input type="email" class="form-control" id="registeremail" required name="email" placeholder="Enter email">
                         <!-- Password -->
-                        <input type="password" class="form-control" id="registerpwd" required minlength="8" name="pwd" placeholder="Enter password">
+                        <input type="password" class="form-control" id="registerpwd"  name="pwd" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+~`-={}[\]|:;&quot;'<>,.?\/]).{8,}" placeholder="Enter password">
                         <!--Password validation checker-->
-                        
-                        <section class="password-validation">
-                    <div class="icon">
-                                <i class='show bx bx-show hide'></i>
-                                <i class='slash bx bx-hide'></i>
-                            </div>
-                    <div class="valid-checks hidden">
-                        <ul class="checklist">
-                        <li class="lowercase"><i class="bx bx-check"></i>At least one lowercase letter</li>
-                        <li class="uppercase"><i class="bx bx-check"></i>At least one uppercase letter</li>
-                        <li class="number"><i class="bx bx-check"></i>At least one number</li>
-                        <li class="special"><i class="bx bx-check"></i>At least one special character</li>
-                        <li class="length"><i class="bx bx-check"></i>At least 8 characters</li>
-                        </ul>
-                    </div>
-                    </section>
+<!--                        -->
+<!--                        <section class="password-validation">-->
+<!--                    <div class="icon">-->
+<!--                                <i class='show bx bx-show hide'></i>-->
+<!--                                <i class='slash bx bx-hide'></i>-->
+<!--                            </div>-->
+<!--                    <div class="valid-checks hidden">-->
+<!--                        <ul class="checklist">-->
+<!--                        <li class="lowercase"><i class="bx bx-check"></i>At least one lowercase letter</li>-->
+<!--                        <li class="uppercase"><i class="bx bx-check"></i>At least one uppercase letter</li>-->
+<!--                        <li class="number"><i class="bx bx-check"></i>At least one number</li>-->
+<!--                        <li class="special"><i class="bx bx-check"></i>At least one special character</li>-->
+<!--                        <li class="length"><i class="bx bx-check"></i>At least 8 characters</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    </section>-->
 
 
                         <!-- Confirm password -->
@@ -57,13 +57,13 @@ include "nav.inc.php";
 
                         <!--membership type-->
                         <div class="membershipType">
-                            <input class="big" type="radio" id="basic" name="membership" value="Basic" />
+                            <input class="big" type="radio" id="basic" name="membership" value="Basic" required/>
                             <label for="basic">Basic</label>
 
-                            <input class="big" type="radio" id="silver" name="membership" value="Silver" />
+                            <input class="big" type="radio" id="silver" name="membership" value="Silver" required/>
                             <label for="silver">Silver</label>
 
-                            <input class="big" type="radio" id="gold" name="membership" value="Gold" />
+                            <input class="big" type="radio" id="gold" name="membership" value="Gold" required/>
                             <label for="gold">Gold</label>
                         </div>
 
