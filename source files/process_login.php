@@ -42,8 +42,12 @@
             }
 
 //            authenticateUser();
+        // If the user checks the "remember me" checkbox, set the session cookie to expire in 30 days
+        if (isset($_POST['remember'])) {
             checkcookies();
-            authenticateUser();
+            echo "Session cookie expiration time: " . date('Y-m-d H:i:s', ini_get('session.cookie_lifetime') + time());
+        }
+        authenticateUser();
 
         //Display the message
             if ($success) {
@@ -160,20 +164,8 @@
             }
             //Helper function to set the cookies.
             function checkcookies(){
-                //If the "remember me" checkbox is checked, set the cookies to one month.
-                if (isset($_POST['remember'])) {
-                    setcookie("member_login", $_POST["email"], time() + (30 * 24 * 60 * 60));
-                    setcookie("member_password", $_POST["pwd"], time() + (30 * 24 * 60 * 60));
-                }
-                //If the "remember" checkbox is not checked, delete the previously set cookies (if any).
-                else {
-                    if (isset($_COOKIE["member_login"])) {
-                        setcookie("member_login", "");
-                    }
-                    if (isset($_COOKIE["member_password"])) {
-                        setcookie("member_password", "");
-                    }
-                }
+                $params = session_get_cookie_params();
+                setcookie(session_name(), $_COOKIE[session_name()], time() + 60*60*24*30, $params["path"], $params["domain"], $params["secure"], $params["httponly"]);
             }
 
         ?>
