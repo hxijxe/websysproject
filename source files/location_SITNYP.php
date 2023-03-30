@@ -24,8 +24,8 @@ include "nav.inc.php";
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 ">
                 <div class="col-lg-8" style="text-align: left;">
-                    <h4 style="color: red;">Locations</h4>
-                    <h1 class="text-white mb-4">SIT @ NYP </h1>
+                    <h1 style="color: red;">Locations</h1>
+                    <h2 class="text-white mb-4">SIT @ NYP </h2>
                     <p class="text-white mb-4">172 Ang Mo Kio Ave 8, Singapore 567739</p>
                     <div class="rowmap">
                                     <a href="https://goo.gl/maps/GTgQQDEU93pAnhkP6" class="RX4Lf26" target="_blank" rel="noreferrer">

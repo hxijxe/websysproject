@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/aboutus.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
     <title>SIT Active Gym About Us</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,7 +25,9 @@ include "nav.inc.php";
             </div>
         </div>
     </header>
+
     <main>
+        <!-- Our Story section -->
         <section class="text-center about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center ">
@@ -41,6 +44,8 @@ include "nav.inc.php";
                 </div>
             </div>
         </section>
+
+        <!-- Access to other pages of the site -->
         <section class="text-center about">
             <div class="container px-5 px-lg-5">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -89,6 +94,8 @@ include "nav.inc.php";
                 </div>
             </div>
         </section>
+
+        <!-- Feedback form -->
         <section class="about">
             <div class="askaqns">
                 <h3>Give Us a Feedback</h3>
@@ -109,6 +116,20 @@ include "nav.inc.php";
                     <textarea id="feedback" name="feedback" required placeholder ="Your feedback..."></textarea>
                     </div>
 
+                    
+                    <div class="rating-box">
+                    <h1>Rate Our Service?</h1>
+                    <p>Give us a quick rating so we know if you like it.</p></label>
+                        <div class="stars">
+                            <input type="hidden" id="rating" name="rating" value="-1">
+                            <div class="bx bxs-star ratings_stars" data-rating="1"></div>
+                            <div class="bx bxs-star ratings_stars" data-rating="2"></div>
+                            <div class="bx bxs-star ratings_stars" data-rating="3"></div>
+                            <div class="bx bxs-star ratings_stars" data-rating="4"></div>
+                            <div class="bx bxs-star ratings_stars" data-rating="5"></div>
+                        </div>
+                    </div>  
+
                     <div class="form-group">
                     <input type="submit" value="Submit">
                     </div>
@@ -128,4 +149,7 @@ include "footer.inc.php";
 <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
 </script>
 <script defer src="js/scripts.js"></script>
+<script defer src="js/aboutus.js"></script>
+</body>
+
 </html>
