@@ -109,7 +109,10 @@
 .padding-large--l {
     padding: 1.6rem;
 }
-
+.clockdiv{
+    width: 200%;
+    height: 30%;
+}
 
 @media (max-width: 413px) {
     .grid-container {
