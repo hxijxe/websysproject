@@ -37,7 +37,7 @@ include "nav.inc.php";
                 <h2 class="py-3 my-3">Add Classes</h2>
                 <div class="classform">
                     <form action="processBooking.php" method="POST">
-                        <label for="name">Location</label>
+                        <label for="location">Location</label>
                         <select id="location" name="location">
                             <option value="Dover">Dover</option>
                             <option value="TP">TP</option>
@@ -77,12 +77,100 @@ include "nav.inc.php";
                         <!-- <input type="submit" value="Submit"> -->
                         <a class="btn btn-secondary mt-3 mb-3" input type="submit" value="Submit">Make Changes</a>
                     </form>
+                    <?php
+                    $timeslot = $duration = $class = $instructor = $location = $errorMsg = "";
+                    $success = true;
+
+                    //Helper function that checks input for malicious or unwanted content.
+                    function sanitize_input($data)
+                    {
+                        $data = trim($data);
+                        $data = stripslashes($data);
+                        $data = htmlspecialchars($data);
+                        return $data;
+                    }
+
+
+                    //helper function to write the member data to the DB 
+                    function saveClasstoDB()
+                    {
+                        global $timeslot, $duration, $class, $instructor, $location, $errorMsg;
+
+                        // Create database connection.
+                        $config = parse_ini_file('../../private/db-config.ini');
+                        $conn = new mysqli(
+                            $config['servername'],
+                            $config['username'],
+                            $config['password'],
+                            $config['dbname']
+                        );
+                        // Check connection
+                        if ($conn->connect_error) {
+                            $errorMsg = "Connection failed: " . $conn->connect_error;
+                            $success = false;
+                        } else {
+                            $timeslot = $_POST['timeslot'];
+                            $duration = $_POST['duration'];
+                            $class = $_POST['className'];
+                            $instructor = $_POST['instructor'];
+                            $location = $_POST['location'];
+                            $stmt = $conn->prepare("INSERT INTO webproject5.timetable (timeslot, duration, class, instructor, location)Values(?,?,?,?)");
+
+                            // Bind & execute the query statement:
+                            $stmt->bind_param("sss", $timeslot, $duration, $class, $instruct);
+                            if (!$stmt->execute()) {
+                                $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
+                                $success = false;
+                            }
+                            $stmt->close();
+                        }
+                        $conn->close();
+                    }
+                    ?>
+
                 </div>
 
             </section>
 
             <section id="content2">
                 <div class="table-wrapper">
+                    <div class="mb-5" style="overflow-x:auto;">
+                        <?php
+                        $name = $email = $feedback = $errorMsg = "";
+                        $success = true;
+                        // Create database connection.
+                        $config = parse_ini_file('../../private/db-config.ini');
+                        $conn = new mysqli(
+                            $config['servername'],
+                            $config['username'],
+                            $config['password'],
+                            $config['dbname']
+                        );
+                        // Check connection
+                        if ($conn->connect_error) {
+                            $errorMsg = "Connection failed: " . $conn->connect_error;
+                            $success = false;
+                        }
+                        // Prepare the statement:
+                        $sql = "SELECT name, email, feedback, rating FROM webproject5.feedback";
+                        $result = $conn->query($sql);
+                        // Bind & execute the query statement:
+                        if ($result->num_rows > 0) {
+                            echo "<table><tr><th>name</th><th>Email</th><th>Feedback</th><th>Rating</th></tr>";
+                            //output data of each row
+                            while ($row = $result->fetch_assoc()) {
+                                echo "<tr  data-rating=\"" . $row["rating"] . "\">";
+                                echo "<td>" . $row["name"] . "</td><td>" . $row["email"] . "</td><td>" . $row["feedback"] . "</td><td>" . $row["instructor"] . "</td><td>" . $row["location"] . "</td>";
+                                echo "</tr>";
+                            }
+                            echo "</table>";
+                        } else {
+                            echo '0 results';
+                        }
+
+                        $conn->close();
+                        ?>
+                    </div>
                     <h3>View Feedback:</h3>
                     <table class="fl-table">
                         <thead>

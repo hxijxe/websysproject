@@ -20,7 +20,6 @@ include "nav.inc.php";
 <body>
     <main id="adl">
         <div class="fcontainer">
-            <!-- <form action="admindashboard.php" method="POST"> -->
             <form>
                 <h2>Admin Login</h2>
 
@@ -31,9 +30,6 @@ include "nav.inc.php";
                 <input type="password" placeholder="Enter Password" name="password" required>
 
                 <button type="submit">Login</button>
-                <!-- <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label> -->
             </form>
         </div>
 
@@ -45,27 +41,6 @@ include "nav.inc.php";
             $pwd  = "";
             $errorMsg = "";
         }
-
-
-        // // check email
-        // if (empty($_POST["email"])) {
-        //     $errorMsg .= "Email is required.<br>";
-        //     $success = false;
-        // } else {
-        //     $email = sanitize_input($_POST["email"]);
-        //     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        //         $errorMsg .= "Invalid email format.<br>";
-        //         $success = false;
-        //     }
-        // }
-
-        // // Password validation
-        // if (empty($_POST["pwd"])) {
-        //     $errorMsg .= "Password is required.<br>";
-        //     $success = false;
-        // } else {
-        //     $pwd = sanitize_input($_POST["pwd"]);
-        // }
 
 
         //Helper function that checks input for malicious or unwanted content.
@@ -82,7 +57,7 @@ include "nav.inc.php";
 
             // Create database connection.
             $config = parse_ini_file('../../private/db-config.ini');
-            $conn = new mysqli($config['servername'], $config['email'], $config['password'], $config['dbname']);
+            $conn = new mysqli($config['servername'], $config['username'], $config['password'], $config['dbname']);
 
             // Check connection,
             if ($conn->connect_error) {
