@@ -57,7 +57,7 @@
             }
 
 // Check rating
-            if (($_POST["name"]) == -1) {
+            if (($_POST["rating"]) == "-1") {
                 $errorMsg .= "Rating is required.<br>";
                 $success = false;
             }
@@ -105,11 +105,11 @@
                     $name = $_POST["name"];
                     $email = $_POST["email"];
                     $feedback = $_POST["feedback"];
-                    $rating = $_POST["rating"];
-                    $stmt = $conn->prepare("INSERT INTO webproject5.feedback (name, email, feedback, rating) VALUES (?, ?, ?,?)");
+                    $rating = intval($_POST["rating"]);
+                    $stmt = $conn->prepare("INSERT INTO webproject5.feedback (name, email, feedback, rating) VALUES (?, ?, ?, ?)");
 
 // Bind & execute the query statement:
-                    $stmt->bind_param("sss", $name, $email, $feedback, $rating);
+                    $stmt->bind_param("ssss", $name, $email, $feedback, $rating);
                     if (!$stmt->execute()) {
                         $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
                         $success = false;
