@@ -44,10 +44,7 @@ include "nav.inc.php";
                             ancient India and focuses on
                             physical, mental, and spiritual well-being.
                             It involves various physical postures,
-                            breathing techniques, meditation, and relaxation.
-                            Regular practice of yoga can improve flexibility,
-                            strength, balance, reduce stress and anxiety,
-                            and promote overall health and wellness.</p>
+                            breathing techniques, meditation, and relaxation. .</p>
                         <p><button class="btn btn-secondary mt-3 mb-3" id="myBtnYoga">Learn More!</button></p>
                         </a>
                     </div>
@@ -68,10 +65,7 @@ include "nav.inc.php";
                     </iframe>
                     <p>Yoga is a practice that combines physical movement, breath control, and meditation to promote physical, mental, and spiritual health.
                         To start, find a quiet space where you can comfortably move and sit.
-                        Begin with simple poses like child's pose, downward dog, and mountain pose.
-                        As you progress, explore different types of yoga such as hatha, vinyasa, and restorative.
-                        Remember to breathe deeply and listen to your body.
-                        With regular practice, yoga can improve flexibility, strength, and balance, as well as reduce stress and anxiety.</p>
+                        Begin with simple poses like child's pose, downward dog, and mountain pose.</p>
                 </div>
                 <div class="modal-footer">
                     <h3>Modal Footer</h3>
@@ -90,9 +84,7 @@ include "nav.inc.php";
                         <h2>Zumba</h2>
                         <p><a href="classes.php">Book Now!</a></p>
                         <p>Zumba has many advantages for physical and mental health.
-                            It is a fun and high-energy workout that can improve cardiovascular health, muscle tone, and endurance.
-                            It also helps to burn calories and reduce stress, anxiety, and depression.
-                            Zumba classes provide a social atmosphere that can increase motivation and make exercise more enjoyable.</p>
+                            It is a fun and high-energy workout that can improve cardiovascular health, muscle tone, and endurance.</p>
                         <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=mZeFvX3ALKY'" target="_blank">Learn More!</a></p>
                     </div>
                 </div>
@@ -109,9 +101,7 @@ include "nav.inc.php";
                         <h2>Gym</h2>
                         <p><a href="classes.php">Book Now!</a></p>
                         <p>Weight training has numerous benefits for overall health and fitness.
-                            It helps to increase muscle mass, improve bone density, and boost metabolism.
-                            Weight training can also enhance athletic performance, reduce the risk of injury,
-                            and improve body composition by reducing body fat and increasing lean muscle tissue.</p>
+                            It helps to increase muscle mass, improve bone density, and boost metabolism.</p>
                         <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=zxDqvJoaR2c'" target="_blank">Learn More!</a></p>
                     </div>
                 </div>
@@ -129,9 +119,7 @@ include "nav.inc.php";
                         <p><a href="classes.php">Book Now!</a></p>
                         <p>Spin classes offer a variety of benefits for physical and mental health.
                             They provide a low-impact cardiovascular workout that can improve endurance, burn calories,
-                            and increase lung capacity. Spin classes also help to strengthen leg muscles, improve balance and coordination,
-                            and reduce the risk of injury.
-                            They provide a fun and social atmosphere that can increase motivation and reduce stress.</p>
+                            and increase lung capacity.</p>
                         <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=CsF-bpdNJvA'" target="_blank">Learn More!</a></p>
                     </div>
                 </div>
@@ -148,9 +136,7 @@ include "nav.inc.php";
                         <h2>Swim</h2>
                         <p><a href="classes.php">Book Now!</a></p>
                         <p>Swimming is a low-impact exercise that offers a wide range of physical and mental health benefits.
-                            It can improve cardiovascular health, build strength and endurance, and reduce the risk of chronic diseases.
-                            Swimming is also a great stress-reliever, promoting relaxation and reducing anxiety.
-                            Additionally, it is a great exercise option for people of all ages and fitness levels.</p>
+                            It can improve cardiovascular health, build strength and endurance, and reduce the risk of chronic diseases.</p>
                         <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=NFtknwZZh5o'" target="_blank">Learn More!</a></p>
                     </div>
                 </div>
