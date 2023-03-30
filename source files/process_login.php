@@ -41,23 +41,11 @@
                 $pwd = sanitize_input($_POST["pwd"]);
             }
 
-//            // When the user logs in with "remember me" checked
-//            if (isset($_POST['checkbox'])) {
-//                // Set a cookie with the user's email and password
-//                setcookie('email', $email, time() + (86400 * 30), '/');  // Cookie expires in 30 days
-//                setcookie('password', $pwd, time() + (86400 * 30), '/');  // Cookie expires in 30 days
-//            }
-//
-//            // When the user visits the site in the future
-//            if (isset($_COOKIE['email']) && isset($_COOKIE['password'])) {
-//                // Automatically log the user in using the stored credentials
-//                $email = $_COOKIE['email'];
-//                $pwd = $_COOKIE['password'];
-//                // Check if the credentials are valid and log the user in
-                authenticateUser();
-//            }
+//            authenticateUser();
+            checkcookies();
+            authenticateUser();
 
-            //Display the message
+        //Display the message
             if ($success) {
                 echo "<section class='about-section text-center'>
                         <div class='container px-4 px-lg-5'>
@@ -170,6 +158,24 @@
 
                 $conn->close();
             }
+            //Helper function to set the cookies.
+            function checkcookies(){
+                //If the "remember me" checkbox is checked, set the cookies to one month.
+                if (isset($_POST['remember'])) {
+                    setcookie("member_login", $_POST["email"], time() + (30 * 24 * 60 * 60));
+                    setcookie("member_password", $_POST["pwd"], time() + (30 * 24 * 60 * 60));
+                }
+                //If the "remember" checkbox is not checked, delete the previously set cookies (if any).
+                else {
+                    if (isset($_COOKIE["member_login"])) {
+                        setcookie("member_login", "");
+                    }
+                    if (isset($_COOKIE["member_password"])) {
+                        setcookie("member_password", "");
+                    }
+                }
+            }
+
         ?>
         </main>
         <?php

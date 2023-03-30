@@ -85,14 +85,14 @@ include "nav.inc.php";
                     <form action="process_login.php" method="post">
                         <h1>Login</h1>
                         <!-- Email -->
-                        <input type="email" class="form-control" id="loginemail" required name="email" placeholder="Enter email">
+                        <input type="email" class="form-control" id="loginemail" required name="email" placeholder="Enter email" value="<?php if(isset($_COOKIE["member_login"])) { echo $_COOKIE["member_login"]; } ?>">
                         <!-- Password -->
-                        <input type="password" class="form-control" id="loginpwd" required minlength="8" name="pwd" placeholder="Enter password">
+                        <input type="password" class="form-control" id="loginpwd" required minlength="8" name="pwd" placeholder="Enter password" value="<?php if(isset($_COOKIE["member_password"])) { echo $_COOKIE["member_password"]; } ?>">
                         <!-- Remember me -->
                         <div class="content">
                             <div class="checkbox">
-                                <input type="checkbox" name="checkbox" id="checkbox">
-                                <label>Remember me</label>
+                                <input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?> />
+                                <label for="remember-me">Remember me</label>
                             </div>
                         </div>
                         <!-- Forget password -->
