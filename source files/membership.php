@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>SIT Active Gym Membership</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -28,119 +29,161 @@ include "nav.inc.php";
     <main>
         <section class="projects-section bg-body" id="projects">
             <div class="container px-5 px-lg-5">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="pricing-header px-3 pt-md-5 pb-md-4 mx-auto text-center">
+                    <h1 class="display-4">Pricing</h1>
+                    <p class="lead">Select the perfect gym membership plan to meet your fitness goals and budget. Our plans are
+                    designed to offer you flexibility and variety, so you can get the most out of your workouts.</p>
+                </div>
+                <div class="card-deck mb-3 text-center row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="card h-100">
-                            <div class="text-center card-header" style="background-color: #51123c;">
-                                <img src="img/sit_logo.png" class="card-img-top membImg" alt="...">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Basic Tier</h4>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Basic Tier</h3>
-                                <h2 class="card-text text-dark mb-5">$16/week</h2>
-                                <p class="card-text">Basic Tier is recommended for beginners who wish to start their fitness journey at a slower pace. Maximum 1 class per week.</p>
-                            </div>
-                            <div class="text-center card-footer">
-                                <a class="btn btn-secondary mt-3 mb-3" href="profile.php">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div class="card h-100" >
-                            <div class="text-center card-header" style="background-color: silver; ">
-                                <img src="img/sit_logo.png" class="card-img-top membImg" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-title">Silver Tier</h3>
-                                <h2 class="card-text text-dark mb-5">$25/week</h2>
-                                <p class="card-text">Silver Tier is recommended for amateurs who wish to commit more time to their physical well-being. Maximum 3 classes per week. </p>
-
-                            </div>
-                            <div class="text-center card-footer">
+                                <h1 class="card-title pricing-card-title">$12 <small class="text-muted">/ mo</small>
+                                </h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>2 booking per week</li>
+                                    <li>Limited amenities</li>
+                                    <li>Cancellation fee</li>
+                                    <li>No Personal training options</li>
+                                </ul>
                                 <a class="btn btn-secondary mt-3 mb-3" href="profile.php">Get Started</a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
-                            <div class="text-center card-header" style="background-color: gold;">
-                                <img src="img/sit_logo.png" class="card-img-top membImg" alt="...">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Silver Tier</h4>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Gold Tier</h3>
-                                <h2 class="card-text text-dark mb-5">$38/month</h2>
-                                <p class="card-text">Gold Tier is recommended for fitness junkies who exercise on a daily basis or even twice a day. Unlimited classes per week.</p>
+                                <h1 class="card-title pricing-card-title">$18 <small class="text-muted">/ mo</small>
+                                </h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>4 booking per week</li>
+                                    <li>All amenities</li>
+                                    <li>Cancellation fee</li>
+                                    <li>Some Personal training options</li>
+                                </ul>
+                                <a class="btn btn-secondary mt-3 mb-3" href="profile.php">Get Started</a>
                             </div>
-                            <div class="text-center card-footer">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Gold Tier</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small>
+                                </h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>7 booking per week</li>
+                                    <li>All amenities</li>
+                                    <li>No cancellation fee</li>
+                                    <li>Some Personal training options</li>
+                                </ul>
                                 <a class="btn btn-secondary mt-3 mb-3" href="profile.php">Get Started</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
+
         <div class="container px-5 px-lg-5">
             <div class="row">
-                <div class="text-center card-body">
-                    <h3>MEMBERSHIP FEATURES</h3>
+                <div class="text-center card-body" style=" border-bottom: 1px solid; padding-bottom: 10px">
+                    <h2>MEMBERSHIP FEATURES</h2>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-3">
-                <div class="col">
-                    <div class="text-center">
-                        <h3>No Joining Fee</h3>
-                    </div>
+            <div class="row text-center py-5">
+                <div class="col-md-4">
+                    <i class="bi bi-currency-dollar"></i>
+                    <h3>No joining fee</h3>
+                    <p>We offer a wide range of classes to suit all fitness levels and
+                        interests, including yoga, Pilates, cycling, and more.</p>
                 </div>
-                <div class="col">
-                    <div class="text-center">
-                        <h3>Multiple Locations</h3>
-                    </div>
+                <div class="col-md-4">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Multiple locations</h3>
+                    <p>Our gyms are conveniently located in various areas, so you can
+                        workout wherever is most convenient for you.</p>
                 </div>
-                <div class="col">
-                    <div class="text-center">
-                        <h3>Variety of Classes</h3>
-                    </div>
+                <div class="col-md-4">
+                    <i class="bi bi-collection-play-fill"></i>
+                    <h3>Variety of classes</h3>
+                    <p>We offer a wide range of classes to suit all fitness levels and
+                        interests, including yoga, Pilates, cycling, and more.</p>
+                </div>
+            </div>
+            <div class="row text-center py-3">
+                <div class="col-md-6 px-5">
+                    <i class="bi bi-discord"></i>
+                    <h3>Fitness facilities</h3>
+                    <p>Our gyms are fully equipped with state-of-the-art cardio and
+                        strength training equipment, as well as functional training areas.</p>
+                </div>
+                <div class="col-md-6 px-5">
+                    <i class="bi bi-person-square"></i>
+                    <h3>Additional services</h3>
+                    <p>We offer a range of additional services, including personal
+                        training, nutrition coaching, and more, to help you achieve your fitness goals.</p>
                 </div>
             </div>
         </div>
 
-        <div class="container px-5 px-lg-5" style = "padding-top: 5rem; padding-bottom:2rem">
-            <h2 style = "padding-bottom: 2rem">Frequently Asked Questions</h2>
-            <div class ="col-lg-12 col-12 g-0">
-                <h3> What do I have to bring for my workout? </h3>
-                <p> Do bring a towel for hygiene purposes. Show up in outfit that is appropriate for physical fitness. 
-                    Consider bringing a change of clothes as well, we do have shower facilities! 
+        <div class="container px-5 px-lg-5" style="padding-top: 5rem ; padding-bottom: 5rem;">
+            <h2 style="padding-bottom: 2rem">Frequently Asked Questions</h2>
+            <div class="col-lg-12 col-12 g-0">
+                <h4> What do I have to bring for my workout? </h4>
+                <p> Do bring a towel for hygiene purposes. Show up in outfit that is appropriate for physical fitness.
+                    Consider bringing a change of clothes as well, we do have shower facilities!
                 </p>
-                <h3> What is the eligibility for membership? </h3>
-                <p> You have to be one of the following: A SIT student, staff, or alumni. 
+                <h4> What is the eligibility for membership? </h4>
+                <p> You have to be one of the following: A SIT student, staff, or alumni.
 
                 </p>
-                <h3> Can I patron more than one location?  </h3>
+                <h4> Can I patron more than one location? </h4>
                 <p> Yes, you can visit any of our 6 locations if you are a member!
                 </p>
-                <h3> Does becoming a member allow me to get better grades in school? </h3>
+                <h4> Does becoming a member allow me to get better grades in school? </h4>
                 <p> We cannot guarantee that your grades will improve. However, it is proven that
                     exercising helps to destress and this may help you to focus in your studies!
                 </p>
+                <h4> What are your hours of operation? </h4>
+                <p> Our gym is open from 6am to 10pm, Monday to Sunday. </p>
+                <h4> Do you offer personal training sessions? </h4>
+                <p> Yes, we offer personal training sessions with certified trainers. You can sign up for these sessions
+                    at our front desk. </p>
+                <h4> Are there any additional fees or charges? </h4>
+                <p> No, there are no additional fees or charges for our gym membership. </p>
+                <h4> What types of equipment do you have available? </h4>
+                <p> We have a wide range of equipment available, including cardio machines, weight machines, and free
+                    weights. </p>
+                <h4> Do you offer group fitness classes? </h4>
+                <p> Yes, we offer a variety of group fitness classes including yoga, Zumba, and spinning. Check our
+                    schedule for the full list of classes and times. </p>
+                <h4> Can I put my membership on hold? </h4>
+                <p> Yes, you can put your membership on hold for up to 3 months with prior notice. </p>
+                <h4> What is your cancellation policy? </h4>
+                <p> We require 30 days written notice to cancel your membership. </p>
             </div>
         </div>
-    
+
     </main>
     <?php
     include "footer.inc.php";
     ?>
     <!--jQuery-->
-    <script defer
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-    </script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
     <!--Bootstrap JS-->
-    <script defer
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-        crossorigin="anonymous">
-    </script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+        </script>
     <script defer src="js/logout.js"></script>
 </body>
 

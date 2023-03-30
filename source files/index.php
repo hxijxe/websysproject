@@ -151,55 +151,70 @@ include "nav.inc.php";
         </div>
         <section class="projects-section bg-body" id="projects">
             <div class="container px-5 px-lg-5">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="pricing-header px-3 pt-md-5 pb-md-4 mx-auto text-center">
+                    <h1 class="display-4">Pricing</h1>
+                    <p class="lead">Select the perfect gym membership plan to meet your fitness goals and budget. Our plans are
+                    designed to offer you flexibility and variety, so you can get the most out of your workouts.</p>
+                </div>
+                <div class="card-deck mb-3 text-center row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="card h-100">
-                            <div class="text-center card-header" style="background-color: #51123c;">
-                                <img src="img/sit_logo.png" class="card-img-top membImg" alt="...">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Basic Tier</h4>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Basic Tier</h3>
-                                <h2 class="card-text text-dark mb-5">$16/week</h2>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="text-center card-footer">
+                                <h1 class="card-title pricing-card-title">$12 <small class="text-muted">/ mo</small>
+                                </h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>2 booking per week</li>
+                                    <li>Limited amenities</li>
+                                    <li>Cancellation fee</li>
+                                    <li>No Personal training options</li>
+                                </ul>
                                 <a class="btn btn-secondary mt-3 mb-3" href="profile.php">Get Started</a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100" >
-                            <div class="text-center card-header" style="background-color: silver; ">
-                                <img src="img/sit_logo.png" class="card-img-top membImg" alt="...">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Silver Tier</h4>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Silver Tier</h3>
-                                <h2 class="card-text text-dark mb-5">$25/week</h2>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-
-                            </div>
-                            <div class="text-center card-footer">
+                                <h1 class="card-title pricing-card-title">$18 <small class="text-muted">/ mo</small>
+                                </h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>4 booking per week</li>
+                                    <li>All amenities</li>
+                                    <li>Cancellation fee</li>
+                                    <li>Some Personal training options</li>
+                                </ul>
                                 <a class="btn btn-secondary mt-3 mb-3" href="profile.php">Get Started</a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
-                            <div class="text-center card-header" style="background-color: gold;">
-                                <img src="img/sit_logo.png" class="card-img-top membImg" alt="...">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Gold Tier</h4>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">Gold Tier</h3>
-                                <h2 class="card-text text-dark mb-5">$38/month</h2>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="text-center card-footer">
+                                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small>
+                                </h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>7 booking per week</li>
+                                    <li>All amenities</li>
+                                    <li>No cancellation fee</li>
+                                    <li>Some Personal training options</li>
+                                </ul>
                                 <a class="btn btn-secondary mt-3 mb-3" href="profile.php">Get Started</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div>
+                    <a href="membership.php"><p>>>>> click here to see more</p></a>
+                </div>
         </section>
         </main>
 
