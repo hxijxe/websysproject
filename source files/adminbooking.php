@@ -1,6 +1,6 @@
 <?php
 // Start the session
-include "includes/authenticate.inc.php";
+//include "includes/protect.php";
 ?>
 <!DOCTYPE html>
 <html lang="en-GB">
@@ -16,7 +16,7 @@ include "includes/authenticate.inc.php";
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
-</body>
+
 <?php
 include "nav.inc.php";
 ?>
@@ -43,41 +43,41 @@ include "nav.inc.php";
                 $errorMsg = "Connection failed: " . $conn->connect_error;
                 echo '<script>alert(' . $errorMsg . ')</script>';
             } else {
-                // Prepare the statement:
-                try {
-                    $sql = "UPDATE bookings SET bkStatus=\"accepted\" WHERE bookingID=" . $_POST['bookingID'] . ";";
-                    $result = $conn->query($sql);
-                    echo '<script>alert("Accepted booking by ' . $_POST['name'] . ' on ' . $_POST['date'] . ' for ' . $_POST['pax'] . ' pax")</script>';
-                    sendMail("accepted", $_POST['email'], $_POST['name'], $_POST['date'], $_POST['pax']);
-                } catch (Exception $ex) {
-                    echo '<script>alert(' . $ex . ')</script>';
-                }
+                // // Prepare the statement:
+                // try {
+                //     $sql = "UPDATE bookings SET bkStatus=\"accepted\" WHERE booking_id=" . $_POST['booking_id'] . ";";
+                //     $result = $conn->query($sql);
+                //     echo '<script>alert("Accepted booking by ' . $_POST['name'] . ' on ' . $_POST['date'] . ' for ' . $_POST['pax'] . ' pax")</script>';
+                //     sendMail("accepted", $_POST['email'], $_POST['name'], $_POST['date'], $_POST['pax']);
+                // } catch (Exception $ex) {
+                //     echo '<script>alert(' . $ex . ')</script>';
+                // }
             }
             $conn->close();
-        } else if (isset($_POST["reject"])) {
+        } else if (isset($_POST["reject"]))
             // Create database connection.
             $config = parse_ini_file('../../private/db-config.ini');
-            $conn = new mysqli(
-                $config['servername'],
-                $config['username'],
-                $config['password'],
-                $config['dbname']
-            );
-            // Check connection
-            if ($conn->connect_error) {
-                $errorMsg = "Connection failed: " . $conn->connect_error;
-                echo '<script>alert(' . $errorMsg . ')</script>';
-            } else {
-                // Prepare the statement:
-                try {
-                    $sql = "UPDATE bookings SET bkStatus=\"rejected\" WHERE bookingID=" . $_POST['bookingID'] . ";";
-                    $result = $conn->query($sql);
-                    echo '<script>alert("Rejected booking by ' . $_POST['name'] . ' on ' . $_POST['date'] . ' for ' . $_POST['pax'] . ' pax")</script>';
-                    sendMail("declined", $_POST['email'], $_POST['name'], $_POST['date'], $_POST['pax']);
-                } catch (Exception $ex) {
-                    echo '<script>alert(' . $ex . ')</script>';
-                }
-            }
+        $conn = new mysqli(
+            $config['servername'],
+            $config['username'],
+            $config['password'],
+            $config['dbname']
+        );
+        // Check connection
+        if ($conn->connect_error) {
+            $errorMsg = "Connection failed: " . $conn->connect_error;
+            echo '<script>alert(' . $errorMsg . ')</script>';
+            // } else {
+            //     // Prepare the statement:
+            //     try {
+            //         $sql = "UPDATE bookings SET bkStatus=\"rejected\" WHERE bookingID=" . $_POST['bookingID'] . ";";
+            //         $result = $conn->query($sql);
+            //         echo '<script>alert("Rejected booking by ' . $_POST['name'] . ' on ' . $_POST['date'] . ' for ' . $_POST['pax'] . ' pax")</script>';
+            //         sendMail("declined", $_POST['email'], $_POST['name'], $_POST['date'], $_POST['pax']);
+            //     } catch (Exception $ex) {
+            //         echo '<script>alert(' . $ex . ')</script>';
+            //     }
+            // }
             $conn->close();
         }
 
@@ -173,13 +173,13 @@ include "nav.inc.php";
         ?>
 
         <div id=test>
-            <h2>Manage bookings</h2>
+            <h2>dashboard</h2>
             <input id="tab1" type="radio" name="tabs" checked>
-            <label for="tab1">Pending Bookings</label>
+            <label for="tab1">Manage Classes</label>
             <input id="tab2" type="radio" name="tabs">
-            <label for="tab2">Accepted Bookings</label>
+            <label for="tab2">Manage Blogposts</label>
             <input id="tab3" type="radio" name="tabs">
-            <label for="tab3">Past Bookings</label>
+            <label for="tab3">Manage Feedback</label>
 
             <section id="content1">
                 <?php
@@ -200,21 +200,17 @@ include "nav.inc.php";
         </div>
     </main>
 
-    <script>
-        // button to accept
-        // var buttons = document.getElementsByClassName('acceptBtn');
-        // for (var i = 0; i < buttons.length; i++) {
-        //     (function (index) {
-        //         buttons[index].onclick = function () {
-        //             //update db
-        //             alert("I am button " +  buttons[index].getAttribute('name'));
-        //         };
-        //     })(i)
-        // }
-    </script>
-    <?php
-    include "includes/footer.inc.php";
-    ?>
+    <div>
+        <?php
+        include "footer.inc.php";
+        ?>
+        <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+        <!--Bootstrap JS-->
+        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+        </script>
+        <script defer src="js/scripts.js"></script>
+    </div>
 </body>
 
 
