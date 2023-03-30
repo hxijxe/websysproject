@@ -90,11 +90,57 @@ include "nav.inc.php";
                         return $data;
                     }
 
+                    // check email
+                    if (empty($_POST["timeslot"])) {
+                        $errorMsg .= "timeslot is required.<br>";
+                        $success = false;}
+                    // } else {
+                    //     $timeslot = sanitize_input($_POST["email"]);
+                    // }
+
+
+                    // check name
+                    if (empty($_POST["duration"])) {
+                        $errorMsg .= "Duration is required.<br>";
+                        $success = false;}
+                    // } else {
+                    //     $name = sanitize_input($_POST["timeslot"]);
+                    // }
+
+                    if (!empty($_POST["class"])) {
+                        $errorMsg .= "Duration is required.<br>";
+                        $success = false;}
+
+                    if (!empty($_POST["instructor"])) {
+                        $errorMsg .= "Duration is required.<br>";
+                        $success = false;}
+
+                    if (!empty($_POST["location"])) {
+                        $errorMsg .= "location is required.<br>";
+                        $success = false;}
+                
+
+                    if ($success) {
+                        saveClassToDB();
+                        echo "<div style= 'padding-bottom: 5rem; padding-top: 5rem'>";
+                        echo "<h1 ;>Class added successfully!</h1>";
+                        echo "<form action='admindashboard.php' style= 'padding-top: 10rem'><button class='btn btn-success btn-lg'>Back to Home</button></form>";
+                        echo "</div>";
+                    } else {
+                        echo "<h1>Oops!</h1>";
+                        echo "<h2>The following input errors were detected:</h2>";
+                        echo "<p>" . $errorMsg . "</p>";
+
+                        echo "<form action='admindashboard.php' method='post' ><button class='btn btn-danger btn-lg'>Return to About Us</button></form>";
+                    }
+
 
                     //helper function to write the member data to the DB 
                     function saveClasstoDB()
                     {
                         global $timeslot, $duration, $class, $instructor, $location, $errorMsg;
+
+
 
                         // Create database connection.
                         $config = parse_ini_file('../../private/db-config.ini');
@@ -117,7 +163,7 @@ include "nav.inc.php";
                             $stmt = $conn->prepare("INSERT INTO webproject5.timetable (timeslot, duration, class, instructor, location)Values(?,?,?,?)");
 
                             // Bind & execute the query statement:
-                            $stmt->bind_param("sss", $timeslot, $duration, $class, $instruct);
+                            $stmt->bind_param("ssss", $timeslot, $duration, $class, $instructor, $location);
                             if (!$stmt->execute()) {
                                 $errorMsg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
                                 $success = false;
@@ -134,6 +180,18 @@ include "nav.inc.php";
 
             <section id="content2">
                 <div class="table-wrapper">
+                    <h3>View Feedback:</h3>
+                    <table class="fl-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Feedback</th>
+                                <th>Rating</th>
+
+                            </tr>
+                        </thead>
+                    </table>
                     <div class="mb-5" style="overflow-x:auto;">
                         <?php
                         $name = $email = $feedback = $errorMsg = "";
@@ -154,7 +212,7 @@ include "nav.inc.php";
                         // Prepare the statement:
                         $sql = "SELECT name, email, feedback, rating FROM webproject5.feedback";
                         $result = $conn->query($sql);
-                        
+
                         // Bind & execute the query statement:
                         if ($result->num_rows > 0) {
                             echo "<table><tr><th>name</th><th>Email</th><th>Feedback</th><th>Rating</th></tr>";
@@ -167,10 +225,8 @@ include "nav.inc.php";
                                 <td>" . $row['rating'] . "</td>
 
                             </tr>";
-
-                              
                             }
-                            
+
                             echo "</table>";
                         } else {
                             echo '0 results';
@@ -179,18 +235,7 @@ include "nav.inc.php";
                         $conn->close();
                         ?>
                     </div>
-                    <h3>View Feedback:</h3>
-                    <table class="fl-table">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Feedback</th>
-                                <th>Rating</th>
 
-                            </tr>
-                        </thead>
-                    </table>
                 </div>
 
             </section>
