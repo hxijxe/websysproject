@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/aboutus.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
     <title>SIT Active Gym About Us</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -148,7 +149,7 @@ include "footer.inc.php";
 <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
 </script>
 <script defer src="js/scripts.js"></script>
-<script defer src="js/logout.js"></script>
+<!-- <script defer src="js/logout.js"></script> -->
 <script defer src="js/aboutus.js"></script>
 </body>
 
