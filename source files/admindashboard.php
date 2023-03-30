@@ -154,15 +154,23 @@ include "nav.inc.php";
                         // Prepare the statement:
                         $sql = "SELECT name, email, feedback, rating FROM webproject5.feedback";
                         $result = $conn->query($sql);
+                        
                         // Bind & execute the query statement:
                         if ($result->num_rows > 0) {
                             echo "<table><tr><th>name</th><th>Email</th><th>Feedback</th><th>Rating</th></tr>";
                             //output data of each row
                             while ($row = $result->fetch_assoc()) {
-                                echo "<tr  data-rating=\"" . $row["rating"] . "\">";
-                                echo "<td>" . $row["name"] . "</td><td>" . $row["email"] . "</td><td>" . $row["feedback"] . "</td><td>" . $row["instructor"] . "</td><td>" . $row["location"] . "</td>";
-                                echo "</tr>";
+                                echo "<tr>
+                                <td>" . $row['name'] . "</td>
+                                <td>" . $row['email'] . "</td>
+                                <td>" . $row['feedback'] . "</td>
+                                <td>" . $row['rating'] . "</td>
+
+                            </tr>";
+
+                              
                             }
+                            
                             echo "</table>";
                         } else {
                             echo '0 results';
