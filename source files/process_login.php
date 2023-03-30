@@ -141,7 +141,8 @@
                         $pwd_hashed = $row["password"];
 
                         // storing user information in a session
-//                        session_start();
+                        session_start();
+
                         $_SESSION['fname'] = $fname;
                         $_SESSION['lname'] = $lname;
                         $_SESSION['email'] = $email;

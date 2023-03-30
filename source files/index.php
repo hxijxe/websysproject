@@ -221,5 +221,6 @@ include "nav.inc.php";
         </script>
         <script defer src="js/scripts.js"></script>
         <script defer src="js/countdown.js"></script>
+        <script defer src="js/logout.js"></script>
     </body>
 </html>
