@@ -4,7 +4,7 @@
 
 .carousel-item img {
   max-height: 1080px; /* adjust this value to suit your needs */
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .carousel-control-prev-icon,
