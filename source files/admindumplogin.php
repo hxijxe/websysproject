@@ -47,26 +47,40 @@ include "nav.inc.php";
         }
 
 
-        // // check email
-        // if (empty($_POST["email"])) {
-        //     $errorMsg .= "Email is required.<br>";
-        //     $success = false;
-        // } else {
-        //     $email = sanitize_input($_POST["email"]);
-        //     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        //         $errorMsg .= "Invalid email format.<br>";
-        //         $success = false;
-        //     }
-        // }
+        // check email
+        if (empty($_POST["email"])) {
+            $errorMsg .= "Email is required.<br>";
+            $success = false;
+        } else {
+            $email = sanitize_input($_POST["email"]);
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $errorMsg .= "Invalid email format.<br>";
+                $success = false;
+            }
+        }
 
-        // // Password validation
-        // if (empty($_POST["pwd"])) {
-        //     $errorMsg .= "Password is required.<br>";
-        //     $success = false;
-        // } else {
-        //     $pwd = sanitize_input($_POST["pwd"]);
-        // }
+        // Password validation
+        if (empty($_POST["pwd"])) {
+            $errorMsg .= "Password is required.<br>";
+            $success = false;
+        } else {
+            $pwd = sanitize_input($_POST["pwd"]);
+        }
 
+        // //Display the message
+        // if ($success) {
+        //     AuthenticateUser();
+        //     echo "<div style= 'padding-bottom: 5rem; padding-top: 5rem'>";
+        //     echo "<h2>Welcome Admin!</h2>";
+        //     echo "<form action='admindashboard.php' style= 'padding-top: 10rem'><button class='btn btn-success btn-lg'>Back to Home</button></form>";
+        //     echo "</div>";
+        // } else {
+        //     echo "<h1>Oops!</h1>";
+        //     echo "<h2>The following input errors were detected:</h2>";
+        //     echo "<p>" . $errorMsg . "</p>";
+
+        //     echo "<form action='about_us.php' method='post' ><button class='btn btn-danger btn-lg'>Return to About Us</button></form>";
+        // }
 
         //Helper function that checks input for malicious or unwanted content.
         function sanitize_input($data)
@@ -76,6 +90,14 @@ include "nav.inc.php";
             $data = htmlspecialchars($data);
             return $data;
         }
+
+
+        /*
+             * Helper function to authenticate the login.
+             */
+        // function authenticateUser()
+        // {
+        //     global $email, $pwd_hashed, $errorMsg, $success;
 
         //check if form was submitted
         if (isset($_POST['submit'])) {
@@ -111,6 +133,53 @@ include "nav.inc.php";
             }
             $conn->close();
         }
+
+
+
+
+        //     $stmt = $conn->prepare("SELECT * FROM webproject5.admin_user(email, password)");
+
+        //     // Bind & execute the query statement:
+        //     $stmt->bind_param("s", $email);
+        //     $stmt->execute();
+        //     $result = $stmt->get_result();
+
+        //     if ($result->num_rows > 0)
+        //     {
+        //         // Note that email field is unique, so should only have
+        //         // one row in the result set.
+        //         $row = $result->fetch_assoc();
+        //         $email = $row["email"];
+        //         $pwd_hashed = $row["password"];
+
+        //         // storing user information in a session
+        //         session_start();
+
+        //         $_SESSION['email'] = $email;
+        //         $_SESSION['password'] = $pwd_hashed;
+        //         $_SESSION["logged_in"] = true;
+        //         header("location: admindashboard.php");
+
+        //         // Check if the password matches:
+        //         if (!password_verify($_POST["pwd"], $pwd_hashed))
+        //         {
+        //             // Don't be too specific with the error message - hackers don't
+        //             // need to know which one they got right or wrong. :)
+        //             $errorMsg = "Email not found or password doesn't match.";
+        //             $success = false;
+        //         }
+        //     }
+        //     else
+        //     {
+        //         $errorMsg = "Email not found or password doesn't match.";
+        //         $success = false;
+        //     }
+
+        //     $stmt->close();
+        // }
+
+
+
         ?>
 
 
