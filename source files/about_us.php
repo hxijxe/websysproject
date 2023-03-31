@@ -45,10 +45,12 @@ include "nav.inc.php";
             </div>
         </section>
 
-        <!-- Access to other pages of the site -->
+        <!-- Cards: Access to other pages of the site -->
         <section class="text-center about">
             <div class="container px-5 px-lg-5">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <!-- Card 1: Locations -->
                     <div class="col">
                         <div class="card h-100">
                         <div class="text-center card-header">
@@ -63,6 +65,8 @@ include "nav.inc.php";
                         </div>
                         </div>
                     </div>
+
+                    <!-- Card 2: Classes -->
                     <div class="col">
                         <div class="card h-100" >
                             <div class="text-center card-header">
@@ -77,6 +81,8 @@ include "nav.inc.php";
                             </div>
                         </div>
                     </div>
+
+                    <!-- Card 3: Sign Up -->
                     <div class="col">
                         <div class="card h-100">
                             <div class="text-center card-header">
@@ -140,17 +146,18 @@ include "nav.inc.php";
     </main>
 
 
-<?php
-include "footer.inc.php";
-?>
-<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-</script>
-<!--Bootstrap JS-->
-<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
-</script>
-<script defer src="js/scripts.js"></script>
-<!-- <script defer src="js/logout.js"></script> -->
-<script defer src="js/aboutus.js"></script>
+    <?php
+    include "footer.inc.php";
+    ?>
+
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <!--Bootstrap JS-->
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+    </script>
+    <script defer src="js/scripts.js"></script>
+    <script defer src="js/logout.js"></script>
+    <script defer src="js/aboutus.js"></script>
 </body>
 
 </html>

@@ -28,10 +28,10 @@ include "nav.inc.php";
                     <h2 class="text-white mb-4">SIT @ NYP </h2>
                     <address class="text-white mb-4">172 Ang Mo Kio Ave 8, Singapore 567739</address>
                     <div class="rowmap">
-                                    <a href="https://goo.gl/maps/GTgQQDEU93pAnhkP6" class="view-map" target="_blank" rel="noreferrer">
-                                        <p class="text-white">View on map</p>
-                                    </a>
-                                </div>
+                        <a href="https://goo.gl/maps/GTgQQDEU93pAnhkP6" class="view-map" target="_blank" rel="noreferrer">
+                            <p class="text-white">View on map</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -41,11 +41,12 @@ include "nav.inc.php";
         <div class="container">
 
             <!-- Picture -->
-            <div class="row">
-                <img src="img/gym-bg.jpg" alt="..." >
-            </div>
-            <!-- Information -->
-            <div class="row" style= "padding-top: 5rem">
+            <figure class="row">
+                <img src="img/gym-bg.jpg" alt="sit nyp gym" >
+            </figure>
+
+            <!-- Information on operating hours and contact -->
+            <section class="row" style= "padding-top: 5rem">
                     <?php
                     $montofri = $sat = $sun = $email = $tel = "";
                     $success = true;
@@ -74,9 +75,10 @@ include "nav.inc.php";
                         echo "<div class='col-sm-4 text-center'> <a class='btn btn-secondary mt-3 mb-3' href='classes.php'>View timetable</a></div>"; 
                     }
                     ?>
-            </div>
-
-            <div class="row" style="padding-top:5rem; padding-bottom:5rem">
+            </section>
+            
+            <!-- Class offered in SIT NYP -->
+            <section class="row" style="padding-top:5rem; padding-bottom:5rem">
                 <div class="row">
                     <div>
                         <h2> Classes offered</h3></div>
@@ -84,23 +86,24 @@ include "nav.inc.php";
                     <div class="row">
                         <div class="col-sm-4 text-center">
                             <div>
-                            <h3> Yoga</h3> <img src="img/yoga.jpg" alt="..." class="img-fluid"></div> 
+                            <h3> Yoga</h3> <img src="img/yoga.jpg" alt="yoga" class="img-fluid"></div> 
 
                         </div>
                         <div class="col-sm-4 text-center">
                             <div>
-                            <h3> Zumba</h3><img src="img/zumba.jpg" alt="..." class="img-fluid"></div> 
+                            <h3> Zumba</h3><img src="img/zumba.jpg" alt="zumba" class="img-fluid"></div> 
                         </div>
                         <div class="col-sm-4 text-center">
                             <div>
-                            <h3> Gym</h3><img src="img/gym.jpg" alt="..." class="img-fluid"></div> 
+                            <h3> Gym</h3><img src="img/gym.jpg" alt="gym" class="img-fluid"></div> 
                     </div>
                     <div class="row">
                         <a class="btn btn-secondary mt-3 mb-3" href="explore.php">Explore classes</a>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
+
     </main>
     <!-- JQuery -->
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">

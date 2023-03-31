@@ -33,40 +33,33 @@ include "nav.inc.php";
             <img class="img-fluid" src="img/swim.jpg" alt="swim">
             </div>
 
-            <!-- Article -->
-            <div class= "row" style="padding-top: 3rem">
+            <!-- Article Intro -->
+            <section class= "row" style="padding-top: 3rem">
                 <h2>Introduction</h2>
-                <p>Chart.js is one of the most popular charting projects for various reasons. Firstly, it is 
-                    lightweight and fast, this means it is easy to install and use, and it does not slow down the
-                    website or application as its loading time and page impact are low. Secondly, the charts are 
-                    fully responsive, meaning they are automatically resized based on the viewport width. It works
-                    well on all devices, including desktops, tablets, and mobile phones. Thirdly, the chart.js 
-                    documentation is well organized and provides detailed information on using each feature, allowing 
-                    developers to have an easier time implementing charts in their web projects. In addition, due to 
-                    its large community of developers, it is easier to get resources for developers who need help while 
-                    using Chart.js. Last but not least, Chart.js is compatible with all modern browsers, including mobile 
-                    devices, which makes it accessible to a wide range of users.
+                <p>Swimming is an excellent form of exercise that has numerous benefits for the mind and body. 
+                    Swimming in a facility can be particularly enjoyable due to the access to various amenities and 
+                    features. In this review, I will discuss my love for swimming in a facility, 
+                    including the reasons why I find it so appealing and the benefits it provides.
                 </p>
-            </div>
+            </section>
 
-            <div class= "row" style="padding-top: 2rem">
+            <!-- Article Conclusion -->
+            <section class= "row" style="padding-top: 2rem">
                 <h2>Conclusion</h2>
-                <p>Chart.js is one of the most popular charting projects for various reasons. Firstly, it is 
-                    lightweight and fast, this means it is easy to install and use, and it does not slow down the
-                    website or application as its loading time and page impact are low. Secondly, the charts are 
-                    fully responsive, meaning they are automatically resized based on the viewport width. It works
-                    well on all devices, including desktops, tablets, and mobile phones. Thirdly, the chart.js 
-                    documentation is well organized and provides detailed information on using each feature, allowing 
-                    developers to have an easier time implementing charts in their web projects. In addition, due to 
-                    its large community of developers, it is easier to get resources for developers who need help while 
-                    using Chart.js. Last but not least, Chart.js is compatible with all modern browsers, including mobile 
-                    devices, which makes it accessible to a wide range of users.
+                <p>
+                    In conclusion, swimming in a facility is an incredibly enjoyable experience that provides 
+                    numerous benefits for the mind and body. The access to amenities and features such as heated pools,
+                     sauna, and steam rooms enhance the overall experience and make it a great way to unwind and exercise. 
+                     As someone who loves swimming, I highly recommend trying out a facility to experience the joy and 
+                     benefits of swimming in a new way.
                 </p>
-            </div>
+            </section>
 
             <!-- Related articles -->
-            <div class= "row py-3" >
+            <section class= "row py-3" >
                 <h1>Related articles</h1>
+
+                <!-- Article 1 -->
                 <div class="col-md-4">
                 <div class="card h-100 mb-4 box-shadow">
                     <img class="card-img-top" src="img/yoga.jpg" alt="swim">
@@ -79,6 +72,8 @@ include "nav.inc.php";
                     </div>
                 </div>
                 </div>
+
+                <!-- Article 2 -->
                 <div class="col-md-4">
                 <div class="card h-100 mb-4 box-shadow">
                     <img class="card-img-top" src="img/gym.jpg" alt="gym">
@@ -92,6 +87,7 @@ include "nav.inc.php";
                 </div>
                 </div>
 
+                <!-- Article 3 -->
                 <div class="col-md-4">
                 <div class="card h-100 mb-4 box-shadow">
                     <img class="card-img-top" src="img/cycle.jpg" alt="cycling">
@@ -105,8 +101,7 @@ include "nav.inc.php";
                 </div>
                 </div>
             </div>
-
-        </div>
+        </section>
     </main>
 
 
