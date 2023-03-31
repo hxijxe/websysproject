@@ -64,6 +64,7 @@ function authenticateAdmin()
         }else{
             $errorMsg = "Email not found or password doesn't match.";
             $success = false;
+            header("Location: adminlogin.php");
         }
         $stmt->close();
 //            try {
