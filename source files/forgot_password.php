@@ -27,7 +27,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <a class="btn btn-secondary mt-3 mb-3" href="reset_password.php">Forget Password</a>
+                                        <button class="btn btn-secondary mt-3 mb-3" type="submit">Forget Password</button>
                                     </div>
                                 </form>
                         </div>

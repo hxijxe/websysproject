@@ -132,16 +132,6 @@
                         $lname = $row["lname"];
                         $pwd_hashed = $row["password"];
 
-                        // storing user information in a session
-                        session_start();
-
-                        $_SESSION['fname'] = $fname;
-                        $_SESSION['lname'] = $lname;
-                        $_SESSION['email'] = $email;
-                        $_SESSION['member_id'] = $row["member_id"];
-                        $_SESSION["logged_in"] = true;
-                        header("location: index.php");
-
                         // Check if the password matches:
                         if (!password_verify($_POST["pwd"], $pwd_hashed))
                         {
@@ -150,6 +140,17 @@
                             $errorMsg = "Email not found or password doesn't match.";
                             $success = false;
                         }
+
+                        // Set the session name and start the session
+//                        session_name("session_login");
+                        session_start();
+
+                        $_SESSION['fname'] = $fname;
+                        $_SESSION['lname'] = $lname;
+                        $_SESSION['email'] = $email;
+                        $_SESSION['member_id'] = $row["member_id"];
+                        $_SESSION["logged_in"] = true;
+                        header("location: index.php");
                     }
                     else
                     {

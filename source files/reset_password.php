@@ -19,17 +19,19 @@ include "nav.inc.php";
                     <h2 class='text-white mb-4'>Forgot Password</h2>
                     <p class='text-white-50'>
                         Please enter your email address to receive a password reset link.</p>
-                    <form name="Re-enterPassword" action="process_resetpassword.php" method="post">
+                    <form action="process_resetpassword.php" method="post">
                         <div class="row">
                             <div class="inline-block">
-                                <input type="email" class="form-control" name="new_pass" id="new_pass" required name="email" placeholder="Enter New Password">
+                                <!-- Password -->
+                                <input type="password" class="form-control" id="pwd"  name="pwd" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+~`-={}[\]|:;&quot;'<>,.?\/]).{8,}" placeholder="Enter password">
                             </div>
                             <div class="inline-block">
-                                <input type="email" class="form-control" name="re_pass" id="re_pass" required name="email" placeholder="Re-enter New Password">
+                                <!-- Confirm password -->
+                                <input type="password" class="form-control" id="pwd_confirm" required minlength="8" name="pwd_confirm" placeholder="Confirm password">
                             </div>
                         </div>
                         <div class="row">
-                            <a class="btn btn-secondary mt-3 mb-3" type="submit" id="submit-btn">Submit</a>
+                            <button class="btn btn-secondary mt-3 mb-3" type="submit">Submit</button>
                         </div>
                     </form>
                 </div>
