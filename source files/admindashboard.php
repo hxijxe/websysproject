@@ -14,11 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <?php
+    include "nav.admin.php";
+    ?>
 </head>
 
-<?php
-include "nav.admin.php";
-?>
+
 
 <body id=test>
 
@@ -31,14 +32,17 @@ include "nav.admin.php";
             <label for="tab1">Manage Classes</label>
             <input id="tab2" type="radio" name="tabs">
             <label for="tab2">Manage Feedback</label>
-
+            <!-- This section has an id of "content1" -->
             <section id="content1">
 
                 <h2 class="py-3 my-3">Add Classes</h2>
                 <div class="classform">
+                    <!-- This form has an action of "process_addclass.php" and a method of "POST" -->
                     <form action="process_addclass.php" method="POST">
                         <label for="location">Location</label>
+                        <!-- This select element has an id of "location" and a name of "location" -->
                         <select id="location" name="location">
+                            <!-- These are the options in the select element -->
                             <option value="Dover">Dover</option>
                             <option value="TP">TP</option>
                             <option value="NYP">NYP</option>
@@ -48,14 +52,18 @@ include "nav.admin.php";
                         </select>
 
                         <label for="duration">Choose your duration</label>
+                        <!-- This select element has an id of "duration" and a name of "duration" -->
                         <select id="duration" name="duration">
+                            <!-- These are the options in the select element -->
                             <option value="2hours">2 hours</option>
 
                         </select>
 
 
                         <label for="class">Choose Class</label>
+                        <!-- This select element has an id of "class" and a name of "class" -->
                         <select id="class" name="class">
+                            <!-- These are the options in the select element -->
                             <option value="yoga">Yoga</option>
                             <option value="zumba">Zumba</option>
                             <option value="gym">GYM</option>
@@ -64,7 +72,9 @@ include "nav.admin.php";
                         </select>
 
                         <label for="timeslot">Choose your Time Slot</label>
+                        <!-- This select element has an id of "timeslot" and a name of "timeslot" -->
                         <select id="timeslot" name="timeslot">
+                            <!-- These are the options in the select element -->
                             <option value="7am">7am-9am</option>
                             <option value="10am">10am-12pm</option>
                             <option value="1pm">1pm-3pm</option>
@@ -73,6 +83,7 @@ include "nav.admin.php";
                         </select>
 
                         <label for="instructor">Choose your instructor</label>
+                        <!-- This select element has an id of "instructor" and a name of "instructor" -->
                         <select id="instructor" name="instructor">
                             <option value="leshane">Ms Leshane</option>
                             <option value="bryon">Mr Bryon</option>
@@ -81,7 +92,7 @@ include "nav.admin.php";
                             <option value="jack">Mr Jack</option>
                         </select>
 
-<!--                         <input type="submit" value="Submit">-->
+                        <!--<input type="submit" value="Submit">-->
                         <button class="btn btn-secondary mt-3 mb-3" type="submit" value="submit">Add Class</button>
                     </form>
 
@@ -93,7 +104,7 @@ include "nav.admin.php";
             <section id="content2">
                 <div class="table-wrapper">
                     <h3>View Feedback:</h3>
-                
+
                     <div class="mb-5" style="overflow-x:auto;">
                         <?php
                         $timeslot = $duration = $class = $instructor = $location = $errorMsg = "";
@@ -140,21 +151,18 @@ include "nav.admin.php";
 
         </div>
     </main>
-
-
-
+    <?php
+    include "footer.inc.php";
+    ?>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <!--Bootstrap JS-->
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+    </script>
+    <script defer src="js/scripts.js"></script>
+    <script defer src="js/logout.js"></script>
 
 
 </body>
-<?php
-include "footer.inc.php";
-?>
-<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-</script>
-<!--Bootstrap JS-->
-<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
-</script>
-<script defer src="js/scripts.js"></script>
-<script defer src="js/logout.js"></script>
 
 </html>

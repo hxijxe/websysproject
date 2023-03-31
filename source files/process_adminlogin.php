@@ -23,6 +23,7 @@ function sanitize_input($data)
     $data = htmlspecialchars($data);
     return $data;
 }
+//call function
 authenticateAdmin();
 
 function authenticateAdmin()
@@ -56,6 +57,7 @@ function authenticateAdmin()
         $_SESSION['admin_id'] = $row["admin_id"];
         $_SESSION["logged_in"] = true;
 
+        //check admin email and password
         if($email == $row['email'] && $password == $row['password']){
 
             header("Location: admindashboard.php");

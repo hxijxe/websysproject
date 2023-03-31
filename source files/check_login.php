@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (isset($_SESSION['user_id'])) {
+if (isset($_SESSION['member_id'])) {
     // User is logged in
     echo "true";
 } else {

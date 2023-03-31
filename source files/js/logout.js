@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var timer = setInterval(function() {
             // Show a prompt to ask the user if they want to extend their session
             if (isLoggedIn() && numPrompts < maxPrompts) {
-                var extendSession = confirm("Your session is expired. Do you want to extend your session for 15 mins?");
+                var extendSession = confirm("Your session is expired. Do you want to extend your session for 15 minutes?");
                 if (extendSession) {
                     // Reset the timer and start again
                     clearInterval(timer);
