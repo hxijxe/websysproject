@@ -27,12 +27,11 @@ include "nav.inc.php";
 </header>
 
     <main>
-        <div class="container text-center">
+        <div class="container-fluid text-center">
             <div class="dropdowncontainer">
-
-                <div>
+                <div class="form-group">
                     <label for="locationDropdown">Location:</label>
-                    <select id="locationDropdown" onchange="filterTable()">
+                    <select id="locationDropdown" onchange="filterTable()" class="form-control">
                         <option value="All">All</option>
                         <option value="Dover">Dover</option>
                         <option value="SP">SP</option>
@@ -41,9 +40,10 @@ include "nav.inc.php";
                         <option value="TP">TP</option>
                         <option value="RP">RP</option>
                     </select>
-
+                </div>
+                <div class="form-group">
                     <label for="classDropdown">Class:</label>
-                    <select id="classDropdown" onchange="filterTable()">
+                    <select id="classDropdown" onchange="filterTable()" class="form-control">
                         <option value="All">All</option>
                         <option value="YOGA">YOGA</option>
                         <option value="ZUMBA">ZUMBA</option>
@@ -56,7 +56,7 @@ include "nav.inc.php";
 
             <h2 class="py-3 my-3">All Available Classes</h2>
             <a class="btn btn-secondary mt-3 mb-3" href="booking.php">Book Now!</a>
-            <div class="mb-5" style="overflow-x:auto;">
+            <div class="mb-5 table-responsive" style="overflow-x:auto;" tabindex="0">
                 <?php
                 $timeslot = $duration = $class = $instructor = $location = $errorMsg = "";
                 $success = true;
