@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/index.css">
     <title>SIT Active Gym</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <?php
@@ -81,7 +81,7 @@ include "nav.inc.php";
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center ">
                     <div class="col-lg-8 border-story">
-                        <h2 class="text-red mb-4">Our Story</h2>
+                        <h1 class="text-red mb-4">Our Story</h1>
                         <p class="text-black">
                         Since our humble beginnings in 2023, we started this company with a mission to bring fitness accessibility for everyone
                         affiliated with SIT. Our purpose is to ensure that the members of SIT have an outlet to take care of their physical well-being
@@ -99,7 +99,7 @@ include "nav.inc.php";
                 <div class="container px-4 px-lg-5">
                     <div class="row gx-4 gx-lg-5 ">
                         <div class="col-lg-8" style="text-align: left;">
-                            <h1 style="color: red;">Blog</h1>
+                            <h2 style="color: red;">Blog</h2>
                             <h2 class="text-black mb-4">Stay up to date with the current fitness scene.</h2>
                         </div>
                     </div>
@@ -109,7 +109,7 @@ include "nav.inc.php";
                         <div class="card h-100 mb-4 box-shadow">
                         <img class="card-img-top" src="img/swim.jpg" alt="swim">
                         <div class="card-body" >
-                            <h5 class="text-muted">Hai Jie Di Lai</h5>
+                            <h3 class="text-muted">Hai Jie Di Lai</h3>
                             <p class="card-text">I enjoy the flexible timetable of booking the classes for swimming.</p>
                             <div class="d-flex justify-content-between align-items-center">
                             <a href="blog_article_haijiedilai.php" class="text-muted" >3 mins</a>
@@ -122,7 +122,7 @@ include "nav.inc.php";
                         <div class="card h-100 mb-4 box-shadow">
                         <img class="card-img-top" src="img/yoga.jpg" alt="swim">
                         <div class="card-body">
-                            <h5 class="text-muted">Lee Shee Ree</h5>
+                            <h3 class="text-muted">Lee Shee Ree</h3>
                             <p class="card-text">I love the relaxing yoga sessions. Would recommend and bring my friends here next time</p>
                             <div class="d-flex justify-content-between align-items-center">
                             <small class="text-muted">7 mins</small>
@@ -135,7 +135,7 @@ include "nav.inc.php";
                         <div class="card h-100 mb-4 box-shadow">
                         <img class="card-img-top" src="img/gym.jpg" alt="gym">
                         <div class="card-body">
-                            <h5 class="text-muted">Yon Yee</h5>
+                            <h3 class="text-muted">Yon Yee</h3>
                             <p class="card-text">The gym facility is large and clean. Would recommend.</p>
                             <div class="d-flex justify-content-between align-items-center">
                             <small class="text-muted">15 mins</small>
@@ -152,7 +152,7 @@ include "nav.inc.php";
         <section class="projects-section bg-body" id="projects">
             <div class="container px-5 px-lg-5">
                 <div class="pricing-header px-3 pt-md-5 pb-md-4 mx-auto text-center">
-                    <h1 class="display-4">Pricing</h1>
+                    <h2 class="display-4">Pricing</h2>
                     <p class="lead">Select the perfect gym membership plan to meet your fitness goals and budget. Our plans are
                     designed to offer you flexibility and variety, so you can get the most out of your workouts.</p>
                 </div>
@@ -160,11 +160,11 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Basic Tier</h4>
+                                <h3 class="my-0 font-weight-normal">Basic Tier</h3>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$12 <small class="text-muted">/ mo</small>
-                                </h1>
+                                <h2 class="card-title pricing-card-title">$12 <small class="text-muted">/ mo</small>
+                                </h2>
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>2 booking per week</li>
                                     <li>Limited amenities</li>
@@ -178,11 +178,11 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Silver Tier</h4>
+                                <h3 class="my-0 font-weight-normal">Silver Tier</h3>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$18 <small class="text-muted">/ mo</small>
-                                </h1>
+                                <h2 class="card-title pricing-card-title">$18 <small class="text-muted">/ mo</small>
+                                </h2>
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>4 booking per week</li>
                                     <li>All amenities</li>
@@ -196,11 +196,11 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Gold Tier</h4>
+                                <h3 class="my-0 font-weight-normal">Gold Tier</h3>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small>
-                                </h1>
+                                <h2 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small>
+                                </h2>
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>7 booking per week</li>
                                     <li>All amenities</li>
@@ -213,8 +213,9 @@ include "nav.inc.php";
                     </div>
                 </div>
                 <div>
-                    <a href="membership.php"><p>>>>> click here to see more</p></a>
+                    <a href="membership.php"><p class="text-black">>>>> click here to see more</p></a>
                 </div>
+            </div>
         </section>
         </main>
 

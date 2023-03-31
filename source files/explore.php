@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>SIT Active Gym Locations</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
@@ -46,7 +46,6 @@ include "nav.inc.php";
                             It involves various physical postures,
                             breathing techniques, meditation, and relaxation. .</p>
                         <p><button class="btn btn-secondary mt-3 mb-3" id="myBtnYoga">Learn More!</button></p>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -85,7 +84,7 @@ include "nav.inc.php";
                         <p><a href="classes.php">Book Now!</a></p>
                         <p>Zumba has many advantages for physical and mental health.
                             It is a fun and high-energy workout that can improve cardiovascular health, muscle tone, and endurance.</p>
-                        <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=mZeFvX3ALKY'" target="_blank">Learn More!</a></p>
+                        <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=mZeFvX3ALKY' target="_blank">Learn More!</a></p>
                     </div>
                 </div>
             </div>
@@ -102,7 +101,7 @@ include "nav.inc.php";
                         <p><a href="classes.php">Book Now!</a></p>
                         <p>Weight training has numerous benefits for overall health and fitness.
                             It helps to increase muscle mass, improve bone density, and boost metabolism.</p>
-                        <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=zxDqvJoaR2c'" target="_blank">Learn More!</a></p>
+                        <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=zxDqvJoaR2c' target="_blank">Learn More!</a></p>
                     </div>
                 </div>
             </div>
@@ -120,7 +119,7 @@ include "nav.inc.php";
                         <p>Spin classes offer a variety of benefits for physical and mental health.
                             They provide a low-impact cardiovascular workout that can improve endurance, burn calories,
                             and increase lung capacity.</p>
-                        <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=CsF-bpdNJvA'" target="_blank">Learn More!</a></p>
+                        <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=CsF-bpdNJvA' target="_blank">Learn More!</a></p>
                     </div>
                 </div>
             </div>
@@ -137,7 +136,7 @@ include "nav.inc.php";
                         <p><a href="classes.php">Book Now!</a></p>
                         <p>Swimming is a low-impact exercise that offers a wide range of physical and mental health benefits.
                             It can improve cardiovascular health, build strength and endurance, and reduce the risk of chronic diseases.</p>
-                        <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=NFtknwZZh5o'" target="_blank">Learn More!</a></p>
+                        <p><a class="btn btn-secondary mt-3 mb-3" href='https://www.youtube.com/watch?v=NFtknwZZh5o' target="_blank">Learn More!</a></p>
                     </div>
                 </div>
             </div>

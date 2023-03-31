@@ -25,7 +25,7 @@ include "nav.admin.php";
     <main>
         <!-- ======= Contact Section ======= -->
 
-        <div id=test>
+        <div>
             <h2>Dashboard</h2>
             <input id="tab1" type="radio" name="tabs" checked>
             <label for="tab1">Manage Classes</label>

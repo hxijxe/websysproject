@@ -33,7 +33,7 @@ include "nav.inc.php";
             <div class="card h-100 mb-4 box-shadow">
               <img class="card-img-top" src="img/swim.jpg" alt="swim">
               <div class="card-body" >
-                <h5 class="text-muted">Hai Jie Di Lai</h5>
+                <h3 class="text-muted">Hai Jie Di Lai</h3>
                 <p class="card-text">I enjoy the flexible timetable of booking the classes for swimming.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <a href="blog_article_haijiedilai.php" class="text-muted" >3 mins</a>
@@ -46,7 +46,7 @@ include "nav.inc.php";
             <div class="card h-100 mb-4 box-shadow">
               <img class="card-img-top" src="img/yoga.jpg" alt="swim">
               <div class="card-body">
-                <h5 class="text-muted">Lee Shee Ree</h5>
+                <h3 class="text-muted">Lee Shee Ree</h3>
                 <p class="card-text">I love the relaxing yoga sessions. Would recommend and bring my friends here next time</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-muted">7 mins</small>
@@ -59,7 +59,7 @@ include "nav.inc.php";
             <div class="card h-100 mb-4 box-shadow">
               <img class="card-img-top" src="img/gym.jpg" alt="gym">
               <div class="card-body">
-                <h5 class="text-muted">Yon Yee</h5>
+                <h3 class="text-muted">Yon Yee</h3>
                 <p class="card-text">The gym facility is large and clean. Would recommend.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-muted">15 mins</small>
@@ -74,7 +74,7 @@ include "nav.inc.php";
             <div class="card h-100 mb-4 box-shadow">
               <img class="card-img-top" src="img/cycle.jpg" alt="cycling">
               <div class="card-body">
-                <h5 class="text-muted">Nick Tan</h5>
+                <h3 class="text-muted">Nick Tan</h3>
                 <p class="card-text">Love the cyclking session. Intense and fun.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-muted">23 mins</small>
@@ -86,7 +86,7 @@ include "nav.inc.php";
             <div class="card h-100 mb-4 box-shadow">
               <img class="card-img-top" src="img/swim.jpg" alt="swim">
               <div class="card-body">
-                <h5 class="text-muted">Ben Dover</h5>
+                <h3 class="text-muted">Ben Dover</h3>
                 <p class="card-text">I use to be scared of swimming, after a few session with the instructor, I can say I can save lives.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-muted">24 mins</small>
@@ -98,7 +98,7 @@ include "nav.inc.php";
             <div class="card h-100 mb-4 box-shadow">
               <img class="card-img-top" src="img/cycle.jpg" alt="cycling">
               <div class="card-body">
-                <h5 class="text-muted">Mike Oxlong</h5>
+                <h3 class="text-muted">Mike Oxlong</h3>
                 <p class="card-text">I love the cycle session with the instructor. She knows how to spice the workout.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-muted">29 mins</small>
@@ -113,7 +113,7 @@ include "nav.inc.php";
             <div class="card h-100 mb-4 box-shadow">
               <img class="card-img-top" src="img/sitnyp.jpg" alt="nyp_campus">
               <div class="card-body">
-                <h5 class="text-muted">Faithio</h5>
+                <h3 class="text-muted">Faithio</h3>
                 <p class="card-text">I love the location of the gym. It is very accessible for student.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-muted">34 mins</small>
@@ -125,7 +125,7 @@ include "nav.inc.php";
             <div class="card h-100 mb-4 box-shadow">
               <img class="card-img-top" src="img/gym.jpg" alt="gym">
               <div class="card-body">
-                <h5 class="text-muted">Koh Pee Oh</h5>
+                <h3 class="text-muted">Koh Pee Oh</h3>
                 <p class="card-text">Clean faclit and equipment. My buddies enjoy working out here. Would Recommend 10/10</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-muted">47 mins</small>
@@ -137,7 +137,7 @@ include "nav.inc.php";
             <div class="card h-100 mb-4 box-shadow">
               <img class="card-img-top" src="img/sitnyp.jpg" alt="nyp_campus">
               <div class="card-body">
-                <h5 class="text-muted">Jian Rong Rong</h5>
+                <h3 class="text-muted">Jian Rong Rong</h3>
                 <p class="card-text">Great Location for students. It is located at NYP campus and its very accessible to all SIT students</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-muted">59 mins</small>

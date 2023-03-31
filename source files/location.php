@@ -9,7 +9,7 @@
     <script defer src="js/countdown.js"></script>
     <title>SIT Active Gym Locations</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
@@ -34,16 +34,14 @@ include "nav.inc.php";
 
     <section id="maps">
         <div class="row">
-            <article class="col-sm">
                 <h2>6 Locations</h2>
-                <h5 class="collapsible">View all locations on map</h5>
+                <h3 class="collapsible">View all locations on map</h3>
                 <div class="content">
                     <div style="width: 100%; overflow: hidden; height: 600px;">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WKqrR1eSDbEUGRTD6MtdDnTMbgEJcM8&ehbc=2E312F" width="100%" height="600" frameborder="0" style="border:0; margin-top: -60px;">
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WKqrR1eSDbEUGRTD6MtdDnTMbgEJcM8&ehbc=2E312F" width="1800" height="600" style="border:0; margin-top: -60px;">
                         </iframe>
                     </div>
                 </div>
-            </article>
         </div>
     </section>
 
