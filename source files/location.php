@@ -3,8 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="css/locationtest.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/countdown.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/location.js"></script>
     <script defer src="js/countdown.js"></script>
     <title>SIT Active Gym Locations</title>
@@ -17,8 +17,6 @@
 <?php
 include "nav.inc.php";
 ?>
-
-
 
 <body>
 <header class="about-section text-center">
