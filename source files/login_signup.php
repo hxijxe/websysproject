@@ -7,11 +7,11 @@
     <script defer src="js/login.js"></script>
     <title>SIT Active Gym</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <a href="../login_signup.php">Login & Register</a>
+    <!-- <a href="../login_signup.php">Login & Register</a> -->
 </head>
 <?php
 include "nav.inc.php";

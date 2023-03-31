@@ -13,7 +13,7 @@
     include "nav.inc.php";
     ?>
     <body>
-        <section class="about-section text-center">
+        <header class="about-section text-center">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
         <main class="container">
             <?php
             $name = $email = $className = $date = $timeslot = $instructor = $errorMsg = "";

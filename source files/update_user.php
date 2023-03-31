@@ -24,6 +24,8 @@ include "nav.inc.php";
         </div>
     </div>
 </header>
+
+<main>
 <?php
 // Initialize variables
 $fname = $lname = $tier = $errorMsg = "";
@@ -125,12 +127,12 @@ if (!$success) {
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
     <input type="hidden" name="member_id" value="<?php echo $member_id; ?>">
     <label for="fname">First Name:</label>
-    <input type="text" name="fname" value="<?php echo $fname; ?>"><br>
+    <input type="text" name="fname" id="fname" value="<?php echo $fname; ?>"><br>
     <label for="lname">Last Name:</label>
-    <input type="text" name="lname" value="<?php echo $lname; ?>"><br>
+    <input type="text" name="lname" id="lname" value="<?php echo $lname; ?>"><br>
 
     <label for="email">Email:</label>
-    <input type="email" name="email" value="<?php echo $email; ?>"><br>
+    <input type="email" name="email" id="email" value="<?php echo $email; ?>"><br>
 
     <label for="tier">Tier:</label>
     <input class="big" type="radio" id="basic" name="tier" value="Basic" />
@@ -146,17 +148,19 @@ if (!$success) {
 
 </form>
 </div>
+</main>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <!--Bootstrap JS-->
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+    </script>
+    <script defer src="js/scripts.js"></script>
 </body>
+
 <?php
 include "footer.inc.php";
 ?>
-<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-</script>
-<!--Bootstrap JS-->
-<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
-</script>
-<script defer src="js/scripts.js"></script>
-</body>
+
 
 
 </html>

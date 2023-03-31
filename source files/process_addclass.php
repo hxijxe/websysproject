@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>SIT Active Gym Classes</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 </head>
 
 <?php
