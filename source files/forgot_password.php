@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <title>SIT Active Gym Classes</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" >
     </HEAD>
     <?php
     include "nav.inc.php";
@@ -17,8 +17,8 @@
                 <div class='container px-4 px-lg-5'>
                     <div class='row gx-4 gx-lg-5 justify-content-center'>
                         <div class='col-lg-8'>
-                            <h2 class='text-white mb-4'>Forgot Password</h2>
-                            <p class='text-white-50'>
+                            <h1 class='text-white mb-4'>Forgot Password</h1>
+                            <p class='text-white'>
                                 Please enter your email address to receive a password reset link.</p>
                                 <form name="login" action="process_resetpassword.php" method="post">
                                     <div class="row">
@@ -27,7 +27,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <a class="btn btn-secondary mt-3 mb-3" type="submit" href="reset_password.php">Forget Password</a>
+                                        <a class="btn btn-secondary mt-3 mb-3" href="reset_password.php">Forget Password</a>
                                     </div>
                                 </form>
                         </div>

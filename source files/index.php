@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/index.css">
     <title>SIT Active Gym</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <?php
@@ -86,7 +86,7 @@ include "nav.inc.php";
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center ">
                     <div class="col-lg-8 border-story">
-                        <h2 class="text-red mb-4">Our Story</h2>
+                        <h1 class="text-red mb-4">Our Story</h1>
                         <p class="text-black">
                             Since our humble beginnings in 2023, we started this company with a mission to bring fitness
                             accessibility for everyone
@@ -207,11 +207,11 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Basic Tier</h4>
+                                <h3 class="my-0 font-weight-normal">Basic Tier</h3>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$12 <small class="text-muted">/ mo</small>
-                                </h1>
+                                <h2 class="card-title pricing-card-title">$12 <small class="text-muted">/ mo</small>
+                                </h2>
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>2 booking per week</li>
                                     <li>Limited amenities</li>
@@ -225,11 +225,11 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Silver Tier</h4>
+                                <h3 class="my-0 font-weight-normal">Silver Tier</h3>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$18 <small class="text-muted">/ mo</small>
-                                </h1>
+                                <h2 class="card-title pricing-card-title">$18 <small class="text-muted">/ mo</small>
+                                </h2>
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>4 booking per week</li>
                                     <li>All amenities</li>
@@ -243,11 +243,11 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Gold Tier</h4>
+                                <h3 class="my-0 font-weight-normal">Gold Tier</h3>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small>
-                                </h1>
+                                <h2 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small>
+                                </h2>
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>7 booking per week</li>
                                     <li>All amenities</li>

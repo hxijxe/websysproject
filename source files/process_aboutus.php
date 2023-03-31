@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>SIT Active Gym Classes</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" >
 </head>
 
 <?php
@@ -68,7 +68,7 @@ include "nav.inc.php";
             {
                 saveFeedbackToDB();
                 echo "<div style= 'padding-bottom: 5rem; padding-top: 5rem'>";
-                echo "<h1 ;>feedback submitted successfully!</h1>";
+                echo "<h1>feedback submitted successfully!</h1>";
                 echo "<h2>Thank you for your feedback, $name</h2>";
                 echo "<form action='index.php' style= 'padding-top: 10rem'><button class='btn btn-success btn-lg'>Back to Home</button></form>";
                 echo "</div>";

@@ -19,8 +19,8 @@ include "nav.inc.php";
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 ">
                 <div class="col-lg-8" style="text-align: left;">
-                    <h1 style="color: red;">About Us</h4>
-                    <h2 class="text-white mb-4">Get to know us better </h1>
+                    <h1 style="color: red;">About Us</h1>
+                    <h2 class="text-white mb-4">Get to know us better </h2>
                 </div>
             </div>
         </div>
@@ -124,8 +124,8 @@ include "nav.inc.php";
 
 
                     <div class="rating-box">
-                    <h1>Rate Our Service?</h1>
-                    <p>Give us a quick rating so we know if you like it.</p></label>
+                    <h3>Rate Our Service?</h3>
+                    <p>Give us a quick rating so we know if you like it.</p>
                         <div class="stars">
                             <input type="hidden" id="rating" name="rating" value="-1">
                             <div class="bx bxs-star ratings_stars" data-rating="1"></div>

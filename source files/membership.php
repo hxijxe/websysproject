@@ -30,7 +30,7 @@ include "nav.inc.php";
         <section class="projects-section bg-body" id="projects">
             <div class="container px-5 px-lg-5">
                 <div class="pricing-header px-3 pt-md-5 pb-md-4 mx-auto text-center">
-                    <h1 class="display-4">Pricing</h1>
+                    <h2 class="display-4">Pricing</h2>
                     <p class="lead">Select the perfect gym membership plan to meet your fitness goals and budget. Our plans are
                     designed to offer you flexibility and variety, so you can get the most out of your workouts.</p>
                 </div>
@@ -38,11 +38,11 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Basic Tier</h4>
+                                <h3 class="my-0 font-weight-normal">Basic Tier</h3>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$12 <small class="text-muted">/ mo</small>
-                                </h1>
+                                <h2 class="card-title pricing-card-title">$12 <small class="text-muted">/ mo</small>
+                                </h2>
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>2 booking per week</li>
                                     <li>Limited amenities</li>
@@ -56,11 +56,11 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Silver Tier</h4>
+                                <h3 class="my-0 font-weight-normal">Silver Tier</h3>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$18 <small class="text-muted">/ mo</small>
-                                </h1>
+                                <h2 class="card-title pricing-card-title">$18 <small class="text-muted">/ mo</small>
+                                </h2>
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>4 booking per week</li>
                                     <li>All amenities</li>
@@ -74,11 +74,11 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Gold Tier</h4>
+                                <h3 class="my-0 font-weight-normal">Gold Tier</h3>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small>
-                                </h1>
+                                <h2 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small>
+                                </h2>
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>7 booking per week</li>
                                     <li>All amenities</li>
@@ -90,6 +90,7 @@ include "nav.inc.php";
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
         <div class="container px-5 px-lg-5">
@@ -137,37 +138,37 @@ include "nav.inc.php";
         <div class="container px-5 px-lg-5" style="padding-top: 5rem ; padding-bottom: 5rem;">
             <h2 style="padding-bottom: 2rem">Frequently Asked Questions</h2>
             <div class="col-lg-12 col-12 g-0">
-                <h4> What do I have to bring for my workout? </h4>
+                <h3> What do I have to bring for my workout? </h3>
                 <p> Do bring a towel for hygiene purposes. Show up in outfit that is appropriate for physical fitness.
                     Consider bringing a change of clothes as well, we do have shower facilities!
                 </p>
-                <h4> What is the eligibility for membership? </h4>
+                <h3> What is the eligibility for membership? </h3>
                 <p> You have to be one of the following: A SIT student, staff, or alumni.
 
                 </p>
-                <h4> Can I patron more than one location? </h4>
+                <h3> Can I patron more than one location? </h3>
                 <p> Yes, you can visit any of our 6 locations if you are a member!
                 </p>
-                <h4> Does becoming a member allow me to get better grades in school? </h4>
+                <h3> Does becoming a member allow me to get better grades in school? </h3>
                 <p> We cannot guarantee that your grades will improve. However, it is proven that
                     exercising helps to destress and this may help you to focus in your studies!
                 </p>
-                <h4> What are your hours of operation? </h4>
+                <h3> What are your hours of operation? </h3>
                 <p> Our gym is open from 6am to 10pm, Monday to Sunday. </p>
-                <h4> Do you offer personal training sessions? </h4>
+                <h3> Do you offer personal training sessions? </h3>
                 <p> Yes, we offer personal training sessions with certified trainers. You can sign up for these sessions
                     at our front desk. </p>
-                <h4> Are there any additional fees or charges? </h4>
+                <h3> Are there any additional fees or charges? </h3>
                 <p> No, there are no additional fees or charges for our gym membership. </p>
-                <h4> What types of equipment do you have available? </h4>
+                <h3> What types of equipment do you have available? </h3>
                 <p> We have a wide range of equipment available, including cardio machines, weight machines, and free
                     weights. </p>
-                <h4> Do you offer group fitness classes? </h4>
+                <h3> Do you offer group fitness classes? </h3>
                 <p> Yes, we offer a variety of group fitness classes including yoga, Zumba, and spinning. Check our
                     schedule for the full list of classes and times. </p>
-                <h4> Can I put my membership on hold? </h4>
+                <h3> Can I put my membership on hold? </h3>
                 <p> Yes, you can put your membership on hold for up to 3 months with prior notice. </p>
-                <h4> What is your cancellation policy? </h4>
+                <h3> What is your cancellation policy? </h3>
                 <p> We require 30 days written notice to cancel your membership. </p>
             </div>
         </div>

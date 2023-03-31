@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>SIT Active Gym Blog</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <?php
@@ -19,7 +19,7 @@ include "nav.inc.php";
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 ">
                 <div class="col-lg-8" style="text-align: left;">
-                    <h1 style="color: red;">Hai Jie Di Lai</h4>
+                    <h1 style="color: red;">Hai Jie Di Lai</h1>
                     <p class="text-white mb-4">Hai Jie's experience in SIT Gym</p>
                 </div>
             </div>
@@ -57,7 +57,7 @@ include "nav.inc.php";
 
             <!-- Related articles -->
             <section class= "row py-3" >
-                <h1>Related articles</h1>
+                <h2>Related articles</h2>
 
                 <!-- Article 1 -->
                 <div class="col-md-4">
@@ -100,8 +100,8 @@ include "nav.inc.php";
                     </div>
                 </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
 

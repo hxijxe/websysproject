@@ -7,7 +7,7 @@
     <script defer src="js/location.js"></script>
     <title>SIT Active Gym Locations</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
@@ -81,7 +81,7 @@ include "nav.inc.php";
             <section class="row" style="padding-top:5rem; padding-bottom:5rem">
                 <div class="row">
                     <div>
-                        <h2> Classes offered</h3></div>
+                        <h2> Classes offered</h2></div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4 text-center">
