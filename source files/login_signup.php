@@ -33,25 +33,6 @@ include "nav.inc.php";
                         <input type="email" class="form-control" id="registeremail" required name="email" placeholder="Enter email">
                         <!-- Password -->
                         <input type="password" class="form-control" id="registerpwd"  name="pwd" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+~`-={}[\]|:;&quot;'<>,.?\/]).{8,}" placeholder="Enter password">
-                        <!--Password validation checker-->
-<!--                        -->
-<!--                        <section class="password-validation">-->
-<!--                    <div class="icon">-->
-<!--                                <i class='show bx bx-show hide'></i>-->
-<!--                                <i class='slash bx bx-hide'></i>-->
-<!--                            </div>-->
-<!--                    <div class="valid-checks hidden">-->
-<!--                        <ul class="checklist">-->
-<!--                        <li class="lowercase"><i class="bx bx-check"></i>At least one lowercase letter</li>-->
-<!--                        <li class="uppercase"><i class="bx bx-check"></i>At least one uppercase letter</li>-->
-<!--                        <li class="number"><i class="bx bx-check"></i>At least one number</li>-->
-<!--                        <li class="special"><i class="bx bx-check"></i>At least one special character</li>-->
-<!--                        <li class="length"><i class="bx bx-check"></i>At least 8 characters</li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                    </section>-->
-
-
                         <!-- Confirm password -->
                         <input type="password" class="form-control" id="pwd_confirm" required minlength="8" name="pwd_confirm" placeholder="Confirm password">
 
@@ -101,7 +82,7 @@ include "nav.inc.php";
                         <!-- Forget password -->
                         <div class="content">
                             <div class="pass-link">
-                                <a href="reset_password.php">Forgot password?</a>
+                                <a href="forgot_password.php">Forgot password?</a>
                             </div>
                         </div>
                         <button type="submit">Login</button>

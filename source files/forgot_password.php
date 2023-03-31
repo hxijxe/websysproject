@@ -11,30 +11,6 @@
     <?php
     include "nav.inc.php";
     ?>
-    <?php
-        $email = $errorMsg = "";$email = $_POST['email'];
-
-        // Check if email field is empty
-        if (empty($email)) {
-            $errors[] = "Email is required";
-        }
-    // Check if email is valid
-        else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $errors[] = "Invalid email format";
-        }
-    // Check if email exists in database
-        else {
-            $query = "SELECT * FROM users WHERE email='$email'";
-            // Create database connection.
-            $config = parse_ini_file('../../private/db-config.ini');
-            $conn = new mysqli($config['servername'], $config['username'], $config['password'], $config['dbname']);;
-            $result = mysqli_query($conn, $query);
-            if (mysqli_num_rows($result) == 0) {
-                $errors[] = "Email not found in database";
-            }
-        }
-    ?>
-
     <BODY>
         <main class="container">
             <section class='about-section text-center'>
@@ -45,19 +21,6 @@
                             <p class='text-white-50'>
                                 Please enter your email address to receive a password reset link.</p>
                                 <form name="login" action="process_resetpassword.php" method="post">
-                                    <?php
-                                    if (! empty($displayMessage["status"])) {
-                                        if ($displayMessage["status"] == "error") {
-                                            ?>
-                                            <div class="server-response error-msg"><?php echo $displayMessage["message"]; ?></div>
-                                            <?php
-                                        } else if ($displayMessage["status"] == "success") {
-                                            ?>
-                                            <div class="server-response success-msg"><?php echo $displayMessage["message"]; ?></div>
-                                            <?php
-                                        }
-                                    }
-                                    ?>
                                     <div class="row">
                                         <div class="inline-block">
                                             <input type="email" class="form-control" id="email" required name="email" placeholder="Enter Email">

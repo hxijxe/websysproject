@@ -49,6 +49,13 @@ function authenticateAdmin()
         $result = $stmt->get_result();
         $row = $result->fetch_assoc();
 
+        // Storing user information in a session for admin
+        session_name("session_admin");
+        session_start();
+        $_SESSION['email'] = $email;
+        $_SESSION['admin_id'] = $row["admin_id"];
+        $_SESSION["logged_in"] = true;
+
         if($email == $row['email'] && $password == $row['password']){
 
             header("Location: admindashboard.php");

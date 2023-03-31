@@ -17,7 +17,7 @@
 </head>
 
 <?php
-include "nav.inc.php";
+include "nav.admin.php";
 ?>
 
 <body id=test>
