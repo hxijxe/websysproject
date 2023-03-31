@@ -46,14 +46,6 @@ include "nav.inc.php";
             </div>
             <!-- Information -->
             <div class="row" style= "padding-top: 5rem">
-            <table>
-                    <thead>
-                    <tr>
-                        <th>Operating Hours</th>
-                        <th>Contacts</th>
-                    </tr>
-                    </thead>
-                    <tbody>
                     <?php
                     $montofri = $sat = $sun = $email = $tel = "";
                     $success = true;
@@ -75,39 +67,13 @@ include "nav.inc.php";
 
                     // Display user data in table
                     while ($row = mysqli_fetch_assoc($result)) {
-                        echo "<tr>";
-                        echo "<td> Monday to Friday: " . $row['montofri'] . "<br> Saturday: " . $row['sat'] . "<br> Sunday: " . $row['sun']. "</td>";
-                        echo "<td> <a href = 'mailto:" . $row['email'] . "'>Email: " . $row['email'] . "</a> <br> Telephone: ". $row['tel'] . "</td>";
-                        echo '<td><a class="btn btn-secondary mt-3 mb-3" href="classes.php">View Classes</a></td>';
-                        echo "</tr>";
+                        echo "<div class='col-sm-4 text-center'> <div> <h3> Operating Hours</h3></div> ";
+                        echo "<div> <p> Monday to Friday: " . $row['montofri'] . "</p></div><div> <p>Saturday: " . $row['sat'] . "</p></div><div> <p> Sunday: " . $row['sun']. "</p></div></div>";
+                        echo "<div class='col-sm-4 text-center'> <div> <h3> Contact Us</h3></div>"; 
+                        echo "<div><a href = 'mailto:" . $row['email'] . "'>Email: " . $row['email'] . "</a> </div><div> <p>Telephone: ". $row['tel'] . "</p></div></div>";
+                        echo "<div class='col-sm-4 text-center'> <a class='btn btn-secondary mt-3 mb-3' href='classes.php'>View timetable</a></div>"; 
                     }
                     ?>
-                    </tbody>
-                </table>
-                <!-- <div class="col-sm-4 text-center">
-                    <div>
-                    <h3> Operating Hours</h3></div>
-                    <div>
-                    <p> Monday-Friday: 9:00am - 9:00pm</p></div>
-                    <div>
-                    <p> Saturday: 9:00am - 10:00pm</p></div>
-                    <div>
-                    <p> Sunday: 9:00am - 5:00pm</p></div>
-                </div>
-
-                <div class="col-sm-4 text-center">
-                    <div>
-                    <h3> Contact Us</h3></div>
-                    <div>
-                    <p> Telephone: 6543 2109</p></div>  
-                    <div>
-                    <a href = "mailto: sitbookingresource@gmail.com">Email: sitbookingresource@gmail.com</a></div>             
-                </div>
-
-                <div class="col-sm-4 text-center">
-                    <a class="btn btn-secondary mt-3 mb-3" href="classes.php">View timetable</a>
-                </div> -->
-
             </div>
 
             <div class="row" style="padding-top:5rem; padding-bottom:5rem">
