@@ -41,6 +41,23 @@
                 $pwd = sanitize_input($_POST["pwd"]);
             }
 
+//        // check password
+//        if (empty($_POST["pwd"])) {
+//            $errorMsg .= "Password is required.<br>";
+//            $success = false;
+//        } else if (empty($_POST["pwd_confirm"])) {
+//            $errorMsg .= "Password Confirmation is required.<br>";
+//            $success = false;
+//        } else {
+//        // check if password and confirmation password match
+//            if ($_POST["pwd"] !== $_POST["pwd_confirm"]) {
+//                $errorMsg .= "Password must match Password Confirmation.<br>";
+//                $success = false;
+//            } else {
+//                $password = password_hash($_POST["pwd"], PASSWORD_DEFAULT);
+//            }
+//        }
+
 //            authenticateUser();
         // If the user checks the "remember me" checkbox, set the session cookie to expire in 30 days
         if (isset($_POST['remember'])) {
