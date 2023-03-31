@@ -113,13 +113,14 @@
     text-align: center;
   }
   .rating-box .stars {
-    display: flex;
+    display:inherit;
     align-items: center;
     gap: 15px;
   }
   .rating-box .stars div {
     color: var(--grey);
-    font-size: 40px;
+    width: 100%;
+    font-size: 200%;
     cursor: pointer;
     transition: color .2s ease;
   }
