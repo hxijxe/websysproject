@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-// Set the session timeout to 15 mins
-    var sessionTimeout = 900000;
+// Set the session timeout to 5 mins
+    var sessionTimeout = 300000;
 
-// Set the initial delay to 1 hour
-    var initialDelay = 3600000;
+// Set the initial delay to 25 mins
+    var initialDelay = 1400000;
 
 // Set the maximum number of prompts to 3
     var maxPrompts = 3;
