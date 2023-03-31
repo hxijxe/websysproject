@@ -21,7 +21,7 @@ include "nav.inc.php";
     <main>
         <section class="login_signup">
             <!-- Register container -->
-            <div class="container mt-5" id="container" style="min-height: 960px">
+            <div class="container mt-5" id="container">
                 <div class="form-container register-container">
                     <form action="process_register.php" method="post">
                         <h1>Register</h1>
@@ -65,20 +65,20 @@ include "nav.inc.php";
                             <div class="content">
                                 <div class="checkbox">
                                     <input type="checkbox" name="remember" id="remember" <?php if(isset($_POST['remember'])) { echo 'checked'; } ?> />
-                                    <label for="remember">Remember me</label>
+                                    <label class="modify" for="remember">Remember me</label>
                                 </div>
                             </div>
 
                         </div>
                         <!-- Forget password -->
                         <div class="content">
-                            <div class="pass-link">
+                            <p class="pass-link modify">
                                 <a href="forgot_password.php">Forgot password?</a>
-                            </div>
+                            </p>
                         </div>
                         <button type="submit">Login</button>
                         <p>
-                            <a href="adminlogin.php">Admin Login</a>
+                            <a  href="adminlogin.php">Admin Login</a>
                         </p>
                     </form>
                 </div>
@@ -87,17 +87,17 @@ include "nav.inc.php";
                     <div class="overlay">
                         <div class="overlay-panel overlay-left">
                             <h1 class="title">Hello <br>Sitizens</h1>
-                            <p>Have an account? <br> Click here to login.</p>
-                            <p>
+                            <h5>Have an account? <br> Click here to login.</h5>
+                            <h5>
                                 For admin login
                                 <a href="adminlogin.php">Admin page</a>.
-                            </p>
+                            </h5>
                             <button class="ghost" id="login">Login<i class="lni lni-arrow-left login"></i>
                             </button>
                         </div>
                         <div class="overlay-panel overlay-right">
                             <h1 class="title">Not a member?<br>Start your journey with us</h1>
-                            <p>if you don't have an account yet, sign up and start your journey with us!</p>
+                            <h5>if you don't have an account yet, sign up and start your journey with us!</h5>
                             <button class="ghost" id="register">Register
                                 <i class="lni lni-arrow-right register"></i>
                             </button>

@@ -20,13 +20,19 @@
   letter-spacing: -1.5px;
   margin: 0;
   margin-bottom: 15px;
+  font-size: 35px;
 }
 
 .login_signup h1.title {
-  font-size: 45px;
+  font-size: 40px;
   line-height: 45px;
   margin: 0;
   text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+
+}
+
+.login_signup h5 {
+  font-size: 18px;
 }
 
 .login_signup p {
@@ -38,11 +44,6 @@
   text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
 }
 
-.login_signup span {
-  font-size: 14px;
-  margin-top: 25px;
-}
-
 .login_signup a {
   color: #333;
   font-size: 14px;
@@ -50,6 +51,42 @@
   margin: 15px 0;
   transition: 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  .login_signup h1 {
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    margin: 0;
+    margin-bottom: 7px;
+    font-size: 20px;
+  }
+
+  .login_signup h1.title {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+  }
+  .login_signup p {
+    font-size: 8px;
+    letter-spacing: 0px;
+    margin: 10px 0 10px;
+  }
+  .login_signup a {
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  .login_signup h5 {
+    font-size: 12px;
+  }
+}
+
+
+.login_signup span {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
 
 .login_signup a:hover {
   color:  #ED1C25;
@@ -62,6 +99,12 @@
   align-items: center;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .login_signup .content {
+    height: 30px;
+  }
+}
+
 
 .login_signup .content .checkbox {
   display: flex;
@@ -96,6 +139,19 @@
   transition: 0.3s ease-in-out;
 }
 
+@media (max-width: 768px) {
+  .login_signup .content label {
+    font-size: 10px;
+    user-select: none;
+    padding-left: 3px;
+  }
+  .login_signup button {
+    font-size: 11px;
+    margin: 7px;
+    padding: 8px 60px;
+    letter-spacing: 0px;
+  }
+}
 .login_signup button:hover {
   letter-spacing: 3px;
 }
@@ -156,6 +212,11 @@
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
+  font-size: 15px;
+}
+
+.modify{
+  font-size: 20px;
 }
 
 .login_signup .container {
@@ -165,8 +226,26 @@
   width: 100%;
   height: 100%;
   max-width: 100%;
-  min-height: 500px;
+  min-height: 960px;
 }
+
+@media (max-width: 768px) {
+  .login_signup form {
+    padding: 0 20px;
+  }
+  .login_signup input {
+    font-size: 10px;
+    padding: 7px 10px;
+  }
+  .modify{
+    font-size: 5px;
+  }
+  .login_signup .container {
+    min-height: 668px;
+  }
+}
+
+
 
 .login_signup .form-container {
   position: absolute;
@@ -228,6 +307,17 @@
   transform: translate(-100%);
 }
 
+@media (min-width: 768px) {
+  .login_signup .overlay-container {
+    left: 50%;
+    width: 50%;
+  }
+
+  .login_signup .container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+  }
+}
+
 .login_signup .overlay {
   background-image: url('../img/gym.gif');
   background-repeat: no-repeat;
@@ -266,13 +356,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0px 40px;
   text-align: center;
   top: 0;
   height: 100%;
   width: 50%;
   transform: translateX(0);
   transition: transform 0.6s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .login_signup .overlay-panel {
+    padding: 0px 15px;
+  }
 }
 
 .login_signup .overlay-left {
@@ -376,8 +472,16 @@
 .membershipType label {
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
+@media (max-width: 768px) {
+  .membershipType label {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+}
 .membershipType input[type="radio"] {
   margin-right: 5px;
 }
@@ -388,4 +492,5 @@
   margin-top: 10px;
   font-size: var(--font-size);
 }
+
 
