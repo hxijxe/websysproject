@@ -46,7 +46,45 @@ include "nav.inc.php";
             </div>
             <!-- Information -->
             <div class="row" style= "padding-top: 5rem">
-                <div class="col-sm-4 text-center">
+            <table>
+                    <thead>
+                    <tr>
+                        <th>Operating Hours</th>
+                        <th>Contacts</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    $montofri = $sat = $sun = $email = $tel = "";
+                    $success = true;
+
+                    // Create database connection.
+                    $config = parse_ini_file('../../private/db-config.ini');
+                    $conn = new mysqli($config['servername'], $config['username'],
+                        $config['password'], $config['dbname']);
+                    
+                    // Check connection
+                    if ($conn->connect_error) {
+                        $errorMsg = "Connection failed: " . $conn->connect_error;
+                        $success = false;
+                    }
+
+                    // Retrieve user data from SQL table based on email in session
+                    $query = "SELECT * FROM webproject5.locations WHERE location_id = '1'";
+                    $result = mysqli_query($conn, $query);
+
+                    // Display user data in table
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo "<tr>";
+                        echo "<td> Monday to Friday: " . $row['montofri'] . "<br> Saturday: " . $row['sat'] . "<br> Sunday: " . $row['sun']. "</td>";
+                        echo "<td> <a href = 'mailto:" . $row['email'] . "'>Email: " . $row['email'] . "</a> <br> Telephone: ". $row['tel'] . "</td>";
+                        echo '<td><a class="btn btn-secondary mt-3 mb-3" href="classes.php">View Classes</a></td>';
+                        echo "</tr>";
+                    }
+                    ?>
+                    </tbody>
+                </table>
+                <!-- <div class="col-sm-4 text-center">
                     <div>
                     <h3> Operating Hours</h3></div>
                     <div>
@@ -68,7 +106,7 @@ include "nav.inc.php";
 
                 <div class="col-sm-4 text-center">
                     <a class="btn btn-secondary mt-3 mb-3" href="classes.php">View timetable</a>
-                </div>
+                </div> -->
 
             </div>
 

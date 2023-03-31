@@ -106,8 +106,8 @@ include "nav.inc.php";
                             </a>
                         </div>
                         <p>Nanyang Polytechnic</p>
-                        <p>172A Ang Mo Kio Avenue 8, Singapore 567739
-                            (beside Blk Q of NYP campus)</p>
+                        <address>172A Ang Mo Kio Avenue 8, Singapore 567739
+                            (beside Blk Q of NYP campus)</address>
                         <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
                             <div class="card__button btn-primary">Find Out More</div>
                         </a>
@@ -130,7 +130,7 @@ include "nav.inc.php";
                             </a>
                         </div>
                         <p>Temasek Polytechnic</p>
-                        <p>Blk 29B Tampines Avenue 1, Singapore 528694</p>
+                        <address>Blk 29B Tampines Avenue 1, Singapore 528694</address>
                         <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
                             <div class="card__button btn-primary">Find Out More</div>
                         </a>
@@ -153,7 +153,7 @@ include "nav.inc.php";
                             </a>
                         </div>
                         <p>Main Campus</p>
-                        <p>10 Dover Drive Singapore 138683</p>
+                        <address>10 Dover Drive Singapore 138683</address>
                         <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
                             <div class="card__button btn-primary">Find Out More</div>
                         </a>
@@ -176,7 +176,7 @@ include "nav.inc.php";
                             </a>
                         </div>
                         <p>Republic Polytechnic</p>
-                        <p>Republic Polytechnic 43 Woodlands Avenue 9, Singapore 737729</p>
+                        <address>Republic Polytechnic 43 Woodlands Avenue 9, Singapore 737729</address>
                         <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
                             <div class="card__button btn-primary">Find Out More</div>
                         </a>
@@ -199,7 +199,7 @@ include "nav.inc.php";
                             </a>
                         </div>
                         <p>Singapore Polytechnic</p>
-                        <p> 510 Dover Road, Singapore 139660</p>
+                        <address> 510 Dover Road, Singapore 139660</address>
                         <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
                             <div class="card__button btn-primary">Find Out More</div>
                         </a>
@@ -222,7 +222,7 @@ include "nav.inc.php";
                             </a>
                         </div>
                         <p>Ngee Ann Polytechnic</p>
-                        <p> 537 Clementi Road, Singapore 599493</p>
+                        <address> 537 Clementi Road, Singapore 599493</address>
                         <a href="location_SITNYP.php" class="RX4Lf26" target="_blank" rel="noreferrer">
                             <div class="card__button btn-primary">Find Out More</div>
                         </a>
