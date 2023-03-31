@@ -337,7 +337,7 @@ kbd kbd {
 }
 
 figure {
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
 }
 
 img,
@@ -4682,7 +4682,7 @@ fieldset:disabled .btn {
 }
 
 .nav-link.disabled {
-  color: #6c757d;
+  color: white;
   pointer-events: none;
   cursor: default;
 }
@@ -8974,6 +8974,14 @@ fieldset:disabled .btn {
   color: #6c757d !important;
 }
 
+
+
+.footer .text-muted {
+  --bs-text-opacity: 1;
+  color: white !important;
+}
+
+
 .text-black-50 {
   --bs-text-opacity: 1;
   color: rgba(0, 0, 0, 0.5) !important;
@@ -13159,6 +13167,7 @@ tr:nth-child(even) {
 }
 
 
+
 /*make container responsive*/
 @media screen and (max-width: 576px) {
   .about-section {
@@ -13177,4 +13186,5 @@ tr:nth-child(even) {
     height: auto;
     font-size: 2rem;
   }
+
 }

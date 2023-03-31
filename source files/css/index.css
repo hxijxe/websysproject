@@ -59,7 +59,7 @@
 .carousel-caption2 {
     position: absolute;
     right: 25%;
-    bottom: 25rem;
+    bottom: 20rem;
     left: 25%;
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
@@ -117,6 +117,7 @@
 
   .carousel-caption2 {
     top: 40%;
+    bottom: 15rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
   }
