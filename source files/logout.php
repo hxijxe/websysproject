@@ -7,6 +7,7 @@
 
     //Clear session
     $_SESSION["member_id"] = "";
+    $_SESSION["email"] = "";
     session_destroy();
 
     // clear cookies

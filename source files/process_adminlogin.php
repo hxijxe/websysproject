@@ -54,7 +54,7 @@ function authenticateAdmin()
         session_name("session_admin");
         session_start();
         $_SESSION['email'] = $email;
-        $_SESSION['admin_id'] = $row["admin_id"];
+        //$_SESSION['admin_id'] = $row["admin_id"];
         $_SESSION["logged_in"] = true;
 
         //check admin email and password

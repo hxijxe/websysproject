@@ -139,18 +139,19 @@
                             // need to know which one they got right or wrong. :)
                             $errorMsg = "Email not found or password doesn't match.";
                             $success = false;
-                        }
+                        }else {
 
-                        // Set the session name and start the session
+                            // Set the session name and start the session
 //                        session_name("session_login");
-                        session_start();
+                            session_start();
 
-                        $_SESSION['fname'] = $fname;
-                        $_SESSION['lname'] = $lname;
-                        $_SESSION['email'] = $email;
-                        $_SESSION['member_id'] = $row["member_id"];
-                        $_SESSION["logged_in"] = true;
-                        header("location: index.php");
+                            $_SESSION['fname'] = $fname;
+                            $_SESSION['lname'] = $lname;
+                            $_SESSION['email'] = $email;
+                            $_SESSION['member_id'] = $row["member_id"];
+                            $_SESSION["logged_in"] = true;
+                            header("location: index.php");
+                        }
                     }
                     else
                     {

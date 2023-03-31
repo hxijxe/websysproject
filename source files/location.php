@@ -66,7 +66,7 @@ and a subtitle "Find a gym near you" is displayed in white.  -->
 
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
 
@@ -121,6 +121,7 @@ and a subtitle "Find a gym near you" is displayed in white.  -->
                     </div>
                 </div>
             </div>
+        </div>
 
             <div class='grid-container'>
                 <div class='card card--featured'>

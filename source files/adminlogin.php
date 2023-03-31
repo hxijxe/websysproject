@@ -49,7 +49,6 @@
 </body>
 
 <!-- This is the opening tag for the footer content -->
-<div>
     <?php
     include "footer.inc.php";
     ?>
