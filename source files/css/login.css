@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 */
-.login_signup body {
+ body .login_signup{
   display: flex;
   background-color: #f6f5f7;
   justify-content: center;
@@ -227,6 +227,7 @@
   height: 100%;
   max-width: 100%;
   min-height: 960px;
+
 }
 
 @media (max-width: 768px) {
