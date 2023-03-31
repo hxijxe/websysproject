@@ -37,7 +37,7 @@ include "nav.inc.php";
               <img class="card-img-top" src="img/swim.jpg" alt="swim">
               <div class="card-body">
                 <!-- This is the name of a person who enjoys the swimming classes -->
-                <h5 class="text-muted">Hai Jie Di Lai</h5>
+                <h3 class="text-muted">Hai Jie Di Lai</h3>
                 <!-- This is a statement about why the person enjoys the classes -->
                 <p class="card-text">I enjoy the flexible timetable of booking the classes for swimming.</p>
                 <div class="d-flex justify-content-between align-items-center">
@@ -94,7 +94,7 @@ include "nav.inc.php";
             <div class="card h-100 mb-4 box-shadow">
               <img class="card-img-top" src="img/swim.jpg" alt="swim">
               <div class="card-body">
-                <h5 class="text-muted">Ben Dover</h5>
+                <h3 class="text-muted">Ben Dover</h3>
                 <p class="card-text">I use to be scared of swimming, after a few session with the instructor, I can say
                   I can save lives.</p>
                 <h3 class="text-muted">Ben Dover</h3>

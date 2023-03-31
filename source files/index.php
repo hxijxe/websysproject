@@ -61,7 +61,7 @@ include "nav.inc.php";
                     <div class="carousel-item">
                         <img src="img/zumba.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption3 d-none d-md-block carousel-text-bg">
-                            <h5>Join Our Blog Post</h5>
+                            <h4>Join Our Blog Post</h4>
                             <a class="btn btn-secondary mt-3 mb-3" href="blog.php">Blog Page</a>
                         </div>
                     </div>
@@ -130,7 +130,7 @@ include "nav.inc.php";
                         <div class="card h-100 mb-4 box-shadow">
                             <img class="card-img-top" src="img/swim.jpg" alt="swim">
                             <div class="card-body">
-                                <h5 class="text-muted">Hai Jie Di Lai</h5>
+                                <h3 class="text-muted">Hai Jie Di Lai</h3>
 
                                 <!-- This is the content of the first blog post -->
                                 <p class="card-text">I enjoy the flexible timetable of booking the classes for swimming.
@@ -149,7 +149,7 @@ include "nav.inc.php";
                         <div class="card h-100 mb-4 box-shadow">
                             <img class="card-img-top" src="img/yoga.jpg" alt="swim">
                             <div class="card-body">
-                                <h5 class="text-muted">Lee Shee Ree</h5>
+                                <h3 class="text-muted">Lee Shee Ree</h3>
 
                                 <!-- This is the content of the second blog post -->
                                 <p class="card-text">I love the relaxing yoga sessions. Would recommend and bring my
@@ -168,7 +168,7 @@ include "nav.inc.php";
                         <div class="card h-100 mb-4 box-shadow">
                             <img class="card-img-top" src="img/gym.jpg" alt="gym">
                             <div class="card-body">
-                                <h5 class="text-muted">Yon Yee</h5>
+                                <h3 class="text-muted">Yon Yee</h3>
 
                                 <!-- This is the content of the third blog post -->
                                 <p class="card-text">The gym facility is large and clean. Would recommend.</p>
@@ -185,7 +185,7 @@ include "nav.inc.php";
                 <!-- This is a link to view more blog posts -->
                 <div>
                     <a href="blog.php">
-                        <p>>>>> click here to see more</p>
+                        <p style="color:blue">>>>> click here to see more</p>
                     </a>
                 </div>
             </div>
@@ -207,7 +207,7 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h3 class="my-0 font-weight-normal">Basic Tier</h3>
+                                <h2 class="my-0 font-weight-normal">Basic Tier</h2>
                             </div>
                             <div class="card-body">
                                 <h2 class="card-title pricing-card-title">$12 <small class="text-muted">/ mo</small>
@@ -225,7 +225,7 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h3 class="my-0 font-weight-normal">Silver Tier</h3>
+                                <h2 class="my-0 font-weight-normal">Silver Tier</h2>
                             </div>
                             <div class="card-body">
                                 <h2 class="card-title pricing-card-title">$18 <small class="text-muted">/ mo</small>
@@ -243,7 +243,7 @@ include "nav.inc.php";
                     <div class="col">
                         <div class="card mb-4 box-shadow">
                             <div class="card-header">
-                                <h3 class="my-0 font-weight-normal">Gold Tier</h3>
+                                <h2 class="my-0 font-weight-normal">Gold Tier</h2>
                             </div>
                             <div class="card-body">
                                 <h2 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small>
@@ -262,7 +262,7 @@ include "nav.inc.php";
                 <div>
                     <!-- This div contains the link to the membership page -->
                     <a href="membership.php">
-                        <p>>>>> click here to see more</p>
+                        <p style="color:blue">>>>> click here to see more</p>
                     </a>
                 </div>
         </section>
