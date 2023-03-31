@@ -53,6 +53,7 @@ if (empty($_POST["instructor"])) {
 } else {
     $instructor = sanitize_input($_POST["instructor"]);
 }
+//call function
 saveClassToDB();
 if ($success) {
     echo "<h1>Added successful!</h1> \n";

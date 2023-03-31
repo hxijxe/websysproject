@@ -30,6 +30,7 @@ include "nav.inc.php";
 </header>
 
 <main class="container">
+<!--main container for card-->
     <div class='main-container'>
         <div class='grid-container'>
             <div class='card card--featured'>
@@ -60,6 +61,7 @@ include "nav.inc.php";
                     <h2>Yoga</h2>
                 </div>
                 <div class="modal-body">
+<!--                    iframe-->
                     <iframe id="video" class="responsive-iframe" src="https://www.youtube.com/embed/v7AYKMP6rOE">
                     </iframe>
                     <p>Yoga is a practice that combines physical movement, breath control, and meditation to promote physical, mental, and spiritual health.

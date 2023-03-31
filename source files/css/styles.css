@@ -13158,6 +13158,8 @@ tr:nth-child(even) {
   margin-right: auto !important;
 }
 
+
+/*make container responsive*/
 @media screen and (max-width: 576px) {
   .about-section {
     height: auto;

@@ -113,7 +113,7 @@ include "nav.inc.php";
 
 
 
-                    // Display user data in table
+                    // Delete data in table
                     while ($row = mysqli_fetch_assoc($result)) {
                         $deletequery = "DELETE FROM webproject5.booking WHERE booking_id =" . $row['booking_id'];
                         echo "<tr id='booking-" . $row['booking_id'] . "'>";

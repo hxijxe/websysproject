@@ -27,6 +27,7 @@ include "nav.inc.php";
 </header>
 
     <main>
+<!--        fluid container for drop down-->
         <div class="container-fluid text-center">
             <div class="dropdowncontainer">
                 <div class="form-group">
