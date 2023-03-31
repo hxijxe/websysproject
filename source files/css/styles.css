@@ -12795,7 +12795,7 @@ body {
 }
 
 .footer {
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 /* classes table style */
@@ -13139,10 +13139,19 @@ tr:nth-child(even) {
   max-width: 80px;
 }
 
+.foot_cite{
+  font-size: 12px;
+  margin: 6px;
+}
+
 @media (max-width: 768px) {
   .navbar-brand img{
     max-height: 55px;
     max-width: 55px;
+  }
+  .foot_cite{
+    font-size: 8px;
+    margin: 2px;
   }
 }
 .mr-auto {
