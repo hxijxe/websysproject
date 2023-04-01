@@ -9,7 +9,7 @@
     <script defer src="js/countdown.js"></script>
     <title>SIT Active Gym Locations</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <?php
@@ -35,38 +35,17 @@ and a subtitle "Find a gym near you" is displayed in white.  -->
 
     <main class="container">
 
-    <section id="maps">
-        <div class="row">
-                <h2>6 Locations</h2>
-                <!-- This section displays a Google Maps iframe with 6 locations marked on the map --> 
-                <h3 class="collapsible">View all locations on map</h3>
-                <div class="content">
-                    <div style="width: 100%; overflow: hidden; height: 600px;">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WKqrR1eSDbEUGRTD6MtdDnTMbgEJcM8&ehbc=2E312F" width="1800" height="600" style="border:0; margin-top: -60px;">
-                        </iframe>
-                    </div>
-                </div>
-        </div>
-    </section>
-
-
-    <div class='main-container'>
-        <div class='grid-container'>
-            <div class='card card--featured'>
-                <div class='card__side-by-side--m'>
-                    <div class='card__image'>
-                        <img src='img/sitnew.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260' alt="new campus">
-                    </div>
-                    <div class='card__content padding-large--l' style="width:100%">
-                        <h2>COMING SOON!</h2>
-                        <div class="rowmap">
-                            <a href="https://www.singaporetech.edu.sg/" class="RX4Lf26" target="_blank" rel="noreferrer">
-                                <p class="kD9RoPu">View on map</p>
-                            </a>
-
+        <section id="maps">
+            <div class="row">
+                    <h2>6 Locations</h2>
+                    <!-- This section displays a Google Maps iframe with 6 locations marked on the map --> 
+                    <h5 class="collapsible">View all locations on map</h5>
+                    <div class="content">
+                        <div style="width: 100%; overflow: hidden; height: 600px;">
+                            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WKqrR1eSDbEUGRTD6MtdDnTMbgEJcM8&ehbc=2E312F" width="100%" height="600" frameborder="0" style="border:0; margin-top: -60px;">
+                            </iframe>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
 
@@ -121,7 +100,6 @@ and a subtitle "Find a gym near you" is displayed in white.  -->
                     </div>
                 </div>
             </div>
-        </div>
 
             <div class='grid-container'>
                 <div class='card card--featured'>
